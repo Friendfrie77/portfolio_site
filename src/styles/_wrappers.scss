@@ -1,0 +1,30 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
+}
+.wrapper{
+background: rgb(0,1,38);
+// background: linear-gradient(180deg, rgba(0,1,38,1) 40%, rgba(18,43,63,1) 50%, rgba(0,1,38,1) 65%);
+background: linear-gradient(90deg, rgba(0,1,38,1) 0%, rgba(5,13,45,1) 14%, rgba(10,24,52,1) 31%, rgba(18,43,63,1) 50%, rgba(13,30,55,1) 68%, rgba(11,25,52,1) 79%, rgba(6,13,45,1) 88%, rgba(0,1,38,1) 94%);
+min-height: 100vh;
+max-width: 100vw;
+display: flex;
+flex-direction: column;
+}
+
+.Hero-Wrapper{
+    min-height: 600px;
+    background-color: red;
+    background-image: url('../images/ian-schneider-TamMbr4okv4-unsplash.jpg');
+    
+}
+.content{
+    margin-bottom: 40px;
+}
+footer{
+    background-color: $nav-color;
+    padding: 8px;
+    margin-top: auto;
+    text-align: center;
+}

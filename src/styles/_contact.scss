@@ -1,0 +1,137 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 20px;
+    width: 30%;
+    background-color: hsla(215,58%,16%,.90);
+    box-shadow: 0px 0px 10px hsla(218,58%,16%,1);
+    border-radius: 10px;
+    margin: 40px;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+        width: 50%;
+    }
+    h1{
+        margin-bottom: 15px;
+        color: whitesmoke;
+    }
+    input, textarea{
+        color: whitesmoke;
+    }
+    input:focus, textarea:focus{
+        color: whitesmoke;
+        border: none;
+        outline: none;
+    }
+    @include for-size(tablet-only){
+        width: 90%;
+    }
+}
+
+.Contact_button{
+    border: none;
+    border-radius: 2px;
+    width: 100px;
+    background-color: #0075C4;
+    &:hover{
+        background-color: red;
+    }
+}
+
+.contact_name, .contact_email{
+    width: 290px;
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+    margin: 0px 10px 020px;
+    font-family: $Copy-font;
+    input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        background-color: transparent;
+    }
+    label{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid red;
+        color: whitesmoke;
+        transform: all 0.2s ease;
+        &:after{
+            content:"";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-bottom: 3px solid pink;
+            left: 0px;
+            bottom: -1px;
+            transform: translateX(-100%);
+            transition: all 0.3s ease;
+        }
+        span{
+            position: absolute;
+            bottom: 0px;
+            left: 4px;
+        }
+    }
+}
+
+.contact_text{
+    position: relative;
+    overflow: hidden;
+    textarea{
+        width: 290px;
+        height: 100px;
+        background-color: transparent;
+        border: none;
+    }
+    label{
+        position: absolute;
+        bottom: 98%;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        color:hsl(0,0%,50%);
+        transform: all 0.2s ease;
+        &:before{
+            content: "";
+            border-bottom: 2px solid red;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: -90%;
+            overflow: hidden;
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-bottom: 3px solid pink;
+            left: 0px;
+            bottom: -90%;
+            transform: translateX(-100%);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+    }
+    span{
+        position: absolute;
+        color: whitesmoke;
+        top:100%;
+        left: 4px
+    }
+}

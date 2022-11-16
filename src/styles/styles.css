@@ -1,0 +1,730 @@
+/* Font families */
+@font-face {
+  font-family: "IBM_Plex_Sans";
+  src: url(./../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
+  src: local("IBM_Plex_Sans"), url(./../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(./../fonts/Roboto/Roboto-Light.ttf);
+  src: local("Roboto"), url(./../fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+h1, h2, h3, h4, h5 {
+  font-family: "IBM_Plex_Sans";
+}
+
+p, li, span {
+  font-family: "Roboto";
+}
+
+/* CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.wrapper {
+  background: rgb(0, 1, 38);
+  background: linear-gradient(90deg, rgb(0, 1, 38) 0%, rgb(5, 13, 45) 14%, rgb(10, 24, 52) 31%, rgb(18, 43, 63) 50%, rgb(13, 30, 55) 68%, rgb(11, 25, 52) 79%, rgb(6, 13, 45) 88%, rgb(0, 1, 38) 94%);
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero-Wrapper {
+  min-height: 600px;
+  background-color: red;
+  background-image: url("../images/ian-schneider-TamMbr4okv4-unsplash.jpg");
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #65737B;
+  padding: 8px;
+  margin-top: auto;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1A3461;
+  height: 50px;
+  padding: 1rem;
+  box-shadow: #000 0px 0px 12px;
+}
+
+.Nav_Links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .Nav_Links {
+    translate: -100%;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: start;
+    background-color: #1A3461;
+    transition: cubic-bezier(0.23, 1, 0.32, 1) 0.35s;
+  }
+}
+
+.Nav_items {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.Nav_Links > li {
+  margin: 0 1rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .Nav_Links > li {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .Nav_Links > li:first-child {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .Nav_Links > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.Nav_Links > li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .Nav_Links > li a {
+    font-size: 2rem;
+  }
+}
+.Nav_Links > li a:hover {
+  color: pink;
+}
+
+.Nav_Links li ul {
+  position: absolute;
+  list-style: none;
+  margin-top: 0.2rem;
+  right: -5rem;
+  background-color: #1A3461;
+  padding: 0px;
+  transition-duration: 0.5s;
+  opacity: 0;
+  display: none;
+}
+@media (max-width: 720px) {
+  .Nav_Links li ul {
+    flex-direction: column;
+    right: 0;
+    position: static;
+  }
+}
+
+.dropdown:hover > ul, .dropdown:focus-within > ul, .Nav_Links .dropdown ul:hover, ul, .Nav_Links .dropdown ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.nav_dropdown li {
+  padding: 10px 10px;
+}
+
+.dropdown_link {
+  padding: 20px 10px;
+}
+
+.Mobile_Nav_container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .Mobile_Nav_container {
+    display: flex;
+  }
+}
+
+#Mobile_Nav_toggle {
+  display: none;
+}
+
+#Mobile_Nav_toggle:checked ~ .Nav_Links {
+  translate: 0% !important;
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 0.35s;
+}
+
+.Mobile_Nav,
+.Mobile_Nav::before,
+.Mobile_Nav::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .Mobile_Nav,
+.Mobile_Nav::before,
+.Mobile_Nav::after {
+    display: flex;
+  }
+}
+
+.Mobile_Nav::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.Mobile_Nav::after {
+  content: "";
+  margin-top: 8px;
+}
+
+.Dropdown::hover .nav_dropdown {
+  display: flex;
+}
+
+#Mobile_Nav_toggle:checked + .Mobile_Nav_container .Mobile_Nav::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#Mobile_Nav_toggle:checked + .Mobile_Nav_container .Mobile_Nav {
+  background: rgba(255, 255, 255, 0);
+}
+
+#Mobile_Nav_toggle:checked + .Mobile_Nav_container .Mobile_Nav::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.Screen-outline {
+  min-width: 100%;
+  height: inherit;
+  border: 20px solid black;
+}
+
+.web_hero {
+  position: relative;
+  min-height: 55vh;
+}
+.web_hero::before {
+  content: "";
+  background-image: url("../images/test.png");
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arts_hero {
+  position: relative;
+  min-height: 55vh;
+}
+.arts_hero::before {
+  content: "";
+  background-image: url("../images/fine_arts_hero.webp");
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animation_hero {
+  position: relative;
+  min-height: 55vh;
+}
+.animation_hero::before {
+  content: "";
+  background-image: url("../images/animation_hero.webp");
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects {
+  display: block;
+}
+
+.content_hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_hero_header {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .content_hero_header {
+    font-size: 2rem;
+  }
+}
+
+.panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 0.5fr);
+  align-items: center;
+  margin: 20px 0px 30px 0px;
+  transition: transform 0.2s;
+}
+.panel:nth-child(even) .panel_picture {
+  grid-area: 1/7/1/11;
+}
+@media (max-width: 1300px) {
+  .panel:nth-child(even) .panel_picture {
+    grid-area: 1/6/2/11;
+  }
+}
+@media (max-width: 768px) {
+  .panel:nth-child(even) .panel_picture {
+    display: none;
+  }
+}
+.panel:nth-child(even) .panel_description {
+  grid-area: 1/4/1/8;
+  margin-left: 0px;
+  margin-right: 30px;
+  padding: 20px;
+}
+@media (max-width: 1300px) {
+  .panel:nth-child(even) .panel_description {
+    grid-area: 1/1/2/7;
+  }
+}
+@media (max-width: 768px) {
+  .panel:nth-child(even) .panel_description {
+    grid-area: 1/1/1/12;
+    width: 100%;
+    background-color: hsla(218deg, 58%, 16%, 0.9);
+    border-radius: 10px;
+  }
+}
+.panel:nth-child(even) .project_title {
+  text-align: left;
+  padding-left: 50px;
+}
+@media (max-width: 768px) {
+  .panel:nth-child(even) .project_title {
+    text-align: center;
+  }
+}
+.panel:nth-child(even) .tech_list {
+  justify-content: flex-start;
+  padding-left: 45px;
+}
+.panel:nth-child(even) .project_links {
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+@media (max-width: 768px) {
+  .panel:nth-child(even) .tech_list, .panel:nth-child(even) .project_links {
+    justify-content: flex-end;
+  }
+}
+
+.panel_description {
+  position: relative;
+  grid-area: 1/7/1/10;
+  z-index: 2;
+  padding: 20px;
+}
+@media (min-width: 2000px) {
+  .panel_description {
+    grid-area: 1/6/1/10;
+  }
+}
+@media (max-width: 1300px) {
+  .panel_description {
+    grid-area: 1/6/2/12;
+  }
+}
+@media (max-width: 768px) {
+  .panel_description {
+    grid-area: 1/1/1/12;
+    width: 100%;
+    background-color: hsla(218deg, 58%, 16%, 0.9);
+    border-radius: 10px;
+  }
+}
+
+.project_title {
+  text-align: right;
+  font-size: 2.3rem;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .project_title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+.project_description {
+  position: relative;
+  padding: 20px;
+  margin-left: 50px;
+  background-color: hsla(218deg, 58%, 16%, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px -15px hsl(218deg, 58%, 16%);
+}
+.project_description p {
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .project_description {
+    background-color: hsla(218deg, 58%, 16%, 0);
+    box-shadow: none;
+  }
+}
+
+.panel_description_img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .panel_description_img {
+    display: block;
+  }
+}
+
+.tech_list {
+  color: whitesmoke;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 5px 0px 0px 0px;
+}
+.tech_list li {
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .tech_list {
+    padding-left: 5px;
+  }
+  .tech_list li {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}
+
+.panel_picture {
+  position: relative;
+  grid-area: 1/4/2/8;
+}
+.panel_picture img {
+  border-radius: 10px;
+}
+@media (max-width: 1300px) {
+  .panel_picture {
+    grid-area: 1/2/2/7;
+  }
+}
+@media (max-width: 768px) {
+  .panel_picture {
+    display: none;
+  }
+}
+.panel_picture:hover {
+  z-index: 100;
+  transform: scale(1.2);
+}
+
+.project_links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 20px;
+  width: 30%;
+  background-color: hsla(215deg, 58%, 16%, 0.9);
+  box-shadow: 0px 0px 10px hsl(218deg, 58%, 16%);
+  border-radius: 10px;
+  margin: 40px;
+}
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  width: 50%;
+}
+.Contact h1 {
+  margin-bottom: 15px;
+  color: whitesmoke;
+}
+.Contact input, .Contact textarea {
+  color: whitesmoke;
+}
+.Contact input:focus, .Contact textarea:focus {
+  color: whitesmoke;
+  border: none;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .Contact {
+    width: 90%;
+  }
+}
+
+.Contact_button {
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  background-color: #0075C4;
+}
+.Contact_button:hover {
+  background-color: red;
+}
+
+.contact_name, .contact_email {
+  width: 290px;
+  position: relative;
+  height: 35px;
+  overflow: hidden;
+  margin: 0px 10px 20px;
+  font-family: "Roboto";
+}
+.contact_name input, .contact_email input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+.contact_name label, .contact_email label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid red;
+  color: whitesmoke;
+  transform: all 0.2s ease;
+}
+.contact_name label:after, .contact_email label:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid pink;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.contact_name label span, .contact_email label span {
+  position: absolute;
+  bottom: 0px;
+  left: 4px;
+}
+
+.contact_text {
+  position: relative;
+  overflow: hidden;
+}
+.contact_text textarea {
+  width: 290px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+}
+.contact_text label {
+  position: absolute;
+  bottom: 98%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: hsl(0deg, 0%, 50%);
+  transform: all 0.2s ease;
+}
+.contact_text label:before {
+  content: "";
+  border-bottom: 2px solid red;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -90%;
+  overflow: hidden;
+}
+.contact_text label:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid pink;
+  left: 0px;
+  bottom: -90%;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.contact_text span {
+  position: absolute;
+  color: whitesmoke;
+  top: 100%;
+  left: 4px;
+}
+
+.contact_name input:focus + .contact_lable .contact_span, .contact_name input:valid + .contact_lable .contact_span {
+  translate: 0% -140%;
+  font-size: 0.65rem;
+}
+
+.contact_name input:focus + .contact_lable:after, .contact_name input:valid + .contact_lable:after {
+  translate: 100%;
+}
+
+.contact_email input:focus + .contact_lable .contact_span, .contact_name input:valid + .contact_email .contact_span {
+  translate: 0% -140%;
+  font-size: 0.65rem;
+}
+
+.contact_email input:focus + .contact_lable:after, .contact_email input:valid + .contact_lable:after {
+  translate: 100%;
+}
+
+.contact_text textarea:focus + .contact_text_lable .text_span, .contact_text textarea:valid + .contact_text_lable .text_span {
+  translate: 0% 0%;
+  font-size: 0.65rem;
+  opacity: 0.1;
+}
+
+.contact_text textarea:focus + .contact_text_lable:after, .contact_text textarea:valid + .contact_text_lable:after {
+  translate: 100%;
+}/*# sourceMappingURL=styles.css.map */

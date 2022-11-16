@@ -1,0 +1,58 @@
+$nav-color: #65737B;
+$Header-font: 'IBM_Plex_Sans';
+$Copy-font: 'Roboto';
+@mixin for-size($size){
+    @if $size == tablet-only{
+        @media (max-width: 768px){ @content;}
+    }
+    @if $size == small-tablet-only{
+        @media (max-width: 720px){ @content;}
+    }
+    @if $size == large-phone-only{
+        @media (max-width: 535px) {@content;}
+    }
+    @if $size == phone-only{
+        @media (max-width: 425px){ @content;}
+    }
+    @if $size == small-desktop{
+        @media (max-width: 1300px){@content;}
+    }
+    @if $size == Desktop{
+        @media (min-width: 1300px) {@content;}
+    }
+    @if $size == large-desktop{
+        @media (min-width: 2000px) {@content;}
+    }
+}
+
+/* Font families */
+@font-face{
+    font-family: 'IBM_Plex_Sans';
+    src: url(./../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
+    src: local('IBM_Plex_Sans'),
+         url(./../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../fonts/Roboto/Roboto-Light.ttf);
+    src: local('Roboto'),
+        url(./../fonts/Roboto/Roboto-Light.ttf) format('truetype');
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $Header-font;
+}
+
+p, li, span{
+    font-family: $Copy-font;
+}
+
+@import './reset';
+@import './wrappers';
+@import './nav';
+@import './hero';
+@import './content_heros';
+@import './content';
+@import './contact';
+@import './animations';
