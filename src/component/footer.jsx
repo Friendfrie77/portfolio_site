@@ -2,7 +2,7 @@ function Footer (){
     const year = new Date().getFullYear();
     return(
         <footer>
-            &copy; Albert Friend {year}
+            <span>&copy; Albert Friend {year}</span>
         </footer>
     )
 }

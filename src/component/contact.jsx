@@ -16,8 +16,8 @@ function Contact(){
     
     return(
         <section className= "Contact">
-            <h1>Contact Me below!</h1>
             <form ref={form} onSubmit={sendEmail}>
+                <h1>Contact Me below!</h1>
                 <div className="contact_name">
                     <input type= "text" name="contact_name" required></input>
                     <label htmlFor="contact_name" className="contact_lable">

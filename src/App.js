@@ -9,18 +9,18 @@ import Web from './component/web'
 import Graphics from './component/graphics';
 import Arts from './component/arts'
 import Animation from './component/animation'
+import Index from './component';
+import Test from './component/resources';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './component/nav'
 function App() {
   return (
     <Router>
       <Nav />
-      <Hero />
-      <Hero />
-      <Web />
-      <Graphics />
-      <Animation />
-      <Arts />
+      <Routes>
+        <Route path='/' element={<Index />}/>
+        <Route path='/resources' element={<Test />}/>
+      </Routes>
       <ContactUs />
       <Footer />
     </Router>
