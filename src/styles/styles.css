@@ -265,7 +265,8 @@ nav {
   padding: 0px;
   transition-duration: 0.5s;
   opacity: 0;
-  display: none;
+  display: flex;
+  z-index: 100;
 }
 @media (max-width: 720px) {
   .Nav_Links li ul {

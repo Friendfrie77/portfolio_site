@@ -9,7 +9,7 @@ import Animation from './animation'
 function Index(){
     return(
         <div>
-            <Hero />
+            {/* <Hero /> */}
             <Web />
             <Graphics />
             <Animation />

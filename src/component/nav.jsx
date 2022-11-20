@@ -30,10 +30,11 @@ function Nav(){
                 <li className='Nav_Item'><Link onClick={handleClickAway} to='/'>Home</Link></li>
                 <li className='Nav_item dropdown'><a href='' aria-haspopup="ture">Projects</a>
                     <ul className='nav_dropdown' aria-label='submenu'>
-                        <li className='Nav_Item'><a className='dropdown_link' href='#web'>Development</a></li>
-                        <li className='Nav_Item'><a className='dropdown_link' href='#graphics'>Graphics</a></li>
-                        <li className='Nav_Item'><a className='dropdown_link' href='#animation'>Animation</a></li>
-                        <li className='Nav_Item'><a className='dropdown_link' href='#arts'>Fine Art</a></li>
+                        <li className='Nav_Item'><Link to='/#web' className='dropdown_link'>Development</Link></li>
+                        <li className='Nav_Item'><Link to='/#graphics' className='dropdown_link'>Graphics</Link></li>
+                        <li className='Nav_Item'><Link className='dropdown_link' to='/#animation'>Animation</Link></li>
+                        <li className='Nav_Item'><a className='dropdown_link' href='/#arts'>Fine Art</a></li>
+                        <li className='Nav_Item'><Link className='dropdown_link' to='#arts'>Fine Art</Link></li>
                     </ul>
                 </li>
                 <li className='Nav_Item'><Link to='/resources'>Resources</Link></li>

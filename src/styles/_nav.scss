@@ -75,7 +75,8 @@ nav{
     padding: 0px;
     transition-duration: .5s;
     opacity: 0;
-    display: none;
+    display: flex;
+    z-index: 100;
     @include for-size(small-tablet-only){
         flex-direction: column;
         right: 0;
