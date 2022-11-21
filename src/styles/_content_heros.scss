@@ -16,6 +16,24 @@
     }
 }
 
+.graphics_hero{
+    position: relative;
+    min-height: 55vh;
+    &::before{
+        content:"";
+        background-image: url('../images/Artboard_1.png');
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .2;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .arts_hero{
     position: relative;
     min-height: 55vh;

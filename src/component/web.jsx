@@ -1,6 +1,7 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-router-dom';
 import toebean from '../images/test2.png';
 import site2 from '../images/site2.png';
 import SqlFinal from '../images/test3.png'
@@ -86,7 +87,7 @@ function Web(){
                             <h3 className='project_title'>Green Home Living</h3>
                             <img className='panel_description_img' src={site2} height="100%" width='700' alt=""/>
                             <div className='project_description'>
-                                <p>Aute ut occaecat incididunt eu veniam irure. Laboris consequat ad aliquip elit adipisicing sint. Tempor cillum laborum exercitation tempor ex et esse sunt officia eu dolore. Culpa cupidatat consequat irure ut esse labore commodo commodo qui qui.</p>
+                                <Link to='/GreenHomeLiving'><p>Aute ut occaecat incididunt eu veniam irure. Laboris consequat ad aliquip elit adipisicing sint. Tempor cillum laborum exercitation tempor ex et esse sunt officia eu dolore. Culpa cupidatat consequat irure ut esse labore commodo commodo qui qui.</p></Link>
                             </div>
                             <ul className='tech_list'>
                                 <li>HTML5</li>

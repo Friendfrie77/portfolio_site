@@ -1,9 +1,10 @@
 function hero(){
     return(
-        <div className="Hero-Wrapper">
-        </div>
-        
+        <section className="hero">
+            <div className="hero-img">
+                
+            </div>
+        </section>
     )
 }
-
 export default hero

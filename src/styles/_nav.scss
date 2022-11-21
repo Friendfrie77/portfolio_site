@@ -70,12 +70,12 @@ nav{
     position: absolute;
     list-style: none;
     margin-top: .2rem;
-    right: -5rem;
+    left: 0;
     background-color:#1A3461;
     padding: 0px;
     transition-duration: .5s;
     opacity: 0;
-    display: flex;
+    display: none;
     z-index: 100;
     @include for-size(small-tablet-only){
         flex-direction: column;

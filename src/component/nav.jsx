@@ -1,4 +1,5 @@
-import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link, HashRouter } from 'react-router-dom';
+import {NavHashLink} from 'react-router-hash-link'
 import {useState} from "react";
 import logo from '../images/Untitled-1.svg'
 
@@ -30,13 +31,13 @@ function Nav(){
                 <li className='Nav_Item'><Link onClick={handleClickAway} to='/'>Home</Link></li>
                 <li className='Nav_item dropdown'><a href='' aria-haspopup="ture">Projects</a>
                     <ul className='nav_dropdown' aria-label='submenu'>
-                        <li className='Nav_Item'><Link to='/#web' className='dropdown_link'>Development</Link></li>
-                        <li className='Nav_Item'><Link to='/#graphics' className='dropdown_link'>Graphics</Link></li>
-                        <li className='Nav_Item'><Link className='dropdown_link' to='/#animation'>Animation</Link></li>
-                        <li className='Nav_Item'><a className='dropdown_link' href='/#arts'>Fine Art</a></li>
-                        <li className='Nav_Item'><Link className='dropdown_link' to='#arts'>Fine Art</Link></li>
+                        <li className='Nav_Item'><NavHashLink className='dropdown_link' to="/#web">Development</NavHashLink></li>
+                        <li className='Nav_Item'><NavHashLink to='/#graphics' className='dropdown_link'>Graphics</NavHashLink></li>
+                        <li className='Nav_Item'><NavHashLink className='dropdown_link' to='/#animation'>Animation</NavHashLink></li>
+                        <li className='Nav_Item'><NavHashLink className='dropdown_link' smooth to='#arts'>Fine Art</NavHashLink></li>
                     </ul>
                 </li>
+                <li className='Nav_Item'><NavHashLink to="#contact">Contact Me</NavHashLink></li>
                 <li className='Nav_Item'><Link to='/resources'>Resources</Link></li>
             </ul>
         </nav>
