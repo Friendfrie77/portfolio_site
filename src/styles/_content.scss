@@ -27,6 +27,7 @@ $test: 50vh;
     align-items: center;
     margin: 20px 0px 30px 0px;
     transition: transform .2s;
+    width: 100%;
     &:nth-child(even){
         .panel_picture{
             grid-area: 1/6/2/11;
@@ -138,6 +139,7 @@ $test: 50vh;
 .panel_picture{
     position: relative;
     grid-area: 1/2/2/7;
+    width: 100%;
     img{
         border-radius: 10px;
         

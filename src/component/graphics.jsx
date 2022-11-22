@@ -1,7 +1,12 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import toebean from '../images/test2.png';
+import { Carousel} from 'react-responsive-carousel'
+import project1 from '../images/graphics-1.png'
+import card1 from '../images/card_1.png'
+import box from '../images/card_box.webp'
+import project2 from '../images/graphics-2.webp'
+import project3 from '../images/graphics-3.webp'
 import site2 from '../images/site2.png';
 import SqlFinal from '../images/test3.png'
 function Graphics(){
@@ -56,69 +61,86 @@ function Graphics(){
                 <h1 className='content_hero_header'>Graphics</h1>
             </div>
             <ul className='projects'>
-                <li className="panel project_one" id="web_one">
+                <li className="panel project_one">
                     <div className='panel_description'>
                         <div>
-                            <h3 className='project_title'>Toebean Sanctuary</h3>
-                            <img className='panel_description_img' src={toebean} height="100%" width='700' alt=""/>
+                            <h3 className='project_title'>Card box</h3>
+                            <div className='panel_description_img'>
+                                <Carousel>
+                                    <div>
+                                        <img src={project1} height="100%" width='700' alt=""/>
+                                    </div>
+                                    <div>
+                                        <img src={box} height="294" width='100%' alt=""/>
+                                    </div>
+                                    <div>
+                                        <img  height="246" width='100%' src={card1} alt=""/>
+                                    </div>
+                                </Carousel>
+                            </div>
                             <div className='project_description'>
-                                <p>For this project I was tasked with making a site with using technology that I haven’t used before. To answer that task, I choose to make a full stack site using the Flask framework for a made-up cat sanctuary/adoption center. To handle data I used PostgreSQL, to store uses emails, and sign-ups for voluntaries. This project allowed me to start learning how to work with databases better, and to better handle JSON data.</p>
+                                <p>For this project, I was tasked with making a playing card set. I took inspiration from a YouTube show called Helluva Boss. I used characters drawn out in Adobe Illustrator to represent the face cards. Sticking to hell theme, I used characters that represent one of the major sins as a jack. I themed the number cards around the sin that each jack represented. You can see more pictures in the Google Drives link below.</p>
                             </div>
                             <ul className='tech_list'>
-                                <li>Flask</li>
-                                <li>Heroku</li>
-                                <li>GSAP</li>
-                                <li>PostgreSQL</li>
-                                <li>SQLAlchemy</li>
+                                <li>Adobe Illustrator</li>
                             </ul>
                             <div className='project_links'>
-                                <a href='https://github.com/Friendfrie77/Web-240-Project' target='_blank'><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill='white' viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel_picture'>
-                        <img src={toebean} height="100%" width='700' alt=""/>
+                        <Carousel>
+                            <div>
+                                <img src={project1} height="100%" width='700' alt=""/>
+                            </div>
+                            <div>
+                                <img src={box} height="294" width='100%' alt=""/>
+                            </div>
+                            <div>
+                                <img  height="246" width='100%' src={card1} alt=""/>
+                            </div>
+                        </Carousel>
                     </div>
                 </li>
-                <li className="panel project_two" id="web_two">
+                <li className="panel project_two">
                     <div className='panel_description'>
                         <div>
-                            <h3 className='project_title'>Green Home Living</h3>
-                            <img className='panel_description_img' src={site2} height="100%" width='700' alt=""/>
+                            <h3 className='project_title'>Compositing</h3>
+                            <img className='panel_description_img' src={project2} height="100%" width='700' alt=""/>
                             <div className='project_description'>
-                                <p>Aute ut occaecat incididunt eu veniam irure. Laboris consequat ad aliquip elit adipisicing sint. Tempor cillum laborum exercitation tempor ex et esse sunt officia eu dolore. Culpa cupidatat consequat irure ut esse labore commodo commodo qui qui.</p>
+                                <p>For this project, I was tasked with making a composite image with a slight fantasy twist. I made a spider enclosure for this project, as you would see in a zoo, but I tried to show that the spider was much larger than usual. I used custom brushes for the web. I ensured that the lighting and shadows matched all the added pictures. </p>
                             </div>
                             <ul className='tech_list'>
-                                <li>HTML5</li>
-                                <li>SCSS</li>
-                                <li>Javascript</li>
+                                <l1>Adobe Photoshop</l1>
                             </ul>
                             <div className='project_links'>
-                                <a href='https://github.com/Friendfrie77/Web-240-Project' target='_blank'><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill='white' viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel_picture'>
-                        <img src={site2} height="100%" width='700' alt=""/>
+                        <img src={project2} height="100%" width='700' alt=""/>
                     </div>
                 </li>
-                <li className="panel project_three" id="web_three">
+                <li className="panel project_three">
                     <div className='panel_description'>
                         <div>
-                            <h3 className='project_title'>Sql Final Project</h3>
+                            <img className='panel_description_img' src={project3} height="100%" width='700' alt=""/>
+                            <h3 className='project_title'>Typography</h3>
                             <div className='project_description'>
-                                <p>Aute ut occaecat incididunt eu veniam irure. Laboris consequat ad aliquip elit adipisicing sint. Tempor cillum laborum exercitation tempor ex et esse sunt officia eu dolore. Culpa cupidatat consequat irure ut esse labore commodo commodo qui qui.</p>
+                                <p>For this project I was tasked with making an emphasis typography advisement using a quote. For my quote I picked a quote dealing with hurting and sorrow. I chose to use that to make an advertisement for the suicide prevention hotline. </p>
                             </div>
                             <ul className='tech_list'>
-                                <li>SQL</li>
+                                <li>Adobe Illustrator</li>
                             </ul>
                             <div className='project_links'>
-                                <a href='https://github.com/Friendfrie77/Web-240-Project' target='_blank'><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill='white' viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel_picture'>
-                        <img src={SqlFinal} height="100%" width='700'/>
+                        <img src={project3} height="100%" width='700'/>
                     </div>
                 </li>
             </ul>

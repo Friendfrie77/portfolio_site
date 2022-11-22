@@ -1,0 +1,15 @@
+.carousel{
+    width: 100% !important;
+    margin-top: 0px !important;
+    div{
+        img{
+            object-fit: contain;
+        }
+    }
+}
+.thumbs-wrapper{
+    display: none;
+}
+.control-dots{
+    margin: 0 !important;
+}

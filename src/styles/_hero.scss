@@ -1,5 +1,19 @@
-.Screen-outline{
-    min-width: 100%;
-    height: inherit;
-    border: 20px solid black;
+.hero-img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+        span{
+            color: white;
+            text-transform: capitalize;
+            font-size: 6rem;
+        }
+    }
+}
+
+.selfie-img{
+    border-radius: 100%;
 }

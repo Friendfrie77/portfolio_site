@@ -85,7 +85,7 @@ function Web(){
                     <div className='panel_description'>
                         <div>
                             <h3 className='project_title'>Green Home Living</h3>
-                            <img className='panel_description_img' src={site2} height="100%" width='700' alt=""/>
+                            <img className='panel_description_img' src={site2} height="100%" width='700' alt="Green Home Living"/>
                             <div className='project_description'>
                                 <Link to='/GreenHomeLiving'><p>Aute ut occaecat incididunt eu veniam irure. Laboris consequat ad aliquip elit adipisicing sint. Tempor cillum laborum exercitation tempor ex et esse sunt officia eu dolore. Culpa cupidatat consequat irure ut esse labore commodo commodo qui qui.</p></Link>
                             </div>
@@ -100,7 +100,7 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel_picture'>
-                        <img src={site2} height="100%" width='700' alt=""/>
+                        <img src={site2} height="100%" width='700' alt="Green Home Living"/>
                     </div>
                 </li>
                 <li className="panel project_three" id="web_three">
