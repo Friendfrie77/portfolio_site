@@ -7,8 +7,7 @@ import card1 from '../images/card_1.png'
 import box from '../images/card_box.webp'
 import project2 from '../images/graphics-2.webp'
 import project3 from '../images/graphics-3.webp'
-import site2 from '../images/site2.png';
-import SqlFinal from '../images/test3.png'
+import project4 from '../images/graphics-4.webp'
 function Graphics(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -141,6 +140,26 @@ function Graphics(){
                     </div>
                     <div className='panel_picture'>
                         <img src={project3} height="100%" width='700'/>
+                    </div>
+                </li>
+                <li className="panel project_four">
+                    <div className='panel_description'>
+                        <div>
+                            <img className='panel_description_img' src={project4} height="100%" width='277' alt=""/>
+                            <h3 className='project_title'>Trompe-l'oeil</h3>
+                            <div className='project_description'>
+                                <p>For this project I was tasked with making an emphasis typography advisement using a quote. For my quote I picked a quote dealing with hurting and sorrow. I chose to use that to make an advertisement for the suicide prevention hotline. </p>
+                            </div>
+                            <ul className='tech_list'>
+                                <li>Adobe Photoshop</li>
+                            </ul>
+                            <div className='project_links'>
+                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='panel_picture'>
+                        <img src={project4} height="100%" width='277'/>
                     </div>
                 </li>
             </ul>

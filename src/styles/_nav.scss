@@ -26,7 +26,7 @@ nav{
         width: 100%;
         margin-top: 50px;
         justify-content: start;
-        background-color:  #1A3461;;
+        background-color:  #1A3461;
         transition: cubic-bezier(0.23, 1, 0.32, 1) .35s;
     }
 }
@@ -79,7 +79,6 @@ nav{
     z-index: 100;
     @include for-size(small-tablet-only){
         flex-direction: column;
-        right: 0;
         position: static;
     }
 }

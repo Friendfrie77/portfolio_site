@@ -107,8 +107,7 @@ $test: 50vh;
         color: whitesmoke;
     }
     @include for-size(tablet-only){
-        // width: 100%;
-        // right: 15%;
+        margin: auto;
         background-color: hsla(218,58%,16%,0);
         box-shadow: none;
     }
@@ -116,6 +115,7 @@ $test: 50vh;
 .panel_description_img{
     display: none;
     @include for-size(tablet-only){
+        margin: auto;
         display: block;
     }
 }

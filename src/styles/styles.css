@@ -283,7 +283,6 @@ nav {
 @media (max-width: 720px) {
   .Nav_Links li ul {
     flex-direction: column;
-    right: 0;
     position: static;
   }
 }
@@ -586,6 +585,7 @@ nav {
 }
 @media (max-width: 768px) {
   .project_description {
+    margin: auto;
     background-color: hsla(218deg, 58%, 16%, 0);
     box-shadow: none;
   }
@@ -596,6 +596,7 @@ nav {
 }
 @media (max-width: 768px) {
   .panel_description_img {
+    margin: auto;
     display: block;
   }
 }
