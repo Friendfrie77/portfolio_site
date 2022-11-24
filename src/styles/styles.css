@@ -287,6 +287,10 @@ nav {
   }
 }
 
+.dropdown > a {
+  pointer-events: none;
+}
+
 .dropdown:hover > ul, .dropdown:focus-within > ul, .Nav_Links .dropdown ul:hover, ul, .Nav_Links .dropdown ul:focus {
   visibility: visible;
   opacity: 1;
@@ -386,6 +390,11 @@ nav {
   color: white;
   text-transform: capitalize;
   font-size: 6rem;
+}
+@media (max-width: 768px) {
+  .hero-img h1 span {
+    font-size: 3rem;
+  }
 }
 
 .selfie-img {

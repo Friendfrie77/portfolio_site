@@ -24,7 +24,7 @@ function Nav(){
                 <div className="Mobile_Nav" id='mobile-nav'></div>
             </label>
             <ul className='Nav_Links' id="nav-links">
-                <li className='Nav_Item'><Link to='/'>Home</Link></li>
+                <li className='Nav_Item'><Link onClick={checkChange} to='/'>Home</Link></li>
                 <li className='Nav_item dropdown'><a href='' aria-haspopup="ture">Projects</a>
                     <ul className='nav_dropdown' aria-label='submenu'>
                         <li className='Nav_Item'><NavHashLink
@@ -35,7 +35,7 @@ function Nav(){
                     </ul>
                 </li>
                 <li className='Nav_Item'><NavHashLink onClick={checkChange} to="#contact">Contact Me</NavHashLink></li>
-                <li className='Nav_Item'><Link to='/resources'>Resources</Link></li>
+                <li className='Nav_Item'><Link onClick={checkChange} to='/resources'>Resources</Link></li>
             </ul>
         </nav>
     )

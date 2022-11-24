@@ -10,6 +10,9 @@
             color: white;
             text-transform: capitalize;
             font-size: 6rem;
+            @include for-size(tablet-only){
+                font-size: 3rem;
+            }
         }
     }
 }

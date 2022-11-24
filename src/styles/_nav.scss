@@ -41,6 +41,7 @@ nav{
     position: relative;
     @include for-size(tablet-only){
         text-align: center;
+        
     }
     &:first-child{
         @include for-size(tablet-only){
@@ -81,6 +82,9 @@ nav{
         flex-direction: column;
         position: static;
     }
+}
+.dropdown > a{
+    pointer-events: none;
 }
 .dropdown:hover > ul, .dropdown:focus-within > ul, .Nav_Links .dropdown ul:hover, ul, .Nav_Links .dropdown ul:focus {
     visibility: visible;
