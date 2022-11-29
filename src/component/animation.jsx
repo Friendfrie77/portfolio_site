@@ -88,7 +88,7 @@ function Animation(){
                         </div>
                     </div>
                     <div className='panel_picture'>
-                        <img src={art2} height="100%" width='700' alt="color theory"/>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </li>
                 {/* <li className="panel project_three" id="web_three">

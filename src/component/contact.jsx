@@ -25,8 +25,8 @@ function Contact(){
                     </label>
                 </div>
                 <div className="contact_email">
-                    <input type="email" name="contact_Email" required></input>
-                    <label htmlFor="contact_Email" className="contact_lable">
+                    <input type="email" name="contact_email" placeholder='' autoccomplete= 'off' required></input>
+                    <label htmlFor="contact_email" className="contact_lable">
                         <span className="contact_span">Email<small>*</small></span>
                     </label>
                 </div>

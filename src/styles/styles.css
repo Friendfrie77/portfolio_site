@@ -125,6 +125,14 @@ body {
   flex-direction: column;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #000110;
+  background-image: linear-gradient(180deg, #000155 10%, #000140 25%, #000130 85%, #000110 100%);
+}
+
 .content {
   position: relative;
 }
@@ -200,9 +208,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #1A3461;
-  height: 50px;
+  height: 60px;
   padding: 1rem;
-  box-shadow: #000 0px 0px 12px;
 }
 
 .Nav_Links {
@@ -272,7 +279,7 @@ nav {
   position: absolute;
   list-style: none;
   margin-top: 0.2rem;
-  left: 0;
+  left: 0px;
   background-color: #1A3461;
   padding: 0px;
   transition-duration: 0.5s;
@@ -280,7 +287,7 @@ nav {
   display: none;
   z-index: 100;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .Nav_Links li ul {
     flex-direction: column;
     position: static;
@@ -376,6 +383,47 @@ nav {
   transform: rotate(-405deg);
 }
 
+.custom-shape-divider-top-1669676562 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1669676698 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1669676698 .shape-fill {
+  fill: #000140;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+  fill: #000110;
+}
+
 .hero-img {
   margin-top: 30px;
   display: flex;
@@ -385,11 +433,13 @@ nav {
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
+  margin: 10px;
 }
 .hero-img h1 span {
   color: white;
   text-transform: capitalize;
   font-size: 6rem;
+  line-height: 1;
 }
 @media (max-width: 768px) {
   .hero-img h1 span {
@@ -398,7 +448,83 @@ nav {
 }
 
 .selfie-img {
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .selfie-img {
+    width: 200px;
+    height: 100%;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .social-links a {
+    padding-right: 15px;
+  }
+}
+.social-links a:hover svg {
+  fill: #1A3461;
+}
+
+.tech-skills-container {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-skills-container h1 {
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+.tech-skills {
+  background-color: #000155;
+  max-width: 680px;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 5px #1A3461;
+}
+.tech-skills span {
+  color: whitesmoke;
+  font-family: "IBM_Plex_Sans";
+}
+
+.skill {
+  background-color: #1A3461;
+  display: flex;
+  padding: 0.9rem;
+  flex: 1 1 18%;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  margin: 1%;
+}
+@media (max-width: 535px) {
+  .skill {
+    padding: 0.5rem;
+  }
+}
+.skill img {
+  padding-right: 0.5rem;
+}
+@media (max-width: 535px) {
+  .skill img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .web_hero {
@@ -547,6 +673,9 @@ nav {
   justify-content: flex-start;
   padding-left: 50px;
 }
+.panel:nth-child(even) .project_links a {
+  padding-left: 5px;
+}
 @media (max-width: 768px) {
   .panel:nth-child(even) .tech_list, .panel:nth-child(even) .project_links {
     justify-content: flex-end;
@@ -678,7 +807,6 @@ nav {
 @media (max-width: 768px) {
   .Contact form {
     min-width: 90vw;
-    background-color: pink;
   }
 }
 @media (max-width: 1300px) {
@@ -752,6 +880,16 @@ nav {
   left: 4px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
 .contact_text {
   position: relative;
   overflow: hidden;
@@ -809,7 +947,7 @@ nav {
   translate: 100%;
 }
 
-.contact_email input:focus + .contact_lable .contact_span, .contact_name input:valid + .contact_email .contact_span {
+.contact_email input:focus + .contact_lable .contact_span, .contact_email input:valid + .contact_lable .contact_span {
   translate: 0% -140%;
   font-size: 0.65rem;
 }

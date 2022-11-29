@@ -8,7 +8,7 @@
     translate: 100%;
 }
 
-.contact_email input:focus + .contact_lable .contact_span, .contact_name input:valid + .contact_email .contact_span{
+.contact_email input:focus + .contact_lable .contact_span, .contact_email input:valid + .contact_lable .contact_span{
     translate: 0% -140%;
     font-size: .65rem;
 }

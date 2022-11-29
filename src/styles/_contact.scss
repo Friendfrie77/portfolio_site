@@ -19,7 +19,6 @@
         background-color: $background-color-2;
         @include for-size(tablet-only){
             min-width: 90vw;
-            background-color: pink;
         }
         @include for-size(small-desktop){
             width: 50%;
@@ -92,6 +91,13 @@
     }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
 .contact_text{
     position: relative;
     overflow: hidden;
