@@ -1,4 +1,4 @@
-import heropic from "../images/selfie.jpg"
+import heropic from "../images/selfie.webp"
 import java from '../images/logo-javascript.svg'
 import python from '../images/python.svg'
 import post from '../images/postgresql.svg'

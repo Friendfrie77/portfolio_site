@@ -2,9 +2,9 @@ import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
-import toebean from '../images/test2.png';
-import site2 from '../images/site2.png';
-import SqlFinal from '../images/test3.png'
+import toebean from '../images/test2.webp';
+import site2 from '../images/site2.webp';
+import SqlFinal from '../images/test3.webp'
 function Web(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);

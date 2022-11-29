@@ -2,8 +2,8 @@ import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Carousel} from 'react-responsive-carousel'
-import project1 from '../images/graphics-1.png'
-import card1 from '../images/card_1.png'
+import project1 from '../images/graphics-1.webp'
+import card1 from '../images/card_1.webp'
 import box from '../images/card_box.webp'
 import project2 from '../images/graphics-2.webp'
 import project3 from '../images/graphics-3.webp'
