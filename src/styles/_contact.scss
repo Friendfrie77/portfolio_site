@@ -1,4 +1,4 @@
-.Contact{
+.contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@
         margin-bottom: 15px;
         color: whitesmoke;
     }
-    input, textarea{
+    textarea{
         color: whitesmoke;
     }
     input:focus, textarea:focus{
@@ -38,17 +38,18 @@
     }
 }
 
-.Contact_button{
+.contact-button{
     border: none;
     border-radius: 5px;
     width: 100px;
-    background-color: #0075C4;
+    background-color: whitesmoke;
+    color: $background-color-1;
     &:hover{
-        background-color: red;
+        background-color: $background-color-5;
     }
 }
 
-.contact_name, .contact_email{
+.contact-name, .contact-email{
     width: 290px;
     position: relative;
     height: 35px;
@@ -62,6 +63,7 @@
         outline: none;
         font-size: 1.2rem;
         background-color: transparent;
+        color: whitesmoke;
     }
     label{
         position: absolute;
@@ -98,7 +100,7 @@ input:-webkit-autofill:focus {
 input[data-autocompleted] {
     background-color: transparent !important;
 }
-.contact_text{
+.contact-text{
     position: relative;
     overflow: hidden;
     textarea{

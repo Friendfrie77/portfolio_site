@@ -1,4 +1,4 @@
-.web_hero{
+.web-hero{
     position: relative;
     min-height: 55vh;
     &::before{
@@ -16,7 +16,7 @@
     }
 }
 
-.graphics_hero{
+.graphics-hero{
     position: relative;
     min-height: 55vh;
     &::before{
@@ -34,7 +34,7 @@
     }
 }
 
-.arts_hero{
+.arts-hero{
     position: relative;
     min-height: 55vh;
     margin-top: 0px;
@@ -54,7 +54,7 @@
     }
 }
 
-.animation_hero{
+.animation-hero{
     position: relative;
     min-height: 55vh;
     &::before{

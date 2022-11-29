@@ -1,28 +1,28 @@
 
-.contact_name input:focus + .contact_lable .contact_span, .contact_name input:valid + .contact_lable .contact_span{
+.contact-name input:focus + .contact-lable .contact-span, .contact-name input:valid + .contact-lable .contact-span{
     translate: 0% -140%;
     font-size: .65rem;
 }
 
-.contact_name input:focus + .contact_lable:after, .contact_name input:valid + .contact_lable:after{
+.contact-name input:focus + .contact-lable:after, .contact-name input:valid + .contact-lable:after{
     translate: 100%;
 }
 
-.contact_email input:focus + .contact_lable .contact_span, .contact_email input:valid + .contact_lable .contact_span{
+.contact-email input:focus + .contact-lable .contact-span, .contact-email input:valid + .contact-lable .contact-span{
     translate: 0% -140%;
     font-size: .65rem;
 }
 
-.contact_email input:focus + .contact_lable:after, .contact_email input:valid + .contact_lable:after{
+.contact-email input:focus + .contact-lable:after, .contact-email input:valid + .contact-lable:after{
     translate: 100%;
 }
 
-.contact_text textarea:focus + .contact_text_lable .text_span, .contact_text textarea:valid + .contact_text_lable .text_span{
+.contact-text textarea:focus + .contact-text-lable .text-span, .contact-text textarea:valid + .contact-text-lable .text-span{
     translate: 0% 0%;
     font-size: .65rem;
     opacity: .1;
 }
 
-.contact_text textarea:focus + .contact_text_lable:after, .contact_text textarea:valid + .contact_text_lable:after{
+.contact-text textarea:focus + .contact-text-lable:after, .contact-text textarea:valid + .contact-text-lable:after{
     translate: 100%;
 }

@@ -15,28 +15,28 @@ function Contact(){
     };
     
     return(
-        <section className= "Contact" id='contact'>
+        <section className= "contact" id='contact'>
             <form ref={form} onSubmit={sendEmail}>
                 <h1>Contact Me below!</h1>
-                <div className="contact_name">
-                    <input type= "text" name="contact_name" required></input>
-                    <label htmlFor="contact_name" className="contact_lable">
-                        <span className="contact_span">Name<small>*</small></span>
+                <div className="contact-name">
+                    <input type= "text" name="contact-name" required></input>
+                    <label htmlFor="contact-name" className="contact-lable">
+                        <span className="contact-span">Name<small>*</small></span>
                     </label>
                 </div>
-                <div className="contact_email">
-                    <input type="email" name="contact_email" placeholder='' autoccomplete= 'off' required></input>
-                    <label htmlFor="contact_email" className="contact_lable">
-                        <span className="contact_span">Email<small>*</small></span>
+                <div className="contact-email">
+                    <input type="email" name="contact-email" placeholder='' autoccomplete= 'off' required></input>
+                    <label htmlFor="contact-email" className="contact-lable">
+                        <span className="contact-span">Email<small>*</small></span>
                     </label>
                 </div>
-                <div className="contact_text">
-                    <textarea name="contact_text" required></textarea>
-                    <label htmlFor="contact_text" className="contact_text_lable">
-                        <span className="text_span">Messege<small>*</small></span>
+                <div className="contact-text">
+                    <textarea name="contact-text" required></textarea>
+                    <label htmlFor="contact-text" className="contact-text-lable">
+                        <span className="text-span">Messege<small>*</small></span>
                     </label>
                 </div>
-                <input className="Contact_button" type="submit" value="Send" />
+                <input className="contact-button" type="submit" value="Send" />
             </form>
         </section>
     );

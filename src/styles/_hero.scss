@@ -67,6 +67,11 @@
        width: 200px;
        height: 100%;
     }
+    @include for-size(phone-only){
+        width: 150px;
+        height: 100%;
+
+    }
 }
 .social-links{
     display: flex;
@@ -81,6 +86,12 @@
                 fill: $nav-color;
             }
         }
+        svg{
+            @include for-size(phone-only){
+                width: 30px;
+                height: 100%;
+            }
+        }
     }
 }
 .tech-skills-container{
@@ -91,6 +102,9 @@
     h1{
         font-size: 2.5rem;
         color: whitesmoke;
+        @include for-size(phone-only){
+            font-size: 2rem;
+        }
     }
 }
 .tech-skills{
@@ -106,13 +120,16 @@
     span{
         color: whitesmoke;
         font-family: $Header-font;
+        @include for-size(phone-only){
+            font-size: .8rem;
+        }
     }
 }
 .skill{
     background-color: $nav-color;
     display: flex;
     padding: .9rem;
-    flex: 1 1 18%;
+    flex: 0 1 30%;
     align-items: center;
     border-radius: 5px;
     justify-content: space-evenly;
@@ -123,8 +140,8 @@
     img{
         padding-right: .5rem;
         @include for-size(large-phone-only){
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
         }
     }
 }

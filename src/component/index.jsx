@@ -6,7 +6,7 @@ import Animation from './animation'
 
 function Index(){
     return(
-        <div>
+        <div className='main-content-wrapper' >
             <Hero />
             <Web />
             <Graphics />

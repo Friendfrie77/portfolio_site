@@ -1,15 +1,13 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import art1 from '../images/art_1.webp'
-import art2 from '../images/art_2.webp'
 function Animation(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project_one"),
+            element.querySelector(".project-one"),
             {
                 opacity: 0,
                 x: -100
@@ -19,7 +17,7 @@ function Animation(){
                 x: 0,
                 duration: .2,
                 scrollTrigger: {
-                    trigger: element.querySelector(".content_hero"),
+                    trigger: element.querySelector(".content-hero"),
                     start: "top",
                     scrub: true,
                     end: "center"
@@ -30,7 +28,7 @@ function Animation(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project_two"),
+            element.querySelector(".project-two"),
             {
                 opacity: 0,
                 x:-100
@@ -40,7 +38,7 @@ function Animation(){
                 x:0,
                 duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project_one"),
+                    trigger: element.querySelector(".project-one"),
                     start: "top-=110%",
                     scrub: true,
                     // markers: true,
@@ -51,46 +49,46 @@ function Animation(){
     },[]);
     return(
         <section className="content" ref={ref} id='animation'>
-            <div className="content_hero animation_hero">
-                <h1 className='content_hero_header'>Animation</h1>
+            <div className="content-hero animation-hero">
+                <h1 className='content-hero-header'>Animation</h1>
             </div>
             <ul className='projects'>
-                <li className="panel project_one" id="art_one">
-                    <div className='panel_description'>
+                <li className="panel project-one">
+                    <div className='panel-description'>
                         <div>
-                            <h3 className='project_title'>Type as Shape</h3>
-                            <img className='panel_description_img' src={art1} height="100%" width='700' alt="type as shape"/>
-                            <div className='project_description'>
-                                <p>For this project I was tasked to use type as a shape. This was done as part of understanding typography. The letters themselves are just basic fonts printed out with the shapes then traced onto carbon paper and transferred onto card stock. You can see more pictures, and some of the process in the google drives link below. </p>
+                            <h3 className='project-title'>Stop Motion</h3>
+                            <iframe className='panel-description-img' width="100%" height="auto" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                            <div className='project-description'>
+                                <p>For this project I was tasked with making a stop motion animation. I used this project to tie my love for tech into the class and project. I did this by making a stop motion for a keyboard building itself. All the photos were taken via a phone camera. It is set to music from Final Fantasy XIV.</p>
                             </div>
-                            <div className='project_links'>
-                                <a href='https://drive.google.com/drive/folders/1eI5nZXYtQP1SvqBl9Vph3OJNKEt6nc6P?usp=sharing' target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
-                            </div>
+                            <ul className='tech-list'>
+                                <li>Adobe Animation</li>
+                            </ul>
                         </div>
                     </div>
-                    <div className='panel_picture'>
-                        <img src={art1} height="100%" width='700' alt="type as shapes"/>
+                    <div className='panel-picture'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
                 </li>
-                <li className="panel project_two" id="art_two">
-                    <div className='panel_description'>
+                <li className="panel project_two">
+                    <div className='panel-description'>
                         <div>
-                            <h3 className='project_title'>Color Theory</h3>
-                            <img className='panel_description_img' src={art2} height="100%" width='700' alt="color theory"/>
-                            <div className='project_description'>
-                                <p>This project was based around color theory and the Fibonacci sequence. I was tasked with laying out four different layouts using a different color theory for each. I then had to use Bristol board to mount the sections, bending the board for presentation. You can find more pictures in the Google Drives link below.</p>
+                            <h3 className='project-title'>Music Video</h3>
+                            <iframe className='panel-description-img' width="100%" height="auto" src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                            <div className='project-description'>
+                                <p>For this project I was tasked to make a music video for a song. For my video I picked a song called “Steh auf” by Lindemann. The song is about a child who found their mother dead from a drug overdose. I tried to style my video to make it seem like it is a child either drawling or thinking about all the things that they could do together. This was my first real go at animation outside of code based animation. </p>
                             </div>
-                            <div className='project_links'>
-                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
-                            </div>
+                            <ul className='tech-list'>
+                                <li>Adobe Animation</li>
+                            </ul>
                         </div>
                     </div>
-                    <div className='panel_picture'>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div className='panel-picture'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
                 </li>
             </ul>
-            <div class="custom-shape-divider-bottom-1668620987">
+            <div class="custom-shape-divider-bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <defs>
                         <linearGradient id='animation-svg' x1="0%" y1="0%" x2="40%" y2="100%">
