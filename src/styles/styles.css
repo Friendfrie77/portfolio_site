@@ -554,6 +554,19 @@ nav {
   }
 }
 
+.hero-text {
+  background-color: #000155;
+  display: flex;
+  align-self: center;
+  max-width: 680px;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.hero-text span {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
 .web-hero {
   position: relative;
   min-height: 55vh;
