@@ -100,13 +100,13 @@ function Arts(){
                             <div className='panel-description-img'>
                                 <Carousel>
                                     <div>
-                                        <img src={arts3} height="100%" width='700' alt=""/>
+                                        <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
                                     </div>
                                     <div>
-                                        <img src={arts3_1} height="100%" width='700' alt=""/>
+                                        <img src={arts3_1} height="100%" width='700' alt="Wedding Sign"/>
                                     </div>
                                     <div>
-                                        <img  height="100%" width='700' src={arts3_2} alt=""/>
+                                        <img  height="100%" width='700' src={arts3_2} alt="Wedding Sign"/>
                                     </div>
                                 </Carousel>
                             </div>
@@ -124,13 +124,13 @@ function Arts(){
                     <div className='panel-picture'>
                     <Carousel>
                             <div>
-                                <img src={arts3} height="100%" width='700' alt=""/>
+                                <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
                             </div>
                             <div>
-                                <img src={arts3_1} height="100%" width='700' alt=""/>
+                                <img src={arts3_1} height="100%" width='700' alt="Wedding Sign"/>
                             </div>
                             <div>
-                                <img  height="100%" width='700' src={arts3_2} alt=""/>
+                                <img  height="100%" width='700' src={arts3_2} alt="Wedding Sign"/>
                             </div>
                         </Carousel>
                     </div>
