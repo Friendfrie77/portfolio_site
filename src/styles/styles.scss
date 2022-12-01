@@ -4,6 +4,7 @@ $background-color-2:#000120;
 $background-color-3:#000130;
 $background-color-4:#000140;
 $background-color-5:#000155;
+$backgroung-grad: linear-gradient(180deg, $background-color-5 10%, $background-color-4 25%, $background-color-3 85%, $background-color-1 100%);
 $Header-font: 'IBM_Plex_Sans';
 $Copy-font: 'Roboto';
 @mixin for-size($size){
@@ -36,6 +37,7 @@ $Copy-font: 'Roboto';
     src: url(./../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
     src: local('IBM_Plex_Sans'),
          url(./../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -43,6 +45,7 @@ $Copy-font: 'Roboto';
     src: url(./../fonts/Roboto/Roboto-Light.ttf);
     src: local('Roboto'),
         url(./../fonts/Roboto/Roboto-Light.ttf) format('truetype');
+    font-display: swap;
 }
 
 h1, h2, h3, h4, h5{
@@ -58,7 +61,8 @@ p, li, span{
 @import './wrappers';
 @import './nav';
 @import './hero';
-@import './content_heros';
+@import './content-heros';
 @import './content';
 @import './contact';
+@import './design-process';
 @import './animations';

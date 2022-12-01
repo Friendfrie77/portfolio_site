@@ -14,7 +14,7 @@ function Graphics(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-one"),
+            element.querySelector(".graphics-one"),
             {
                 opacity: 0,
                 x: -100
@@ -24,10 +24,10 @@ function Graphics(){
                 x: 0,
                 duration: .2,
                 scrollTrigger: {
-                    trigger: element.querySelector(".content-hero"),
-                    start: "top",
+                    trigger: element.querySelector(".graphics-hero"),
+                    start: "-30%",
                     scrub: true,
-                    end: "center"
+                    end: "75%"
                 }
             }
         );
@@ -35,21 +35,62 @@ function Graphics(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-two"),
+            element.querySelector(".graphics-two"),
             {
                 opacity: 0,
-                x:-100
+                y:100
             },
             {
                 opacity: 1,
-                x:0,
+                y:0,
                 duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project-one"),
-                    start: "top-=110%",
+                    trigger: element.querySelector(".graphics-one"),
+                    start: "-25%",
                     scrub: true,
-                    // markers: true,
-                    end: "top-=10%",
+                    end: "100%",
+                }
+            }
+        );
+    },[]);
+    useEffect(()=>{
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector('.graphics-three'),
+            {
+                opacity: 0,
+                x: -100
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration:.7,
+                scrollTrigger:{
+                    trigger:element.querySelector('.graphics-two'),
+                    start: '-120%',
+                    scrub: true,
+                    end: '20%'
+                }
+            }
+        );
+    },[]);
+    useEffect(()=>{
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector('.graphics-four'),
+            {
+                opacity: 0,
+                y:-100
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration:.7,
+                scrollTrigger:{
+                    trigger:element.querySelector('.graphics-three'),
+                    start: '-50%',
+                    scrub: true,
+                    end: '20%'
                 }
             }
         );
@@ -60,7 +101,7 @@ function Graphics(){
                 <h1 className='content-hero-header'>Graphics</h1>
             </div>
             <ul className='projects'>
-                <li className="panel project-one">
+                <li className="panel project-one graphics-one">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Card box</h3>
@@ -102,7 +143,7 @@ function Graphics(){
                         </Carousel>
                     </div>
                 </li>
-                <li className="panel project-two">
+                <li className="panel project-two graphics-two">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Compositing</h3>
@@ -122,7 +163,7 @@ function Graphics(){
                         <img src={project2} height="100%" width='700' alt=""/>
                     </div>
                 </li>
-                <li className="panel project-three">
+                <li className="panel project-three graphics-three">
                     <div className='panel-description'>
                         <div>
                             <img className='panel-description-img' src={project3} height="100%" width='700' alt=""/>
@@ -142,7 +183,7 @@ function Graphics(){
                         <img src={project3} height="100%" width='700'/>
                     </div>
                 </li>
-                <li className="panel project-four">
+                <li className="panel project-four graphics-four">
                     <div className='panel-description'>
                         <div>
                             <img className='panel-description-img' src={project4} height="100%" width='277' alt=""/>

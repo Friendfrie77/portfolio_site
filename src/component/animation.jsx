@@ -7,7 +7,7 @@ function Animation(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-one"),
+            element.querySelector(".animation-one"),
             {
                 opacity: 0,
                 x: -100
@@ -15,12 +15,12 @@ function Animation(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .2,
+                duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".content-hero"),
-                    start: "top",
+                    trigger: element.querySelector(".animation-hero"),
+                    start: "-75%",
                     scrub: true,
-                    end: "center"
+                    end: "15%"
                 }
             }
         );
@@ -28,20 +28,19 @@ function Animation(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-two"),
+            element.querySelector(".animation-two"),
             {
                 opacity: 0,
-                x:-100
+                y:-100
             },
             {
                 opacity: 1,
-                x:0,
+                y:0,
                 duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project-one"),
+                    trigger: element.querySelector(".animation-one"),
                     start: "top-=110%",
                     scrub: true,
-                    // markers: true,
                     end: "top-=10%",
                 }
             }
@@ -53,7 +52,7 @@ function Animation(){
                 <h1 className='content-hero-header'>Animation</h1>
             </div>
             <ul className='projects'>
-                <li className="panel project-one">
+                <li className="panel project-one animation-one">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Stop Motion</h3>
@@ -70,7 +69,7 @@ function Animation(){
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
                 </li>
-                <li className="panel project_two">
+                <li className="panel project_two animation-two">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Music Video</h3>

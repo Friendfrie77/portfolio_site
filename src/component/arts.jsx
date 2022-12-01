@@ -1,19 +1,19 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Carousel} from 'react-responsive-carousel'
-import art1 from '../images/art_1.webp'
-import art2 from '../images/art_2.webp'
-import arts3 from '../images/arts_3.webp'
-import arts3_1 from '../images/arts_3_1.webp'
-import arts3_2 from '../images/arts_3_2.webp'
+import { Carousel} from 'react-responsive-carousel';
+import art1 from '../images/art_1.webp';
+import art2 from '../images/art_2.webp';
+import arts3 from '../images/arts_3.webp';
+import arts3_1 from '../images/arts_3_1.webp';
+import arts3_2 from '../images/arts_3_2.webp';
 function Arts(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-one"),
+            element.querySelector(".arts-one"),
             {
                 opacity: 0,
                 x: -100
@@ -21,12 +21,12 @@ function Arts(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .2,
+                duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".content-hero"),
-                    start: "top",
+                    trigger: element.querySelector(".arts-hero"),
+                    start: "-35%",
                     scrub: true,
-                    end: "center"
+                    end: "50%"
                 }
             }
         );
@@ -34,21 +34,41 @@ function Arts(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-two"),
+            element.querySelector(".arts-two"),
             {
                 opacity: 0,
-                x:-100
+                y:-100
             },
             {
                 opacity: 1,
-                x:0,
+                y:0,
                 duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project-one"),
-                    start: "top-=110%",
+                    trigger: element.querySelector(".arts-one"),
+                    start: "-70%",
                     scrub: true,
-                    // markers: true,
-                    end: "top-=10%",
+                    end: "0%",
+                }
+            }
+        );
+    },[]);
+    useEffect(()=>{
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector(".arts-three"),
+            {
+                opacity: 0,
+                x: -100
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration: .7,
+                scrollTrigger: {
+                    trigger: element.querySelector(".arts-two"),
+                    start: "-65%",
+                    scrub: true,
+                    end: '45%',
                 }
             }
         );
@@ -59,7 +79,7 @@ function Arts(){
                 <h1 className='content-hero-header'>Fine Arts</h1>
             </div>
             <ul className='projects'>
-                <li className="panel project-one" id="art-one">
+                <li className="panel project-one arts-one" id="art-one">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Type as Shape</h3>
@@ -76,7 +96,7 @@ function Arts(){
                         <img src={art1} height="100%" width='700' alt="type as shapes"/>
                     </div>
                 </li>
-                <li className="panel project-two" id="art-two">
+                <li className="panel project-two arts-two">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Color Theory</h3>
@@ -93,7 +113,7 @@ function Arts(){
                         <img src={art2} height="100%" width='700' alt="color theory"/>
                     </div>
                 </li>
-                <li className="panel project-three" id="arts-three">
+                <li className="panel project-three arts-three" id='arts-three'>
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Wedding Sign</h3>

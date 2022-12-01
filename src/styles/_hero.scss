@@ -1,12 +1,12 @@
-.custom-shape-divider-top-1669676562 {
-    position: absolute;
+.custom-shape-divider-top {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
-.custom-shape-divider-top-1669676698 svg {
+.custom-shape-divider-top svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -30,7 +30,7 @@
     height: 100px;
 }
 
-.custom-shape-divider-top-1669676698 .shape-fill {
+.custom-shape-divider-top .shape-fill {
     fill: $background-color-4;
 }
 .custom-shape-divider-bottom .shape-fill {
@@ -116,7 +116,11 @@
     justify-content: space-evenly;
     border-radius: 10px;
     padding: .5rem;
+    margin: .5rem;
     box-shadow: 0px 0px 5px $nav-color;
+    @include for-size(large-phone-only){
+        width: 100%;
+    }
     span{
         color: whitesmoke;
         font-family: $Header-font;

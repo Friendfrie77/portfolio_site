@@ -43,7 +43,18 @@ flex-direction: column;
     width: calc(100% + 1.3px);
     height: 54px;
 }
-
+.design-process{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: $background-color-1;
+    background-image: $backgroung-grad;
+}
+.design-content-wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
 #animation-fill{
     fill: url(#animation-svg) #fff;
 }
@@ -68,7 +79,10 @@ footer{
         font-family: $Header-font;
     }
 }
-
+.design-process{
+    background-color: $background-color-1;
+    background-image: linear-gradient(180deg, $background-color-5 10%, $background-color-4 25%, $background-color-3 85%, $background-color-1 100%);
+}
 #web{
     background: $background-color-1;
     background: linear-gradient(180deg, $background-color-1 98.5%, $background-color-2 99%);

@@ -11,20 +11,20 @@ function Web(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-one"),
+            element.querySelector(".web-one"),
             {
                 opacity: 0,
-                x: -100
+                x: -100,
             },
             {
                 opacity: 1,
                 x: 0,
                 duration: .2,
                 scrollTrigger: {
-                    trigger: element.querySelector(".content-hero"),
-                    start: "top",
+                    trigger: element.querySelector(".web-hero"),
+                    start: "-20%",
                     scrub: true,
-                    end: "center"
+                    end: "30%"
                 }
             }
         );
@@ -32,21 +32,41 @@ function Web(){
     useEffect(()=> {
         const element = ref.current;
         gsap.fromTo(
-            element.querySelector(".project-two"),
+            element.querySelector(".web-two"),
             {
                 opacity: 0,
-                x:-100
+                y:-100
             },
             {
                 opacity: 1,
-                x:0,
+                duration: .5,
+                y: 0,
+                scrollTrigger: {
+                    trigger: element.querySelector(".web-hero"),
+                    start: "60%",
+                    scrub: true,
+                    end: "130%"
+                }
+            }
+        );
+    },[]);
+    useEffect(()=> {
+        const element = ref.current
+        gsap.fromTo(
+            element.querySelector(".web-three"),
+            {
+                opacity: 0,
+                x: -100
+            },
+            {
+                opacity: 1,
+                x: 0,
                 duration: .7,
                 scrollTrigger: {
                     trigger: element.querySelector(".project-one"),
-                    start: "top-=110%",
+                    start:'0%',
                     scrub: true,
-                    // markers: true,
-                    end: "top-=10%",
+                    end: "bottom"
                 }
             }
         );
@@ -57,7 +77,7 @@ function Web(){
                 <h1 className='content-hero-header'>Web and Programing</h1>
             </div>
             <ul className='projects'>
-                <li className="panel project-one" id="web-one">
+                <li className="panel project-one web-one">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Toebean Sanctuary</h3>
@@ -81,7 +101,7 @@ function Web(){
                         <img src={toebean} height="100%" width='700' alt=""/>
                     </div>
                 </li>
-                <li className="panel project-two" id="web-two">
+                <li className="panel project-two web-two">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Green Home Living</h3>
@@ -106,10 +126,11 @@ function Web(){
                         <img src={site2} height="100%" width='700' alt="Green Home Living"/>
                     </div>
                 </li>
-                <li className="panel project-three" id="web-three">
+                <li className="panel project-three web-three">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Sql Final Project</h3>
+                            <img className='panel-description-img' src={SqlFinal} height="100%" width='700' alt="Sql Final"/>
                             <div className='project-description'>
                                 <p>For this project I was tasked to make a mock SQL database that handled a medical study. I was tasked with making functions and stored procedures that would allow doctors and research staff easily be able to enter in patients into the studies and into the offices database for storing patients. It also had to allow for adding patients to the studies and removing them from studies with reasons that were given in the data. You can see the full SQL script in the GitHub link below.</p>
                             </div>
