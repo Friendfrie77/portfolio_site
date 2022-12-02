@@ -1,0 +1,33 @@
+.brainstorming, .design-development{
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: whitesmoke;
+        font-size: 2.23rem;
+        text-align: center;
+    }
+    p{
+        color: whitesmoke;
+        padding: 15px;
+        font-size: 1.25rem;
+    }
+}
+
+.design-carousel{
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    .carousel-root{
+        max-width: 700px;
+    }
+    @include for-size(tablet-only){
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+#design-carousel-2{
+    grid-template-columns: 1fr;
+}

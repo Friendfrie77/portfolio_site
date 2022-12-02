@@ -142,7 +142,7 @@ function Arts(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                    <Carousel>
+                        <Carousel>
                             <div>
                                 <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
                             </div>
