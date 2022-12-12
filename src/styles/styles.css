@@ -236,9 +236,19 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #1A3461;
+  background-color: #000155;
   height: 60px;
   padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  opacity: 0.9;
+}
+@media (max-width: 768px) {
+  nav {
+    opacity: 1;
+  }
 }
 
 .Nav_Links {
@@ -253,14 +263,15 @@ nav {
     translate: -100%;
     flex-direction: column;
     position: fixed;
-    top: 0px;
+    top: 10px;
     left: 0px;
     z-index: 100;
     height: 100%;
     width: 100%;
     margin-top: 50px;
     justify-content: start;
-    background-color: #1A3461;
+    background-color: #000155;
+    opacity: 1;
     transition: cubic-bezier(0.23, 1, 0.32, 1) 0.35s;
   }
 }
@@ -309,18 +320,24 @@ nav {
   list-style: none;
   margin-top: 0.2rem;
   left: 0px;
-  background-color: #1A3461;
+  background-color: #000155;
   padding: 0px;
   transition-duration: 0.5s;
   opacity: 0;
   display: none;
   z-index: 100;
+  border-radius: 10px;
 }
 @media (max-width: 768px) {
   .Nav_Links li ul {
     flex-direction: column;
     position: static;
   }
+}
+
+.dropdown span {
+  font-size: 0.8rem;
+  padding: 3px;
 }
 
 .dropdown > a {
@@ -800,7 +817,7 @@ nav {
 @media (max-width: 768px) {
   .project-title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -876,6 +893,9 @@ nav {
   justify-content: flex-end;
   margin-top: 5px;
 }
+.project-links a {
+  color: white;
+}
 
 .contact {
   display: flex;
@@ -884,6 +904,7 @@ nav {
   align-items: center;
   align-self: center;
   width: 100%;
+  position: relative;
   background-color: #000155;
 }
 .contact form {

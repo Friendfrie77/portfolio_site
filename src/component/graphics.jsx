@@ -166,8 +166,8 @@ function Graphics(){
                 <li className="panel project-three graphics-three">
                     <div className='panel-description'>
                         <div>
-                            <img className='panel-description-img' src={project3} height="100%" width='700' alt=""/>
                             <h3 className='project-title'>Typography</h3>
+                            <img className='panel-description-img' src={project3} height="100%" width='700' alt=""/>
                             <div className='project-description'>
                                 <p>For this project I was tasked with making an emphasis typography advisement using a quote. For my quote I picked a quote dealing with hurting and sorrow. I chose to use that to make an advertisement for the suicide prevention hotline. </p>
                             </div>
@@ -186,8 +186,8 @@ function Graphics(){
                 <li className="panel project-four graphics-four">
                     <div className='panel-description'>
                         <div>
-                            <img className='panel-description-img' src={project4} height="100%" width='277' alt=""/>
                             <h3 className='project-title'>Trompe-l'oeil</h3>
+                            <img className='panel-description-img' src={project4} height="100%" width='277' alt=""/>
                             <div className='project-description'>
                                 <p>For this project, I was tasked with making a composite image with a strong Trompe-l’oeil effect advertising a company or service, with the piece inspired by a quote given by the teacher. I choices to center mine around a gym, using the saying, “A leopard can’t change its spots.” I combined parts of images from fit people. I emphasized aspects of the call ad to highlight that there is no easy way to change. You can see more at the Google drives link below.</p>
                             </div>

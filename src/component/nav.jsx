@@ -2,7 +2,7 @@ import {NavLink } from 'react-router-dom';
 import {NavHashLink} from 'react-router-hash-link'
 import {useRef} from "react";
 // import logo from '../images/Untitled-1.svg'
-import logo from '../images/logo-test.svg'
+import logo from '../images/logo2.svg'
 
 function Nav(){
     let activeStyle = {
@@ -31,8 +31,8 @@ function Nav(){
                 <div className="Mobile_Nav" id='mobile-nav'></div>
             </label>
             <ul className='Nav_Links' id="nav-links">
-                <li className='Nav_Item'><NavLink style={({isActive}) => isActive ? activeStyle : undefined} onClick={checkChange} to='/'>Home</NavLink></li>
-                <li className='Nav_item dropdown'><a href='' aria-haspopup="ture">Projects</a>
+                <li className='Nav_Item'><NavHashLink to='/#hero'>Home</NavHashLink></li>
+                <li className='Nav_item dropdown'><a href='' aria-haspopup="ture">Projects<span>&#9660;</span></a>
                     <ul className='nav_dropdown' aria-label='submenu'>
                         <li className='Nav_Item'><NavHashLink
                         className='dropdown_link' onClick={checkChange} to="/#web">Development</NavHashLink></li>

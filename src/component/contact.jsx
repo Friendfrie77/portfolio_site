@@ -8,15 +8,20 @@ function Contact(){
     const sendEmail = (e) =>{
         e.preventDefault();
         emailjs.sendForm('service_9v94n0a', 'template_ihqoeq2', form.current, 'ns0dETlWDNhjdsN6T').then((result) => {
-            document.getElementById('contact-form').reset();
+            form.current.reset();
+            showThanks();
         }, (error) => {
+            form.current.className = "thanks"
             console.log(error.text);
         });
     };
-    
+    const showThanks = () => {
+        form.current.className = "thanks"
+        console.log('test');
+    };
     return(
         <section className= "contact" id='contact'>
-            <form ref={form} onSubmit={sendEmail} id="contact-form">
+            <form ref={form} onSubmit={showThanks} id="contact-form">
                 <h1>Contact Me below!</h1>
                 <div className="contact-name">
                     <input type= "text" name="contact-name" required></input>

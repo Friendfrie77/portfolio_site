@@ -5,6 +5,7 @@
     align-items: center;
     align-self: center;
     width: 100%;
+    position: relative;
     background-color: $background-color-5;
     form{
         display: flex;
@@ -24,6 +25,7 @@
             width: 50%;
         }
     }
+
     h1{
         margin-bottom: 15px;
         color: whitesmoke;
