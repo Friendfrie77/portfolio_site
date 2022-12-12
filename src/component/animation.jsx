@@ -56,7 +56,7 @@ function Animation(){
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Stop Motion</h3>
-                            <iframe className='panel-description-img' width="100%" height="auto" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                            <iframe className='panel-description-img' height="300px" width='100%' src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                             <div className='project-description'>
                                 <p>For this project I was tasked with making a stop motion animation. I used this project to tie my love for tech into the class and project. I did this by making a stop motion for a keyboard building itself. All the photos were taken via a phone camera. It is set to music from Final Fantasy XIV.</p>
                             </div>
@@ -66,14 +66,14 @@ function Animation(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                        <iframe width="auto" height="350" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
                 </li>
                 <li className="panel project_two animation-two">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Music Video</h3>
-                            <iframe className='panel-description-img' width="100%" height="auto" src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                            <iframe className='panel-description-img' height="300px" width='100%' src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                             <div className='project-description'>
                                 <p>For this project I was tasked to make a music video for a song. For my video I picked a song called “Steh auf” by Lindemann. The song is about a child who found their mother dead from a drug overdose. I tried to style my video to make it seem like it is a child either drawling or thinking about all the things that they could do together. This was my first real go at animation outside of code based animation. </p>
                             </div>
@@ -83,7 +83,7 @@ function Animation(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                        <iframe height="350" width='auto' src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
                 </li>
             </ul>

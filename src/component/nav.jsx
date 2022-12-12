@@ -20,7 +20,7 @@ function Nav(){
 
     return(
         <nav>
-            <div className="Logo">
+            <div className="logo">
                 <img src={logo} height='50px' width='100%'></img>
             </div>
             <div className='socials'>
