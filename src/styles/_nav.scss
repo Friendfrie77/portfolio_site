@@ -172,4 +172,15 @@ nav{
     transform: rotate(-405deg);
 }
 
+footer{
+    background-color: $background-color-5;
+    padding: 8px;
+    margin-top: auto;
+    text-align: center;
+    span{
+        color: #fff;
+        font-size: 1.1rem;
+        font-family: $Header-font;
+    }
+}
 //Navigation End

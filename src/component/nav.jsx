@@ -42,7 +42,7 @@ function Nav(){
                     </ul>
                 </li>
                 <li className='Nav_Item'><NavHashLink onClick={checkChange} to="#contact">Contact Me</NavHashLink></li>
-                <li className='Nav_Item'><NavLink style={({isActive}) => isActive ? activeStyle : undefined} onClick={checkChange} to='/resources'>Resources</NavLink></li>
+                {/* <li className='Nav_Item'><NavLink style={({isActive}) => isActive ? activeStyle : undefined} onClick={checkChange} to='/resources'>Resources</NavLink></li> */}
             </ul>
         </nav>
     )
