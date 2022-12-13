@@ -918,7 +918,6 @@ footer span {
   position: relative;
   grid-area: 1/2/2/7;
   width: 100%;
-  z-index: 1000;
 }
 .panel-picture img {
   border-radius: 10px;

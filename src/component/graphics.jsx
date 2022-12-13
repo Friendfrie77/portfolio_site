@@ -2,23 +2,15 @@ import {useEffect, useRef, useState} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Carousel} from 'react-responsive-carousel'
-import FsLightbox from 'fslightbox-react';
 import project1 from '../images/graphics-1.webp'
 import GraphicsProject1Lightbox from './graphicsproject1'
 import GraphicsProject2Lightbox from './graphicsproject2'
+import GraphicsProject3Lightbox from './graphicsproject3'
+import GraphicsProject4Lightbox from './graphicsproject4'
 import project2 from '../images/graphics-2.webp'
-import lbprojecttwo1 from '../images/graphics/friend-bitmap-final.webp'
 import project3 from '../images/graphics-3.webp'
-import lbprojectthree1 from '../images/graphics/draft.webp'
-import lbprojectthree2 from '../images/graphics/draft2.webp'
-import lbprojectthree3 from '../images/graphics/Final.webp'
 import project4 from '../images/graphics-4.webp'
-import lbproject4 from '../images/graphics/trompe.webp'
 function Graphics(){
-    const [toggler0, setToggler0] = useState(false);
-    const [toggler1, setToggler1] = useState(false);
-    const [toggler2, setToggler2] = useState(false);
-    const [toggler3, setToggler3] = useState(false);
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -151,7 +143,7 @@ function Graphics(){
                                 <l1>Adobe Photoshop</l1>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/14-w-zOR3h-IKAeTTvIVuGSAxWJ3VGHYg?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
@@ -160,22 +152,13 @@ function Graphics(){
                         <GraphicsProject2Lightbox />
                     </div>
                 </li>
-                {/* <li className="panel project-three graphics-three">
+                <li className="panel project-three graphics-three">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Typography</h3>
                             <div className='panel-description-img'>
                             <img src={project3} height="100%" width='700'/>
-                                <button className='lightbox-button' onClick={() => setToggler2(!toggler2)}>
-                                </button>
-                                <FsLightbox
-                                    toggler={toggler2}
-                                    sources={[
-                                        lbprojectthree1,
-                                        lbprojectthree2,
-                                        lbprojectthree3
-                                    ]}
-                                />
+                            <GraphicsProject3Lightbox />
                             </div>
                             <div className='project-description'>
                                 <p>For this project I was tasked with making an emphasis typography advisement using a quote. For my quote I picked a quote dealing with hurting and sorrow. I chose to use that to make an advertisement for the suicide prevention hotline. </p>
@@ -184,22 +167,13 @@ function Graphics(){
                                 <li>Adobe Illustrator</li>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/1P-_KiIEvVbl1BCohnCVsNqF3WBclOi9c?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel-picture'>
                         <img src={project3} height="100%" width='700'/>
-                        <button className='lightbox-button' onClick={() => setToggler2(!toggler2)}>
-                        </button>
-                        <FsLightbox
-                            toggler={toggler2}
-                            sources={[
-                                 lbprojectthree1,
-                                 lbprojectthree2,
-                                 lbprojectthree3
-                            ]}
-                        />
+                        <GraphicsProject3Lightbox />
                     </div>
                 </li>
                 <li className="panel project-four graphics-four">
@@ -208,14 +182,7 @@ function Graphics(){
                             <h3 className='project-title'>Trompe-l'oeil</h3>
                             <div className='panel-description-img'>
                                 <img src={project4} height="100%" width='277'/>
-                                <button className='lightbox-button' onClick={() => setToggler3(!toggler3)}>
-                                </button>
-                                <FsLightbox
-                                    toggler={toggler3}
-                                    sources={[
-                                        lbproject4
-                                    ]}
-                                />
+                                <GraphicsProject4Lightbox />
                             </div>
                             <div className='project-description'>
                                 <p>For this project, I was tasked with making a composite image with a strong Trompe-l’oeil effect advertising a company or service, with the piece inspired by a quote given by the teacher. I choices to center mine around a gym, using the saying, “A leopard can’t change its spots.” I combined parts of images from fit people. I emphasized aspects of the call ad to highlight that there is no easy way to change. You can see more at the Google drives link below.</p>
@@ -224,22 +191,15 @@ function Graphics(){
                                 <li>Adobe Photoshop</li>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/file/d/14RKKmwvl3jEMoPCkg9PZcBztX6cLq5ap/view?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/1OPq2g6kWPw4xtY77305BXCZc0we3FJLX?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel-picture'>
                         <img src={project4} height="100%" width='277'/>
-                        <button className='lightbox-button' onClick={() => setToggler3(!toggler3)}>
-                        </button>
-                        <FsLightbox
-                            toggler={toggler3}
-                            sources={[
-                                lbproject4
-                            ]}
-                        />
+                        <GraphicsProject4Lightbox />
                     </div>
-                </li> */}
+                </li>
             </ul>
             <div class="custom-shape-divider-bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

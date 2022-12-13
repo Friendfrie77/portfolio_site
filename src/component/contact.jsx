@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 function Contact(){
     const form =useRef();
     const thanks = useRef();
-    const msg = "suck a dick"
+    const msg = ""
     const sendEmail = (e) =>{
         e.preventDefault();
         emailjs.sendForm('service_9v94n0a', 'template_ihqoeq2', form.current, 'ns0dETlWDNhjdsN6T').then((result) => {
