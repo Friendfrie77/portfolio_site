@@ -1,19 +1,30 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 
 function Contact(){
     const form =useRef();
     const thanks = useRef();
-    const msg = ""
+    const [msg, setMsg] = useState("");
+
     const sendEmail = (e) =>{
         e.preventDefault();
         emailjs.sendForm('service_9v94n0a', 'template_ihqoeq2', form.current, 'ns0dETlWDNhjdsN6T').then((result) => {
             form.current.reset();
-            const msg = 'test'
+            setMsg("Email sent successfully")
+            clearMsg()
         }, (error) => {
             console.log(error.text);
         });
+    };
+    function sleep(ms){
+        return new Promise(
+            resolve => setTimeout(resolve, ms)
+        );
+    }
+    async function clearMsg(){
+        await sleep(4000);
+        setMsg("");
     };
     return(
         <section className= "contact" id='contact'>

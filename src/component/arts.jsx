@@ -3,7 +3,9 @@ import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Carousel} from 'react-responsive-carousel';
 import art1 from '../images/art_1.webp';
+import ArtsProject1 from './artsproject1';
 import art2 from '../images/art_2.webp';
+import ArtsProject2 from './artsproject2';
 import arts3 from '../images/arts_3.webp';
 import arts3_1 from '../images/arts_3_1.webp';
 import arts3_2 from '../images/arts_3_2.webp';
@@ -83,7 +85,10 @@ function Arts(){
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Type as Shape</h3>
-                            <img className='panel-description-img' src={art1} height="100%" width='700' alt="type as shape"/>
+                            <div className='panel-description-img'>
+                                <img src={art1} height="100%" width='700' alt="type as shape"/>
+                                <ArtsProject1 />
+                            </div>
                             <div className='project-description'>
                                 <p>For this project I was tasked to use type as a shape. This was done as part of understanding typography. The letters themselves are just basic fonts printed out with the shapes then traced onto carbon paper and transferred onto card stock. You can see more pictures, and some of the process in the google drives link below. </p>
                             </div>
@@ -94,13 +99,17 @@ function Arts(){
                     </div>
                     <div className='panel-picture'>
                         <img src={art1} height="100%" width='700' alt="type as shapes"/>
+                        <ArtsProject1 />
                     </div>
                 </li>
                 <li className="panel project-two arts-two">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Color Theory</h3>
-                            <img className='panel-description-img' src={art2} height="100%" width='700' alt="color theory"/>
+                            <div className='panel-description-img'>
+                                <img src={art2} height="100%" width='700' alt="color theory"/>
+                                <ArtsProject2 />
+                            </div> 
                             <div className='project-description'>
                                 <p>This project was based around color theory and the Fibonacci sequence. I was tasked with laying out four different layouts using a different color theory for each. I then had to use Bristol board to mount the sections, bending the board for presentation. You can find more pictures in the Google Drives link below.</p>
                             </div>
@@ -111,6 +120,7 @@ function Arts(){
                     </div>
                     <div className='panel-picture'>
                         <img src={art2} height="100%" width='700' alt="color theory"/>
+                        <ArtsProject2 />
                     </div>
                 </li>
                 <li className="panel project-three arts-three" id='arts-three'>

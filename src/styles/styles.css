@@ -1064,6 +1064,7 @@ footer span {
   min-width: 100%;
   border-radius: 5px;
   text-align: center;
+  transition: 0.4s linear;
 }
 
 input:-webkit-autofill,
