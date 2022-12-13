@@ -19,7 +19,7 @@
         margin: 25px;
         background-color: $background-color-2;
         @include for-size(tablet-only){
-            min-width: 90vw;
+            min-width: 100vw;
         }
         @include for-size(small-desktop){
             width: 50%;
@@ -93,6 +93,9 @@
             left: 4px;
         }
     }
+    @include for-size(phone-only){
+        max-width: 100%;
+    }
 }
 
 input:-webkit-autofill,
@@ -105,11 +108,15 @@ input[data-autocompleted] {
 .contact-text{
     position: relative;
     overflow: hidden;
+    width: 290px;
     textarea{
         width: 290px;
         height: 100px;
         background-color: transparent;
         border: none;
+        @include for-size(phone-only){
+            max-width: 100%;
+        }
     }
     label{
         position: absolute;
@@ -117,6 +124,7 @@ input[data-autocompleted] {
         left: 0px;
         width: 100%;
         height: 100%;
+        max-width: 290px;
         pointer-events: none;
         color:hsl(0,0%,50%);
         transform: all 0.2s ease;
@@ -140,12 +148,15 @@ input[data-autocompleted] {
             transform: translateX(-100%);
             transition: all 0.3s ease;
             overflow: hidden;
-        }
+        } 
     }
     span{
         position: absolute;
         color: whitesmoke;
         top:100%;
         left: 4px
+    }
+    @include for-size(phone-only){
+        max-width: 100%;
     }
 }

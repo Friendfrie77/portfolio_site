@@ -45,6 +45,12 @@
         flex-direction: column;
         text-transform: capitalize;
         margin: 10px;
+        @include for-size(phone-only){
+            flex-direction: row;
+            margin: 10px auto;
+            text-align: center;
+            justify-content: center;
+        }
         span{
             color: white;
             text-transform: capitalize;
@@ -54,6 +60,14 @@
                 font-size: 3rem;
             }
         }
+        span:first-of-type{
+            @include for-size(phone-only){
+                padding-right: 10px;
+            }
+        }
+    }
+    @include for-size(phone-only){
+        flex-direction: column;
     }
 }
 
@@ -68,8 +82,9 @@
        height: 100%;
     }
     @include for-size(phone-only){
-        width: 150px;
+        width: 200px;
         height: 100%;
+        margin: auto;
 
     }
 }
@@ -77,6 +92,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
+    @include for-size(phone-only){
+        justify-content: space-evenly;
+    }
     a{
         @include for-size(tablet-only){
             padding-right: 15px;
@@ -88,7 +107,7 @@
         }
         svg{
             @include for-size(phone-only){
-                width: 30px;
+                width: 35px;
                 height: 100%;
             }
         }
@@ -157,6 +176,7 @@
     max-width: 680px;
     border-radius: 5px;
     padding: .5rem;
+    margin-bottom: 1.5rem;
     span{
         color: whitesmoke;
         font-size: 1.2rem;

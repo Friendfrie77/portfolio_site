@@ -229,11 +229,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #000155;
-  height: 70px;
+  height: 75px;
   padding: 1rem;
   position: -webkit-sticky;
   position: sticky;
-  padding: 1rem;
   top: 0;
   z-index: 100;
   opacity: 0.9;
@@ -492,6 +491,14 @@ footer span {
   text-transform: capitalize;
   margin: 10px;
 }
+@media (max-width: 460px) {
+  .hero-img h1 {
+    flex-direction: row;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
 .hero-img h1 span {
   color: white;
   text-transform: capitalize;
@@ -501,6 +508,16 @@ footer span {
 @media (max-width: 768px) {
   .hero-img h1 span {
     font-size: 3rem;
+  }
+}
+@media (max-width: 460px) {
+  .hero-img h1 span:first-of-type {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 460px) {
+  .hero-img {
+    flex-direction: column;
   }
 }
 
@@ -517,10 +534,11 @@ footer span {
     height: 100%;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .selfie-img {
-    width: 150px;
+    width: 200px;
     height: 100%;
+    margin: auto;
   }
 }
 
@@ -528,6 +546,12 @@ footer span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 460px) {
+  .social-links {
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 768px) {
   .social-links a {
@@ -537,9 +561,9 @@ footer span {
 .social-links a:hover svg {
   fill: #1A3461;
 }
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .social-links a svg {
-    width: 30px;
+    width: 35px;
     height: 100%;
   }
 }
@@ -554,7 +578,7 @@ footer span {
   font-size: 2.5rem;
   color: whitesmoke;
 }
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .tech-skills-container h1 {
     font-size: 2rem;
   }
@@ -581,7 +605,7 @@ footer span {
   color: whitesmoke;
   font-family: "IBM_Plex_Sans";
 }
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .tech-skills span {
     font-size: 0.8rem;
   }
@@ -619,6 +643,7 @@ footer span {
   max-width: 680px;
   border-radius: 5px;
   padding: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 .hero-text span {
   color: whitesmoke;
@@ -729,6 +754,11 @@ footer span {
   flex-direction: column;
   margin: auto;
 }
+@media (max-width: 460px) {
+  .projects {
+    width: 100%;
+  }
+}
 
 .content-hero {
   display: flex;
@@ -741,7 +771,7 @@ footer span {
   color: white;
   text-align: center;
 }
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   .content-hero-header {
     font-size: 2rem;
   }
@@ -752,7 +782,7 @@ footer span {
   display: grid;
   grid-template-columns: repeat(12, 0.5fr);
   align-items: center;
-  margin: 20px 0px 30px 0px;
+  margin: 20px auto;
   transition: transform 0.2s;
   width: 100%;
 }
@@ -866,6 +896,8 @@ footer span {
   display: flex;
   list-style: none;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  word-break: word-break;
   margin: 5px 0px 0px 0px;
 }
 .tech-list li {
@@ -935,7 +967,7 @@ footer span {
 }
 @media (max-width: 768px) {
   .contact form {
-    min-width: 90vw;
+    min-width: 100vw;
   }
 }
 @media (max-width: 1300px) {
@@ -1010,6 +1042,11 @@ footer span {
   bottom: 0px;
   left: 4px;
 }
+@media (max-width: 460px) {
+  .contact-name, .contact-email {
+    max-width: 100%;
+  }
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
@@ -1024,6 +1061,7 @@ input[data-autocompleted] {
 .contact-text {
   position: relative;
   overflow: hidden;
+  width: 290px;
 }
 .contact-text textarea {
   width: 290px;
@@ -1031,12 +1069,18 @@ input[data-autocompleted] {
   background-color: transparent;
   border: none;
 }
+@media (max-width: 460px) {
+  .contact-text textarea {
+    max-width: 100%;
+  }
+}
 .contact-text label {
   position: absolute;
   bottom: 98%;
   left: 0px;
   width: 100%;
   height: 100%;
+  max-width: 290px;
   pointer-events: none;
   color: hsl(0deg, 0%, 50%);
   transform: all 0.2s ease;
@@ -1067,6 +1111,11 @@ input[data-autocompleted] {
   color: whitesmoke;
   top: 100%;
   left: 4px;
+}
+@media (max-width: 460px) {
+  .contact-text {
+    max-width: 100%;
+  }
 }
 
 .brainstorming, .design-development {

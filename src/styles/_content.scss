@@ -3,6 +3,9 @@
     max-width:1400px;
     flex-direction: column;
     margin: auto;
+    @include for-size(phone-only){
+        width: 100%;
+    }
 }
 .content-hero{
     display: flex;
@@ -23,7 +26,7 @@
     display: grid;
     grid-template-columns: repeat(12, .5fr);
     align-items: center;
-    margin: 20px 0px 30px 0px;
+    margin: 20px auto;
     transition: transform .2s;
     width: 100%;
     &:nth-child(even){
@@ -122,6 +125,8 @@
     display: flex;
     list-style: none;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    word-break: word-break;
     margin: 5px 0px 0px 0px;
     li{
         padding: 5px;

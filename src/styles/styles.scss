@@ -18,7 +18,7 @@ $Copy-font: 'Roboto';
         @media (max-width: 535px) {@content;}
     }
     @if $size == phone-only{
-        @media (max-width: 425px){ @content;}
+        @media (max-width: 460px){ @content;}
     }
     @if $size == small-desktop{
         @media (max-width: 1300px){@content;}
