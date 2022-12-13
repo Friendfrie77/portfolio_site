@@ -6,6 +6,7 @@ import Footer from './component/footer';
 import Index from './component';
 import Resources from './component/resources';
 import Web2 from './component/greenhomeliving';
+import Fuck from './component/fuck'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Nav from './component/nav'
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route  exact path='/resources' element={<Resources />}/>
         <Route  exact path='/GreenHomeLiving' element={<Web2 />}/>
       </Routes>
+      <Fuck />
       <ContactUs />
       <Footer />
     </Router>

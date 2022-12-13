@@ -4,24 +4,21 @@ import emailjs from '@emailjs/browser';
 
 function Contact(){
     const form =useRef();
-
+    const thanks = useRef();
+    const msg = "suck a dick"
     const sendEmail = (e) =>{
         e.preventDefault();
         emailjs.sendForm('service_9v94n0a', 'template_ihqoeq2', form.current, 'ns0dETlWDNhjdsN6T').then((result) => {
             form.current.reset();
-            showThanks();
+            const msg = 'test'
         }, (error) => {
-            form.current.className = "thanks"
             console.log(error.text);
         });
     };
-    const showThanks = () => {
-        form.current.className = "thanks"
-        console.log('test');
-    };
     return(
         <section className= "contact" id='contact'>
-            <form ref={form} onSubmit={showThanks} id="contact-form">
+            <form ref={form} onSubmit={sendEmail} id="contact-form">
+                <h1 className='email-message' ref={thanks}>{msg}</h1>
                 <h1>Contact Me below!</h1>
                 <div className="contact-name">
                     <input type= "text" name="contact-name" required></input>

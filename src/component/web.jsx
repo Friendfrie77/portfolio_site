@@ -6,71 +6,71 @@ import toebean from '../images/test2.webp';
 import site2 from '../images/site2.webp';
 import SqlFinal from '../images/test3.webp'
 function Web(){
-    // gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
-    // useEffect(()=> {
-    //     const element = ref.current;
-    //     gsap.fromTo(
-    //         element.querySelector(".web-one"),
-    //         {
-    //             opacity: 0,
-    //             x: -100,
-    //         },
-    //         {
-    //             opacity: 1,
-    //             x: 0,
-    //             duration: .2,
-    //             scrollTrigger: {
-    //                 trigger: element.querySelector(".web-hero"),
-    //                 start: "-20%",
-    //                 scrub: true,
-    //                 end: "30%"
-    //             }
-    //         }
-    //     );
-    // },[]);
-    // useEffect(()=> {
-    //     const element = ref.current;
-    //     gsap.fromTo(
-    //         element.querySelector(".web-two"),
-    //         {
-    //             opacity: 0,
-    //             y:-100
-    //         },
-    //         {
-    //             opacity: 1,
-    //             duration: .5,
-    //             y: 0,
-    //             scrollTrigger: {
-    //                 trigger: element.querySelector(".web-hero"),
-    //                 start: "60%",
-    //                 scrub: true,
-    //                 end: "130%"
-    //             }
-    //         }
-    //     );
-    // },[]);
-    // useEffect(()=> {
-    //     const element = ref.current
-    //     gsap.fromTo(
-    //         element.querySelector(".web-three"),
-    //         {
-    //             opacity: 0,
-    //             x: -100
-    //         },
-    //         {
-    //             opacity: 1,
-    //             x: 0,
-    //             duration: .7,
-    //             scrollTrigger: {
-    //                 trigger: element.querySelector(".project-one"),
-    //                 start:'0%',
-    //                 scrub: true,
-    //                 end: "bottom"
-    //             }
-    //         }
-    //     );
-    // },[]);
+    useEffect(()=> {
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector(".web-one"),
+            {
+                opacity: 0,
+                x: -100,
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration: .2,
+                scrollTrigger: {
+                    trigger: element.querySelector(".web-hero"),
+                    start: "-20%",
+                    scrub: true,
+                    end: "30%"
+                }
+            }
+        );
+    },[]);
+    useEffect(()=> {
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector(".web-two"),
+            {
+                opacity: 0,
+                y:-100
+            },
+            {
+                opacity: 1,
+                duration: .5,
+                y: 0,
+                scrollTrigger: {
+                    trigger: element.querySelector(".web-hero"),
+                    start: "60%",
+                    scrub: true,
+                    end: "130%"
+                }
+            }
+        );
+    },[]);
+    useEffect(()=> {
+        const element = ref.current
+        gsap.fromTo(
+            element.querySelector(".web-three"),
+            {
+                opacity: 0,
+                x: -100
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration: .7,
+                scrollTrigger: {
+                    trigger: element.querySelector(".project-one"),
+                    start:'0%',
+                    scrub: true,
+                    end: "bottom"
+                }
+            }
+        );
+    },[]);
     return(
         <section className="content" ref={ref} id='web'>
             <div className="content-hero web-hero">
