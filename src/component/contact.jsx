@@ -15,6 +15,8 @@ function Contact(){
             clearMsg()
         }, (error) => {
             console.log(error.text);
+            setMsg("Oops something went wrong.")
+            clearMsg()
         });
     };
     function sleep(ms){

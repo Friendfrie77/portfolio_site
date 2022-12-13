@@ -7,6 +7,7 @@ import ArtsProject1 from './artsproject1';
 import art2 from '../images/art_2.webp';
 import ArtsProject2 from './artsproject2';
 import arts3 from '../images/arts_3.webp';
+import ArtsProject3 from './artsproject3';
 import arts3_1 from '../images/arts_3_1.webp';
 import arts3_2 from '../images/arts_3_2.webp';
 function Arts(){
@@ -128,17 +129,8 @@ function Arts(){
                         <div>
                             <h3 className='project-title'>Wedding Sign</h3>
                             <div className='panel-description-img'>
-                                <Carousel>
-                                    <div>
-                                        <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
-                                    </div>
-                                    <div>
-                                        <img src={arts3_1} height="100%" width='700' alt="Wedding Sign"/>
-                                    </div>
-                                    <div>
-                                        <img  height="100%" width='700' src={arts3_2} alt="Wedding Sign"/>
-                                    </div>
-                                </Carousel>
+                                <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
+                                <ArtsProject3 />
                             </div>
                             <div className='project-description'>
                                 <p>This was a personal project for my sister’s wedding. I made the design in Adobe Illustrator and then laser-cut it out of acrylic. It was a rush job as I found someone to cut out the sign frame about a week before the wedding. Due to a mix-up at the cutter, the channels are not entirely cut, so the lights are glued to acrylic. I am currently building a 2.0 of the sign with the proper cutouts to hold the lights.</p>
@@ -152,17 +144,8 @@ function Arts(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <Carousel>
-                            <div>
-                                <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
-                            </div>
-                            <div>
-                                <img src={arts3_1} height="100%" width='700' alt="Wedding Sign"/>
-                            </div>
-                            <div>
-                                <img  height="100%" width='700' src={arts3_2} alt="Wedding Sign"/>
-                            </div>
-                        </Carousel>
+                        <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
+                        <ArtsProject3 />
                     </div>
                 </li>
             </ul>

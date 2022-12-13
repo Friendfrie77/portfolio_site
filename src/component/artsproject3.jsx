@@ -1,23 +1,21 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import Lightbox from "react-18-image-lightbox";
-import lbprojectone1 from '../images/graphics/Artboard 1.webp'
-import lbprojectone2 from '../images/graphics/Artboard 4 copy 2.webp'
-import lbprojectone3 from '../images/graphics/Artboard 4 copy 3.webp'
-import lbprojectone4 from '../images/graphics/Artboard 4 copy 4.webp'
-import lbprojectone5 from '../images/graphics/Artboard 4 copy.webp'
-import lbprojectone6 from '../images/graphics/Artboard 4.webp'
+import lbprojectone1 from '../images/art/wed1.webp'
+import lbprojectone2 from '../images/art/wed2.webp'
+import lbprojectone3 from '../images/art/wed3.webp'
+import lbprojectone4 from '../images/art/wed4.webp'
+
+
 
 const images = [
     lbprojectone1,
     lbprojectone2,
     lbprojectone3,
-    lbprojectone4,
-    lbprojectone5,
-    lbprojectone6
+    lbprojectone4
   ];
   
-  export default class GraphicsProject1Lightbox extends Component {
+  export default class ArtsProject3 extends Component {
     constructor(props) {
       super(props);
   
@@ -32,7 +30,8 @@ const images = [
   
       return (
         <div>
-          <button className='lightbox-button' type="button" onClick={() => this.setState({ isOpen: true })}><span>Click here for a larger view!</span></button>
+          <button className='lightbox-button' type="button" onClick={() => this.setState({ isOpen: true })}><span>Click here for a larger view!</span>
+          </button>
   
           {isOpen && (
             <Lightbox

@@ -34,7 +34,7 @@ const images = [
   
       return (
         <div>
-          <button className='lightbox-button' type="button" onClick={() => this.setState({ isOpen: true })}>
+          <button className='lightbox-button' type="button" onClick={() => this.setState({ isOpen: true })}><span>Click here for a larger view!</span>
           </button>
   
           {isOpen && (
