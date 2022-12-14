@@ -72,6 +72,7 @@ function GreenHomeLiving(){
                 </div>
                 <div className='design-development'>
                     <h1>Development</h1>
+                    <p>After the brainstorming and layout was done I started coding. For this project, I decided to start branching out, learning more than what was being taught in class. I switched from using Dreamweaver, to start learning Visual Studio Code, and getting use to the hotkeys and other addons that help to save time while coding. I also switched from using normal CSS to a preprocessor. For this project, I also had to capture all my own pictures, or modify others. For me this project was a good learning experience in thinking about layouts using more than floats. I feel like I have come a long way from that project, in both my coding design. You can see the site live<a href='https://web-112-final-project.onrender.com/index.html' target= '_blank'>here</a></p>
                 </div>
             </div>
         </section>
