@@ -1,7 +1,6 @@
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Carousel} from 'react-responsive-carousel'
 import project1 from '../images/graphics-1.webp'
 import GraphicsProject1Lightbox from './graphicsproject1'
 import GraphicsProject2Lightbox from './graphicsproject2'
@@ -14,90 +13,90 @@ function Graphics(){
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
-    // useEffect(()=> {
-    //     const element = ref.current;
-    //     gsap.fromTo(
-    //         element.querySelector(".graphics-one"),
-    //         {
-    //             opacity: 0,
-    //             x: -100
-    //         },
-    //         {
-    //             opacity: 1,
-    //             x: 0,
-    //             duration: .2,
-    //             scrollTrigger: {
-    //                 trigger: element.querySelector(".graphics-hero"),
-    //                 start: "-50%",
-    //                 scrub: true,
-    //                 end: "55%"
-    //             }
-    //         }
-    //     );
-    // },[]);
-    // useEffect(()=> {
-    //     const element = ref.current;
-    //     gsap.fromTo(
-    //         element.querySelector(".graphics-two"),
-    //         {
-    //             opacity: 0,
-    //             y:100
-    //         },
-    //         {
-    //             opacity: 1,
-    //             y:0,
-    //             duration: .7,
-    //             scrollTrigger: {
-    //                 trigger: element.querySelector(".graphics-one"),
-    //                 start: "-65%",
-    //                 scrub: true,
-    //                 end: "10%",
-    //             }
-    //         }
-    //     );
-    // },[]);
-    // useEffect(()=>{
-    //     const element = ref.current;
-    //     gsap.fromTo(
-    //         element.querySelector('.graphics-three'),
-    //         {
-    //             opacity: 0,
-    //             x: -100
-    //         },
-    //         {
-    //             opacity: 1,
-    //             x: 0,
-    //             duration:.7,
-    //             scrollTrigger:{
-    //                 trigger:element.querySelector('.graphics-two'),
-    //                 start: '-160%',
-    //                 scrub: true,
-    //                 end: '-40%'
-    //             }
-    //         }
-    //     );
-    // },[]);
-    // useEffect(()=>{
-    //     const element = ref.current;
-    //     gsap.fromTo(
-    //         element.querySelector('.graphics-four'),
-    //         {
-    //             opacity: 0,
-    //             y:-100
-    //         },
-    //         {
-    //             opacity: 1,
-    //             y: 0,
-    //             duration:.7,
-    //             scrollTrigger:{
-    //                 trigger:element.querySelector('.graphics-three'),
-    //                 start: '-90%',
-    //                 scrub: true,
-    //                 end: '10%'
-    //             }
-    //         }
-    //     );
-    // },[]);
+    useEffect(()=> {
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector(".graphics-one"),
+            {
+                opacity: 0,
+                x: -100
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration: .2,
+                scrollTrigger: {
+                    trigger: element.querySelector(".graphics-hero"),
+                    start: "-50%",
+                    scrub: true,
+                    end: "55%"
+                }
+            }
+        );
+    },[]);
+    useEffect(()=> {
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector(".graphics-two"),
+            {
+                opacity: 0,
+                y:100
+            },
+            {
+                opacity: 1,
+                y:0,
+                duration: .7,
+                scrollTrigger: {
+                    trigger: element.querySelector(".graphics-one"),
+                    start: "-65%",
+                    scrub: true,
+                    end: "10%",
+                }
+            }
+        );
+    },[]);
+    useEffect(()=>{
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector('.graphics-three'),
+            {
+                opacity: 0,
+                x: -100
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration:.7,
+                scrollTrigger:{
+                    trigger:element.querySelector('.graphics-two'),
+                    start: '-160%',
+                    scrub: true,
+                    end: '-40%'
+                }
+            }
+        );
+    },[]);
+    useEffect(()=>{
+        const element = ref.current;
+        gsap.fromTo(
+            element.querySelector('.graphics-four'),
+            {
+                opacity: 0,
+                y:-100
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration:.7,
+                scrollTrigger:{
+                    trigger:element.querySelector('.graphics-three'),
+                    start: '-90%',
+                    scrub: true,
+                    end: '10%'
+                }
+            }
+        );
+    },[]);
     return(
         <section className="content" ref={ref} id='graphics'>
             <div className="content-hero graphics-hero">
@@ -109,7 +108,7 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Card box</h3>
                             <div className='panel-description-img'>
-                                <img src={project1} height="100%" width='700' alt=""/>
+                                <img src={project1} height="100%" width='700' alt="Playing cards"/>
                                 <GraphicsProject1Lightbox />
                             </div>
                             <div className='project-description'>
@@ -119,12 +118,12 @@ function Graphics(){
                                 <li>Adobe Illustrator</li>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/drive/folders/1F3Yz9P-feMVB83g3aMA4MX_vCWeS7rxd?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/1F3Yz9P-feMVB83g3aMA4MX_vCWeS7rxd?usp=sharing" target='_blank' rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project1} height="100%" width='700' alt=""/>
+                        <img src={project1} height="100%" width='700' alt="playing cards"/>
                         <GraphicsProject1Lightbox />
                     </div>
                 </li>
@@ -133,7 +132,7 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Compositing</h3>
                             <div className='panel-description-img'>
-                                <img src={project2} height="100%" width='700' alt=""/>
+                                <img src={project2} height="100%" width='700' alt="Compositing"/>
                                 <GraphicsProject2Lightbox />
                             </div>
                             <div className='project-description'>
@@ -143,12 +142,12 @@ function Graphics(){
                                 <l1>Adobe Photoshop</l1>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/drive/folders/14-w-zOR3h-IKAeTTvIVuGSAxWJ3VGHYg?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/14-w-zOR3h-IKAeTTvIVuGSAxWJ3VGHYg?usp=sharing" target='_blank' rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project2} height="100%" width='700' alt=""/>
+                        <img src={project2} height="100%" width='700' alt="Compositing"/>
                         <GraphicsProject2Lightbox />
                     </div>
                 </li>
@@ -157,7 +156,7 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Typography</h3>
                             <div className='panel-description-img'>
-                            <img src={project3} height="100%" width='700'/>
+                            <img src={project3} height="100%" width='700' alt='Typography'/>
                             <GraphicsProject3Lightbox />
                             </div>
                             <div className='project-description'>
@@ -167,12 +166,12 @@ function Graphics(){
                                 <li>Adobe Illustrator</li>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/drive/folders/1P-_KiIEvVbl1BCohnCVsNqF3WBclOi9c?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/1P-_KiIEvVbl1BCohnCVsNqF3WBclOi9c?usp=sharing" target='_blank' rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project3} height="100%" width='700'/>
+                        <img src={project3} height="100%" width='700' alt='Typography'/>
                         <GraphicsProject3Lightbox />
                     </div>
                 </li>
@@ -181,7 +180,7 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Trompe-l'oeil</h3>
                             <div className='panel-description-img'>
-                                <img src={project4} height="100%" width='277'/>
+                                <img src={project4} height="100%" width='277' alt="Trompe-l'oeil"/>
                                 <GraphicsProject4Lightbox />
                             </div>
                             <div className='project-description'>
@@ -191,12 +190,12 @@ function Graphics(){
                                 <li>Adobe Photoshop</li>
                             </ul>
                             <div className='project-links'>
-                                <a href="https://drive.google.com/drive/folders/1OPq2g6kWPw4xtY77305BXCZc0we3FJLX?usp=sharing" target='_blank' ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
+                                <a href="https://drive.google.com/drive/folders/1OPq2g6kWPw4xtY77305BXCZc0we3FJLX?usp=sharing" target='_blank' rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" fill='white'> <path d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z"></path></svg></a>
                             </div>
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project4} height="100%" width='277'/>
+                        <img src={project4} height="100%" width='277' alt="Trompe-l'oeil"/>
                         <GraphicsProject4Lightbox />
                     </div>
                 </li>

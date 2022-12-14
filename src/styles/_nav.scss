@@ -73,7 +73,7 @@ nav{
         }
         &:hover
         {
-            color:pink;
+            color:$nav-color;
         }
     }
 }
@@ -94,6 +94,16 @@ nav{
         flex-direction: column;
         position: static;
     }
+}
+.Nav_Links li button{
+    border: none;
+    background-color: transparent;
+    color:  whitesmoke;
+    font-size: 1.4rem;
+    @include for-size(tablet-only){
+        font-size: 2rem;
+    }
+
 }
 .dropdown span{
     font-size: .8rem;

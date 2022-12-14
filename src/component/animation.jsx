@@ -66,7 +66,7 @@ function Animation(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <iframe width="auto" height="350" src="http://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                        <iframe width="auto" height="350" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
                 </li>
                 <li className="panel project_two animation-two">

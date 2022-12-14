@@ -309,7 +309,7 @@ nav {
   }
 }
 .Nav_Links > li a:hover {
-  color: pink;
+  color: #1A3461;
 }
 
 .Nav_Links li ul {
@@ -329,6 +329,18 @@ nav {
   .Nav_Links li ul {
     flex-direction: column;
     position: static;
+  }
+}
+
+.Nav_Links li button {
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .Nav_Links li button {
+    font-size: 2rem;
   }
 }
 
