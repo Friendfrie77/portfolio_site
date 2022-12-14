@@ -14,90 +14,90 @@ function Graphics(){
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
-    useEffect(()=> {
-        const element = ref.current;
-        gsap.fromTo(
-            element.querySelector(".graphics-one"),
-            {
-                opacity: 0,
-                x: -100
-            },
-            {
-                opacity: 1,
-                x: 0,
-                duration: .2,
-                scrollTrigger: {
-                    trigger: element.querySelector(".graphics-hero"),
-                    start: "-50%",
-                    scrub: true,
-                    end: "55%"
-                }
-            }
-        );
-    },[]);
-    useEffect(()=> {
-        const element = ref.current;
-        gsap.fromTo(
-            element.querySelector(".graphics-two"),
-            {
-                opacity: 0,
-                y:100
-            },
-            {
-                opacity: 1,
-                y:0,
-                duration: .7,
-                scrollTrigger: {
-                    trigger: element.querySelector(".graphics-one"),
-                    start: "-65%",
-                    scrub: true,
-                    end: "10%",
-                }
-            }
-        );
-    },[]);
-    useEffect(()=>{
-        const element = ref.current;
-        gsap.fromTo(
-            element.querySelector('.graphics-three'),
-            {
-                opacity: 0,
-                x: -100
-            },
-            {
-                opacity: 1,
-                x: 0,
-                duration:.7,
-                scrollTrigger:{
-                    trigger:element.querySelector('.graphics-two'),
-                    start: '-160%',
-                    scrub: true,
-                    end: '-40%'
-                }
-            }
-        );
-    },[]);
-    useEffect(()=>{
-        const element = ref.current;
-        gsap.fromTo(
-            element.querySelector('.graphics-four'),
-            {
-                opacity: 0,
-                y:-100
-            },
-            {
-                opacity: 1,
-                y: 0,
-                duration:.7,
-                scrollTrigger:{
-                    trigger:element.querySelector('.graphics-three'),
-                    start: '-90%',
-                    scrub: true,
-                    end: '10%'
-                }
-            }
-        );
-    },[]);
+    // useEffect(()=> {
+    //     const element = ref.current;
+    //     gsap.fromTo(
+    //         element.querySelector(".graphics-one"),
+    //         {
+    //             opacity: 0,
+    //             x: -100
+    //         },
+    //         {
+    //             opacity: 1,
+    //             x: 0,
+    //             duration: .2,
+    //             scrollTrigger: {
+    //                 trigger: element.querySelector(".graphics-hero"),
+    //                 start: "-50%",
+    //                 scrub: true,
+    //                 end: "55%"
+    //             }
+    //         }
+    //     );
+    // },[]);
+    // useEffect(()=> {
+    //     const element = ref.current;
+    //     gsap.fromTo(
+    //         element.querySelector(".graphics-two"),
+    //         {
+    //             opacity: 0,
+    //             y:100
+    //         },
+    //         {
+    //             opacity: 1,
+    //             y:0,
+    //             duration: .7,
+    //             scrollTrigger: {
+    //                 trigger: element.querySelector(".graphics-one"),
+    //                 start: "-65%",
+    //                 scrub: true,
+    //                 end: "10%",
+    //             }
+    //         }
+    //     );
+    // },[]);
+    // useEffect(()=>{
+    //     const element = ref.current;
+    //     gsap.fromTo(
+    //         element.querySelector('.graphics-three'),
+    //         {
+    //             opacity: 0,
+    //             x: -100
+    //         },
+    //         {
+    //             opacity: 1,
+    //             x: 0,
+    //             duration:.7,
+    //             scrollTrigger:{
+    //                 trigger:element.querySelector('.graphics-two'),
+    //                 start: '-160%',
+    //                 scrub: true,
+    //                 end: '-40%'
+    //             }
+    //         }
+    //     );
+    // },[]);
+    // useEffect(()=>{
+    //     const element = ref.current;
+    //     gsap.fromTo(
+    //         element.querySelector('.graphics-four'),
+    //         {
+    //             opacity: 0,
+    //             y:-100
+    //         },
+    //         {
+    //             opacity: 1,
+    //             y: 0,
+    //             duration:.7,
+    //             scrollTrigger:{
+    //                 trigger:element.querySelector('.graphics-three'),
+    //                 start: '-90%',
+    //                 scrub: true,
+    //                 end: '10%'
+    //             }
+    //         }
+    //     );
+    // },[]);
     return(
         <section className="content" ref={ref} id='graphics'>
             <div className="content-hero graphics-hero">
