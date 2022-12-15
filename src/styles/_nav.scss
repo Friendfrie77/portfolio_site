@@ -100,6 +100,7 @@ nav{
     background-color: transparent;
     color:  whitesmoke;
     font-size: 1.4rem;
+    padding: 0;
     @include for-size(tablet-only){
         font-size: 2rem;
     }

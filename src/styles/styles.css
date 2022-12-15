@@ -337,6 +337,7 @@ nav {
   background-color: transparent;
   color: whitesmoke;
   font-size: 1.4rem;
+  padding: 0;
 }
 @media (max-width: 768px) {
   .Nav_Links li button {
