@@ -619,6 +619,11 @@ footer span {
     width: 100%;
   }
 }
+@media (max-width: 300px) {
+  .tech-skills {
+    flex-direction: column;
+  }
+}
 .tech-skills span {
   color: whitesmoke;
   font-family: "IBM_Plex_Sans";

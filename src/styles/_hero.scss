@@ -143,6 +143,9 @@
     @include for-size(large-phone-only){
         width: 100%;
     }
+    @include for-size(small-phone-only){
+        flex-direction: column;
+    }
     span{
         color: whitesmoke;
         font-family: $Header-font;
