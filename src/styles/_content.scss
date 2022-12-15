@@ -100,7 +100,9 @@
     @include for-size(tablet-only){
         text-align: center;
         font-size:1.85rem
-        
+    }
+    @include for-size(small-phone-only){
+        font-size: 1.6rem;
     }
 }
 .project-description{
@@ -199,6 +201,9 @@
         display: none;
         @include for-size(tablet-only){
             display: block;
+        }
+        @include for-size(small-phone-only){
+            font-size: 1rem;
         }
     }
 

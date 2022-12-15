@@ -59,6 +59,9 @@
             @include for-size(tablet-only){
                 font-size: 3rem;
             }
+            @include for-size(small-phone-only){
+                font-size: 2rem;
+            }
         }
         span:first-of-type{
             @include for-size(phone-only){
