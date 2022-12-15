@@ -1,6 +1,6 @@
 import {NavHashLink} from 'react-router-hash-link'
 import {useRef} from "react";
-// import logo from '../images/Untitled-1.svg'
+import logo1 from '../images/logo2.png'
 import logo from '../images/logo2.svg'
 
 function Nav(){
@@ -14,7 +14,7 @@ function Nav(){
     return(
         <nav>
             <div className="logo">
-                <img src={logo} height='50px' width='100%' alt="logo"></img>
+                <img src={logo1} height='50px' width='100%' alt="logo"></img>
             </div>
             <div className='socials'>
 

@@ -1,15 +1,12 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Carousel} from 'react-responsive-carousel';
 import art1 from '../images/art_1.webp';
 import ArtsProject1 from './artsproject1';
 import art2 from '../images/art_2.webp';
 import ArtsProject2 from './artsproject2';
 import arts3 from '../images/arts_3.webp';
 import ArtsProject3 from './artsproject3';
-import arts3_1 from '../images/arts_3_1.webp';
-import arts3_2 from '../images/arts_3_2.webp';
 function Arts(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
