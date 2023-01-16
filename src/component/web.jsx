@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import toebean from '../images/test2.webp';
 import site2 from '../images/site2.webp';
 import SqlFinal from '../images/test3.webp'
+import OOP from '../images/OOP.webp'
 function Web(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -172,7 +173,7 @@ function Web(){
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>OOP Final</h3>
-                            <img className='panel-description-img' src={SqlFinal} height="100%" width='700' alt="Sql Final"/>
+                            <img className='panel-description-img' src={OOP} height="100%" width='700' alt="Sql Final"/>
                             <div className='project-description'>
                                 <p>For this project I was tasked with making a full application using OOP to make a bike rental app. While the base classes where given, I heavily modified and added to the classes for them to fit specifications given. I coded and debugged the program over the course of a week. You can find the code in the GitHub link below.</p>
                             </div>
@@ -185,7 +186,7 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={SqlFinal} height="100%" width='700' alt='OOP final'/>
+                        <img src={OOP} height="100%" width='700' alt='OOP final'/>
                     </div>
                 </li>
             </ul>

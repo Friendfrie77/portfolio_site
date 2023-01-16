@@ -337,6 +337,7 @@ nav {
   background-color: transparent;
   color: whitesmoke;
   font-size: 1.4rem;
+  padding: 0;
 }
 @media (max-width: 768px) {
   .Nav_Links li button {
@@ -522,6 +523,11 @@ footer span {
     font-size: 3rem;
   }
 }
+@media (max-width: 300px) {
+  .hero-img h1 span {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 460px) {
   .hero-img h1 span:first-of-type {
     padding-right: 10px;
@@ -611,6 +617,11 @@ footer span {
 @media (max-width: 535px) {
   .tech-skills {
     width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .tech-skills {
+    flex-direction: column;
   }
 }
 .tech-skills span {
@@ -882,6 +893,11 @@ footer span {
     font-size: 1.85rem;
   }
 }
+@media (max-width: 300px) {
+  .project-title {
+    font-size: 1.6rem;
+  }
+}
 
 .project-description {
   position: relative;
@@ -993,6 +1009,11 @@ footer span {
 @media (max-width: 768px) {
   .lightbox-button span {
     display: block;
+  }
+}
+@media (max-width: 300px) {
+  .lightbox-button span {
+    font-size: 1rem;
   }
 }
 
