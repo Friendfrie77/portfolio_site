@@ -861,6 +861,9 @@ footer span {
   .panel:nth-child(even) .tech-list, .panel:nth-child(even) .project-links {
     justify-content: flex-end;
   }
+  .panel:nth-child(even) .tech-list a, .panel:nth-child(even) .project-links a {
+    padding-left: 5px;
+  }
 }
 
 .panel-description {
@@ -977,7 +980,7 @@ footer span {
   margin-top: 5px;
 }
 .project-links a {
-  color: white;
+  margin-left: 5px;
 }
 
 .lightbox-button {
