@@ -105,7 +105,7 @@ function Web(){
                             <h3 className='project-title'>Toebean Sanctuary</h3>
                             <img className='panel-description-img' src={toebean} height="100%" width='700' alt=""/>
                             <div className='project-description'>
-                                <p>For this project I was tasked with making a site with using technology that I haven’t used before. To answer that task, I choose to make a full stack site using the Flask framework for a made-up cat sanctuary/adoption center. To handle data I used PostgreSQL, to store uses emails, and sign-ups for voluntaries. This project allowed me to start learning how to work with databases better, and to better handle JSON data.</p>
+                                <p>For this project I was tasked with making a site with using technology that I haven’t used before. To answer that task, I choose to make a full stack site using the Flask framework for a made-up cat sanctuary/adoption center. To handle data I used PostgreSQL, to store uses emails, and sign-ups for voluntaries. This project allowed me to start learning how to work with databases better, and to better handle JSON data. Please note, the first load of the page might be slow as it is runing on an Azure free tier.</p>
                             </div>
                             <ul className='tech-list'>
                                 <li>Flask</li>

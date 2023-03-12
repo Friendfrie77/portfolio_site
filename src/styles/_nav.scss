@@ -51,8 +51,7 @@ nav{
     margin: 0 1rem;
     position: relative;
     @include for-size(tablet-only){
-        text-align: center;
-        
+        text-align: center;        
     }
     &:first-child{
         @include for-size(tablet-only){
