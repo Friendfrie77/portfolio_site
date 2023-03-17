@@ -7,7 +7,7 @@ import GraphicsProject2Lightbox from './graphicsproject2'
 import GraphicsProject3Lightbox from './graphicsproject3'
 import GraphicsProject4Lightbox from './graphicsproject4'
 import project2 from '../images/graphics-2.webp'
-import project3 from '../images/graphics-3.webp'
+import project3 from '../images/graphics/typography_final.webp'
 import project4 from '../images/graphics-4.webp'
 function Graphics(){
 
@@ -171,7 +171,7 @@ function Graphics(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project3} height="100%" width='700' alt='Typography'/>
+                        <img src={project3} height="100%" width='auto' alt='Typography'/>
                         <GraphicsProject3Lightbox />
                     </div>
                 </li>

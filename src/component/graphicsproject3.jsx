@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import Lightbox from "react-18-image-lightbox";
 import lbprojectthree1 from '../images/graphics/draft.webp'
 import lbprojectthree2 from '../images/graphics/draft2.webp'
 import lbprojectthree3 from '../images/graphics/Final.webp'
+import lbprojectthree4 from '../images/graphics/typography_final.webp'
 
 const images = [
+    lbprojectthree4,
     lbprojectthree1,
     lbprojectthree2,
     lbprojectthree3
