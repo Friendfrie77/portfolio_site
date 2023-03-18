@@ -1,14 +1,14 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import project1 from '../images/graphics-1.webp'
+import project1 from '../images/graphics/main-page/playing-cards.webp'
 import GraphicsProject1Lightbox from './graphicsproject1'
 import GraphicsProject2Lightbox from './graphicsproject2'
 import GraphicsProject3Lightbox from './graphicsproject3'
 import GraphicsProject4Lightbox from './graphicsproject4'
-import project2 from '../images/graphics-2.webp'
-import project3 from '../images/graphics/typography_final.webp'
-import project4 from '../images/graphics-4.webp'
+import project2 from '../images/graphics/main-page/splicers-web.webp'
+import project3 from '../images/graphics/main-page/typography.webp'
+import project4 from '../images/graphics/main-page/deadlift-gym.webp'
 function Graphics(){
 
     gsap.registerPlugin(ScrollTrigger);

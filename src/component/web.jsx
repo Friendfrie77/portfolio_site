@@ -2,10 +2,11 @@ import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
-import toebean from '../images/test2.webp';
-import site2 from '../images/site2.webp';
-import SqlFinal from '../images/test3.webp'
-import OOP from '../images/OOP.webp'
+import toebean from '../images/web/test2.webp';
+import tracker from '../images/web/tracker.webp'
+import site2 from '../images/web/site2.webp';
+import SqlFinal from '../images/web/test3.webp'
+import OOP from '../images/web/OOP.webp'
 function Web(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -124,7 +125,7 @@ function Web(){
                     <div className='panel-description'>
                         <div>
                             <h3 className="project-title">Period Tracker (Work in Progress)</h3>
-                            <img className='panel-description-img' src={toebean} height="100%" width='700' alt="test"/>
+                            <img className='panel-description-img' src={tracker} height="100%" width='700' alt="period tracker login"/>
                             <div className='project-description'>
                                 <p>For this project, I was tasked to make a simple period tracking application. I used this as an opportunity to get a better understanding of React and the MERN stack in general. At the moment, the site offers basic tracking using Planned Parnethoods method of tracking found on their website. More features will be added at a later date, once the accuracy of the application can be honed in.</p>
                             </div>
@@ -142,14 +143,14 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={toebean} height="100%" width='700' alt=""/>
+                        <img src={tracker} height="100%" width='700' alt="period tracker login"/>
                     </div>
                 </li>
                 <li className="panel project-one web-one">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Toebean Sanctuary</h3>
-                            <img className='panel-description-img' src={toebean} height="100%" width='700' alt=""/>
+                            <img className='panel-description-img' src={toebean} height="100%" width='700' alt="Toebean Sanctuary"/>
                             <div className='project-description'>
                                 <p>For this project I was tasked with making a site with using technology that I haven’t used before. To answer that task, I choose to make a full stack site using the Flask framework for a made-up cat sanctuary/adoption center. To handle data I used PostgreSQL, to store uses emails, and sign-ups for voluntaries. This project allowed me to start learning how to work with databases better, and to better handle JSON data. Please note, the first load of the page might be slow as it is runing on an Azure free tier.</p>
                             </div>
@@ -167,7 +168,7 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={toebean} height="100%" width='700' alt=""/>
+                        <img src={toebean} height="100%" width='700' alt="Toebean Sanctuary"/>
                     </div>
                 </li>
                 <li className="panel project-two web-two">

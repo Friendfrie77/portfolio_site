@@ -86,12 +86,10 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -231,7 +229,6 @@ nav {
   background-color: #000155;
   height: 75px;
   padding: 1rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -406,8 +403,8 @@ nav {
 }
 @media (max-width: 768px) {
   .Mobile_Nav,
-.Mobile_Nav::before,
-.Mobile_Nav::after {
+  .Mobile_Nav::before,
+  .Mobile_Nav::after {
     display: flex;
   }
 }
@@ -679,7 +676,7 @@ footer span {
 }
 .web-hero::before {
   content: "";
-  background-image: url("../images/web-background.webp");
+  background-image: url("../images/heros/web-background.webp");
   display: block;
   position: absolute;
   left: 0;
@@ -697,7 +694,7 @@ footer span {
 }
 .graphics-hero::before {
   content: "";
-  background-image: url("../images/Artboard_1.webp");
+  background-image: url("../images/heros/Artboard_1.webp");
   display: block;
   position: absolute;
   left: 0;
@@ -717,7 +714,7 @@ footer span {
 }
 .arts-hero::before {
   content: "";
-  background-image: url("../images/fine_arts_hero.webp");
+  background-image: url("../images/heros/fine_arts_hero.webp");
   display: block;
   position: absolute;
   left: 0;
@@ -735,7 +732,7 @@ footer span {
 }
 .animation-hero::before {
   content: "";
-  background-image: url("../images/animation_hero.webp");
+  background-image: url("../images/heros/animation_hero.webp");
   display: block;
   position: absolute;
   left: 0;
@@ -831,7 +828,7 @@ footer span {
   .panel:nth-child(even) .panel-description {
     grid-area: 1/1/1/12;
     width: 100%;
-    background-color: hsla(218deg, 58%, 16%, 0.9);
+    background-color: hsla(218, 58%, 16%, 0.9);
     border-radius: 10px;
     margin: 0;
   }
@@ -876,7 +873,7 @@ footer span {
   .panel-description {
     grid-area: 1/1/1/12;
     width: 100%;
-    background-color: hsla(218deg, 58%, 16%, 0.9);
+    background-color: hsla(218, 58%, 16%, 0.9);
     border-radius: 10px;
   }
 }
@@ -903,9 +900,9 @@ footer span {
   position: relative;
   padding: 20px;
   margin-left: 50px;
-  background-color: hsla(218deg, 58%, 16%, 0.95);
+  background-color: hsla(218, 58%, 16%, 0.95);
   border-radius: 10px;
-  box-shadow: 0 10px 30px -15px hsl(218deg, 58%, 16%);
+  box-shadow: 0 10px 30px -15px hsl(218, 58%, 16%);
 }
 .project-description p {
   color: whitesmoke;
@@ -913,7 +910,7 @@ footer span {
 @media (max-width: 768px) {
   .project-description {
     margin: auto;
-    background-color: hsla(218deg, 58%, 16%, 0);
+    background-color: hsla(218, 58%, 16%, 0);
     box-shadow: none;
   }
 }
@@ -1164,7 +1161,7 @@ input[data-autocompleted] {
   height: 100%;
   max-width: 290px;
   pointer-events: none;
-  color: hsl(0deg, 0%, 50%);
+  color: hsl(0, 0%, 50%);
   transform: all 0.2s ease;
 }
 .contact-text label:before {
@@ -1261,15 +1258,6 @@ input[data-autocompleted] {
 
 .contact-text textarea:focus + .contact-text-lable:after, .contact-text textarea:valid + .contact-text-lable:after {
   translate: 100%;
-}
-
-@-webkit-keyframes closeWindow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes closeWindow {
@@ -1470,17 +1458,7 @@ input[data-autocompleted] {
 }
 
 .ril__outerAnimating {
-  -webkit-animation-name: closeWindow;
-          animation-name: closeWindow;
-}
-
-@-webkit-keyframes pointFade {
-  0%, 19.999%, 100% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
+  animation-name: closeWindow;
 }
 
 @keyframes pointFade {
@@ -1513,8 +1491,7 @@ input[data-autocompleted] {
   height: 30%;
   background-color: #fff;
   border-radius: 30%;
-  -webkit-animation: pointFade 800ms infinite ease-in-out both;
-          animation: pointFade 800ms infinite ease-in-out both;
+  animation: pointFade 800ms infinite ease-in-out both;
 }
 
 .ril__loadingCirclePoint:nth-of-type(1) {
@@ -1527,8 +1504,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(1)::before,
 .ril__loadingCirclePoint:nth-of-type(7)::before {
-  -webkit-animation-delay: -800ms;
-          animation-delay: -800ms;
+  animation-delay: -800ms;
 }
 
 .ril__loadingCirclePoint:nth-of-type(2) {
@@ -1541,8 +1517,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(2)::before,
 .ril__loadingCirclePoint:nth-of-type(8)::before {
-  -webkit-animation-delay: -666ms;
-          animation-delay: -666ms;
+  animation-delay: -666ms;
 }
 
 .ril__loadingCirclePoint:nth-of-type(3) {
@@ -1555,8 +1530,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(3)::before,
 .ril__loadingCirclePoint:nth-of-type(9)::before {
-  -webkit-animation-delay: -533ms;
-          animation-delay: -533ms;
+  animation-delay: -533ms;
 }
 
 .ril__loadingCirclePoint:nth-of-type(4) {
@@ -1569,8 +1543,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(4)::before,
 .ril__loadingCirclePoint:nth-of-type(10)::before {
-  -webkit-animation-delay: -400ms;
-          animation-delay: -400ms;
+  animation-delay: -400ms;
 }
 
 .ril__loadingCirclePoint:nth-of-type(5) {
@@ -1583,8 +1556,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(5)::before,
 .ril__loadingCirclePoint:nth-of-type(11)::before {
-  -webkit-animation-delay: -266ms;
-          animation-delay: -266ms;
+  animation-delay: -266ms;
 }
 
 .ril__loadingCirclePoint:nth-of-type(6) {
@@ -1597,8 +1569,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(6)::before,
 .ril__loadingCirclePoint:nth-of-type(12)::before {
-  -webkit-animation-delay: -133ms;
-          animation-delay: -133ms;
+  animation-delay: -133ms;
 }
 
 .ril__loadingCirclePoint:nth-of-type(7) {
@@ -1611,8 +1582,7 @@ input[data-autocompleted] {
 
 .ril__loadingCirclePoint:nth-of-type(7)::before,
 .ril__loadingCirclePoint:nth-of-type(13)::before {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  animation-delay: 0ms;
 }
 
 .ril__loadingContainer {

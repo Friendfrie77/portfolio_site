@@ -1,10 +1,10 @@
 import heropic from "../images/selfie.webp"
-import java from '../images/logo-javascript.svg'
-import python from '../images/python.svg'
-import post from '../images/postgresql.svg'
-import photoshop from '../images/adobe-photoshop.svg'
-import illustrator from '../images/adobe-illustrator.svg'
-import flask from '../images/flask.svg'
+import java from '../images/svgs/logo-javascript.svg'
+import python from '../images/svgs/python.svg'
+import post from '../images/svgs/postgresql.svg'
+import photoshop from '../images/svgs/adobe-photoshop.svg'
+import illustrator from '../images/svgs/adobe-illustrator.svg'
+import flask from '../images/svgs/flask.svg'
 import resume from '../Friend_Albert_Resume.pdf'
 function hero(){
     return(

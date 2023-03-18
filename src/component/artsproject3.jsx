@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import Lightbox from "react-18-image-lightbox";
-import lbprojectone1 from '../images/art/wed1.webp'
-import lbprojectone2 from '../images/art/wed2.webp'
-import lbprojectone3 from '../images/art/wed3.webp'
-import lbprojectone4 from '../images/art/wed4.webp'
+import lbprojectone1 from '../images/art/arts-3/wed1.webp'
+import lbprojectone2 from '../images/art/arts-3/wed2.webp'
+import lbprojectone3 from '../images/art/arts-3/wed3.webp'
+import lbprojectone4 from '../images/art/arts-3/wed4.webp'
 
 
 

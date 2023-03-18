@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import Lightbox from "react-18-image-lightbox";
-import lbprojectone1 from '../images/art/fullshot1.webp'
-import lbprojectone2 from '../images/art/fullshot2.webp'
-import lbprojectone3 from '../images/art/fullshot3.webp'
-import lbprojectone4 from '../images/art/analogous.webp'
-import lbprojectone5 from '../images/art/chromatic.webp'
-import lbprojectone6 from '../images/art/monochrome.webp'
+import lbprojectone1 from '../images/art/arts-2/fullshot1.webp'
+import lbprojectone2 from '../images/art/arts-2/fullshot2.webp'
+import lbprojectone3 from '../images/art/arts-2/fullshot3.webp'
+import lbprojectone4 from '../images/art/arts-2/analogous.webp'
+import lbprojectone5 from '../images/art/arts-2/chromatic.webp'
+import lbprojectone6 from '../images/art/arts-2/monochrome.webp'
 
 
 const images = [

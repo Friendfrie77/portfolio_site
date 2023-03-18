@@ -1,11 +1,11 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import art1 from '../images/art_1.webp';
+import art1 from '../images/art/main-page/art_1.webp';
 import ArtsProject1 from './artsproject1';
-import art2 from '../images/art_2.webp';
+import art2 from '../images/art/main-page/art_2.webp';
 import ArtsProject2 from './artsproject2';
-import arts3 from '../images/arts_3.webp';
+import arts3 from '../images/art/main-page/arts_3.webp';
 import ArtsProject3 from './artsproject3';
 function Arts(){
     gsap.registerPlugin(ScrollTrigger);

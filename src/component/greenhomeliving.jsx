@@ -1,13 +1,13 @@
-import brainstorming1 from '../images/brainstorming-1.webp';
-import brainstorming2 from '../images/brainstorming-2.webp';
-import sitereserch from '../images/site-research.webp';
-import sitegoals from '../images/site-goals.webp';
-import sketch1 from '../images/green-sketch-1.webp';
-import sketch2 from '../images/green-sketch-2.webp';
-import sketch3 from '../images/green-sketch-3.webp';
-import greenlogo from '../images/green-logo.svg';
-import greenflow from '../images/green-flowchart.webp';
-import greenfinal from '../images/green-layout.webp';
+import brainstorming1 from '../images/greenhomeliving/images/brainstorming-1.webp';
+import brainstorming2 from '../images/greenhomeliving/images/brainstorming-2.webp';
+import sitereserch from '../images/greenhomeliving/images/site-research.webp';
+import sitegoals from '../images/greenhomeliving/images/site-goals.webp';
+import sketch1 from '../images/greenhomeliving/images/green-sketch-1.webp';
+import sketch2 from '../images/greenhomeliving/images/green-sketch-2.webp';
+import sketch3 from '../images/greenhomeliving/images/green-sketch-3.webp';
+import greenlogo from '../images/greenhomeliving/svg/green-logo.svg';
+import greenflow from '../images/greenhomeliving/images/green-flowchart.webp';
+import greenfinal from '../images/greenhomeliving/images/green-layout.webp';
 import { Carousel} from 'react-responsive-carousel';
 function GreenHomeLiving(){
     return(

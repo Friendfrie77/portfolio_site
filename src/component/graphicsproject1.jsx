@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import Lightbox from "react-18-image-lightbox";
-import lbprojectone1 from '../images/graphics/Artboard 1.webp'
-import lbprojectone2 from '../images/graphics/Artboard 4 copy 2.webp'
-import lbprojectone3 from '../images/graphics/Artboard 4 copy 3.webp'
-import lbprojectone4 from '../images/graphics/Artboard 4 copy 4.webp'
-import lbprojectone5 from '../images/graphics/Artboard 4 copy.webp'
-import lbprojectone6 from '../images/graphics/Artboard 4.webp'
+import lbprojectone1 from '../images/graphics/graphics-1/photo_0007.webp'
+import lbprojectone2 from '../images/graphics/graphics-1/photo_0002.webp'
+import lbprojectone3 from '../images/graphics/graphics-1/photo_0003.webp'
+import lbprojectone4 from '../images/graphics/graphics-1/photo_0005.webp'
+import lbprojectone5 from '../images/graphics/graphics-1/photo_0006.webp'
+import lbprojectone6 from '../images/graphics/graphics-1/photo_0004.webp'
+import lbprojectone7 from '../images/graphics/graphics-1/photo_0001.webp'
 
 const images = [
     lbprojectone1,
@@ -14,7 +14,8 @@ const images = [
     lbprojectone3,
     lbprojectone4,
     lbprojectone5,
-    lbprojectone6
+    lbprojectone6,
+    lbprojectone7,
   ];
   
   export default class GraphicsProject1Lightbox extends Component {

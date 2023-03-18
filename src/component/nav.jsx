@@ -30,8 +30,8 @@ function Nav(){
                         <li className='Nav_Item'><NavHashLink
                         className='dropdown_link' onClick={checkChange} to="/#web">Development</NavHashLink></li>
                         <li className='Nav_Item'><NavHashLink onClick={checkChange} to='/#graphics' className='dropdown_link'>Graphics</NavHashLink></li>
-                        <li className='Nav_Item'><NavHashLink className='dropdown_link' onClick={checkChange} to='/#animation'>Animation</NavHashLink></li>
                         <li className='Nav_Item'><NavHashLink className='dropdown_link' onClick={checkChange} smooth to='#arts'>Fine Art</NavHashLink></li>
+                        <li className='Nav_Item'><NavHashLink className='dropdown_link' onClick={checkChange} to='/#animation'>Animation</NavHashLink></li>
                     </ul>
                 </li>
                 <li className='Nav_Item'><NavHashLink onClick={checkChange} to="#contact">Contact Me</NavHashLink></li>

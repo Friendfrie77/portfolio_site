@@ -3,7 +3,7 @@
     min-height: 55vh;
     &::before{
         content:"";
-        background-image: url('../images/web-background.webp');
+        background-image: url('../images/heros/web-background.webp');
         display: block;
         position: absolute;
         left: 0;
@@ -21,7 +21,7 @@
     min-height: 55vh;
     &::before{
         content:"";
-        background-image: url('../images/Artboard_1.webp');
+        background-image: url('../images/heros/Artboard_1.webp');
         display: block;
         position: absolute;
         left: 0;
@@ -41,7 +41,7 @@
     background-color: #0d2960;
     &::before{
         content:"";
-        background-image: url('../images/fine_arts_hero.webp');
+        background-image: url('../images/heros/fine_arts_hero.webp');
         display: block;
         position: absolute;
         left: 0;
@@ -59,7 +59,7 @@
     min-height: 55vh;
     &::before{
         content:"";
-        background-image: url('../images/animation_hero.webp');
+        background-image: url('../images/heros/animation_hero.webp');
         display: block;
         position: absolute;
         left: 0;

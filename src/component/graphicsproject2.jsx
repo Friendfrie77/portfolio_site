@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import Lightbox from "react-18-image-lightbox";
-import lbprojecttwo1 from '../images/graphics/friend-bitmap-final.webp'
+import photo1 from '../images/graphics/graphics-2/photo_02.webp';
+import photo2 from '../images/graphics/graphics-2/photo_01.webp';
 
 const images = [
-    lbprojecttwo1
+    photo1,
+    photo2
   ];
   
   export default class GraphicsProject2Lightbox extends Component {

@@ -10,8 +10,8 @@ function Index(){
             <Hero />
             <Web />
             <Graphics />
-            <Animation />
             <Arts />
+            <Animation />
         </div>
     )
 };
