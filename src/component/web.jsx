@@ -127,7 +127,7 @@ function Web(){
                             <h3 className="project-title">Period Tracker (Work in Progress)</h3>
                             <img className='panel-description-img' src={tracker} height="100%" width='700' alt="period tracker login"/>
                             <div className='project-description'>
-                                <p>For this project, I was tasked to make a simple period tracking application. I used this as an opportunity to get a better understanding of React and the MERN stack in general. At the moment, the site offers basic tracking using Planned Parnethoods method of tracking found on their website. More features will be added at a later date, once the accuracy of the application can be honed in.</p>
+                                <p>For this project, I was tasked to make a simple period tracking application. I used this as an opportunity to get a better understanding of React and the MERN stack in general. At the moment, the site offers basic tracking using Planned Parnethoods method of tracking found on their website. More features will be added at a later date, once the accuracy of the application can be honed in. Please note, the back end server is currently running of a free tier server, so it is slow to log in.</p>
                             </div>
                             <ul className='tech-list'>
                                 <li>React</li>
