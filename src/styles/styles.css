@@ -971,6 +971,10 @@ footer span {
   z-index: 1000;
 }
 
+.card-picture {
+  grid-area: 1/4/1/8;
+}
+
 .project-links {
   display: flex;
   justify-content: flex-end;

@@ -108,7 +108,7 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Card box</h3>
                             <div className='panel-description-img'>
-                                <img src={project1} height="100%" width='700' alt="Playing cards"/>
+                                <img src={project1} height="auto" width='338' alt="Playing cards"/>
                                 <GraphicsProject1Lightbox />
                             </div>
                             <div className='project-description'>
@@ -122,8 +122,8 @@ function Graphics(){
                             </div>
                         </div>
                     </div>
-                    <div className='panel-picture'>
-                        <img src={project1} height="100%" width='700' alt="playing cards"/>
+                    <div className='panel-picture card-picture'>
+                        <img src={project1} height="auto" width='338' alt="playing cards"/>
                         <GraphicsProject1Lightbox />
                     </div>
                 </li>
@@ -180,7 +180,7 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Trompe-l'oeil</h3>
                             <div className='panel-description-img'>
-                                <img src={project4} height="100%" width='277' alt="Trompe-l'oeil"/>
+                                <img src={project4} height="auto" width='338' alt="Trompe-l'oeil"/>
                                 <GraphicsProject4Lightbox />
                             </div>
                             <div className='project-description'>
@@ -195,7 +195,7 @@ function Graphics(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project4} height="100%" width='277' alt="Trompe-l'oeil"/>
+                        <img src={project4} height="auto" width='338' alt="Trompe-l'oeil"/>
                         <GraphicsProject4Lightbox />
                     </div>
                 </li>
