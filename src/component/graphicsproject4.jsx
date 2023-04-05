@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Lightbox from "react-18-image-lightbox";
+import photo0 from '../images/graphics/graphics-4/photo_0.webp'
 import photo1 from '../images/graphics/graphics-4/photo_01.webp'
 import photo2 from '../images/graphics/graphics-4/photo_02.webp'
 
 const images = [
+    photo0,
     photo1,
     photo2
   ];
