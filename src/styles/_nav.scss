@@ -193,7 +193,7 @@ footer{
     text-align: center;
     span{
         color: #fff;
-        font-size: 1.1rem;
+        font-size: var(--fs-footer);
         font-family: $Header-font;
     }
 }

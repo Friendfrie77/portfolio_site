@@ -19,7 +19,7 @@
         margin: 25px;
         background-color: $background-color-2;
         @include for-size(tablet-only){
-            min-width: 100vw;
+            min-width: 95%;
         }
         @include for-size(small-desktop){
             width: 50%;

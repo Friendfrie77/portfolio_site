@@ -7,6 +7,7 @@ $background-color-5:#000155;
 $backgroung-grad: linear-gradient(180deg, $background-color-5 10%, $background-color-4 25%, $background-color-3 85%, $background-color-1 100%);
 $Header-font: 'IBM_Plex_Sans';
 $Copy-font: 'Roboto';
+
 @mixin for-size($size){
     @if $size == tablet-only{
         @media (max-width: 768px){ @content;}
@@ -34,6 +35,10 @@ $Copy-font: 'Roboto';
     }
 }
 
+:root{
+    --fs-hero-name: clamp(1rem, calc(5vw + 1rem), 6rem);
+    --fs-footer:clamp(.5rem, calc(2.5vw + .2rem), 1.5rem);
+}
 /* Font families */
 @font-face{
     font-family: 'IBM_Plex_Sans';
