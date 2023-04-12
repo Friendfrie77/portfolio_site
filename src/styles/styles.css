@@ -1218,6 +1218,9 @@ input[data-autocompleted] {
   padding: 15px;
   font-size: 1.25rem;
 }
+.brainstorming a, .design-development a {
+  color: whitesmoke;
+}
 
 .design-carousel {
   display: grid;

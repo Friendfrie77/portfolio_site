@@ -7,6 +7,8 @@ import tracker from '../images/web/tracker.webp'
 import site2 from '../images/web/site2.webp';
 import SqlFinal from '../images/web/test3.webp'
 import OOP from '../images/web/OOP.webp'
+import test from '../images/web/test.webm'
+import toebeansvideo from '../images/web/toebeans.webm'
 function Web(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -125,7 +127,10 @@ function Web(){
                     <div className='panel-description'>
                         <div>
                             <h3 className="project-title">Period Tracker (Work in Progress)</h3>
-                            <img className='panel-description-img' src={tracker} height="100%" width='700' alt="period tracker login"/>
+                            <video className='panel-description-img' height='100%' width='100%' controls>
+                                <source className='panel-description-img' src={test} typeof='video/webm'></source>
+                            </video>
+                            {/* <img className='panel-description-img' src={tracker} height="100%" width='700' alt="period tracker login"/> */}
                             <div className='project-description'>
                                 <p>For this project, I was tasked to make a simple period tracking application. I used this as an opportunity to get a better understanding of React and the MERN stack in general. At the moment, the site offers basic tracking using Planned Parnethoods method of tracking found on their website. More features will be added at a later date, once the accuracy of the application can be honed in. Please note, the back end server is currently running of a free tier server, so it is slow to log in.</p>
                             </div>
@@ -143,14 +148,19 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={tracker} height="100%" width='700' alt="period tracker login"/>
+                        <video height='100%' width='100%' controls>
+                            <source src={test} typeof='video/webm'></source>
+                        </video>
                     </div>
                 </li>
                 <li className="panel project-one web-one">
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Toebean Sanctuary</h3>
-                            <img className='panel-description-img' src={toebean} height="100%" width='700' alt="Toebean Sanctuary"/>
+                            {/* <img className='panel-description-img' src={toebean} height="100%" width='700' alt="Toebean Sanctuary"/> */}
+                            <video className='panel-description-img' height='100%' width='100%' controls>
+                                <source className='panel-description-img' src={toebeansvideo} typeof='video/webm'></source>
+                            </video>
                             <div className='project-description'>
                                 <p>For this project I was tasked with making a site with using technology that I haven’t used before. To answer that task, I choose to make a full stack site using the Flask framework for a made-up cat sanctuary/adoption center. To handle data I used PostgreSQL, to store uses emails, and sign-ups for voluntaries. This project allowed me to start learning how to work with databases better, and to better handle JSON data. Please note, the first load of the page might be slow as it is runing on an Azure free tier.</p>
                             </div>
@@ -168,7 +178,9 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={toebean} height="100%" width='700' alt="Toebean Sanctuary"/>
+                        <video height='100%' width='100%' controls>
+                                    <source src={toebeansvideo} typeof='video/webm'></source>
+                        </video>
                     </div>
                 </li>
                 <li className="panel project-two web-two">

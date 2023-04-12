@@ -55,7 +55,6 @@ function GreenHomeLiving(){
                     <p>After the initial sketches and brainstorming, I then designed the logo for the site in Adobe Illustrator. Along with making a flow chart for how the website will navigate and did the final layout in Illustrator, including a tablet and mobile layout.</p>
                     <div className='design-carousel' id='design-carousel-2'>
                         <div>
-                            <h1>Brainstorming</h1>
                             <Carousel>
                                 <div>
                                     <img src={greenlogo} height="100%" width='700' alt="Logo for site"/>
@@ -70,9 +69,13 @@ function GreenHomeLiving(){
                         </div>
                     </div>
                 </div>
+                <div className='brainstorming'>
+                    <h1>Redesign</h1>
+                    <p>As part of another class, I was tasked with improving the site. I chose to redesign the site as a whole. I wanted to keep a similar layout, but simplify the colors and remove some of the content that I felt was unneeded. I used Figma to do a general layout. Sadly I didn't not have time to fully lay out the site, as I was working on other large projects while working on it. You can find the layout <a href='https://www.figma.com/file/JPbbR62Z8e5nPvk01ziUXo/Untitled?node-id=0%3A1&t=JNXj8BPvI01KtJdh-1' target='_blank'>here</a>.</p>
+                </div>
                 <div className='design-development'>
                     <h1>Development</h1>
-                    <p>After the brainstorming and layout was done I started coding. For this project, I decided to start branching out, learning more than what was being taught in class. I switched from using Dreamweaver, to start learning Visual Studio Code, and getting use to the hotkeys and other addons that help to save time while coding. I also switched from using normal CSS to a preprocessor. For this project, I also had to capture all my own pictures, or modify others. For me this project was a good learning experience in thinking about layouts using more than floats. I feel like I have come a long way from that project, in both my coding design. You can see the site live<a href='https://web-112-final-project.onrender.com/index.html' target= '_blank'>here</a></p>
+                    <p>After the brainstorming and layout was done I started coding. For this project, I decided to start branching out, learning more than what was being taught in class. I switched from using Dreamweaver, to start learning Visual Studio Code, and getting use to the hotkeys and other addons that help to save time while coding. I also switched from using normal CSS to a preprocessor. For this project, I also had to capture all my own pictures, or modify others. For me this project was a good learning experience in thinking about layouts using more than floats. I feel like I have come a long way from that project, in both my coding design. You can see the site live <a href='https://web-112-final-project.onrender.com/index.html' target= '_blank'>here</a></p>
                 </div>
             </div>
         </section>
