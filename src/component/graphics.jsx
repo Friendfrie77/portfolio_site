@@ -9,6 +9,7 @@ import GraphicsProject4Lightbox from './graphicsproject4'
 import project2 from '../images/graphics/main-page/splicers-web.webp'
 import project3 from '../images/graphics/main-page/typography.webp'
 import project4 from '../images/graphics/main-page/deadlift-gym.webp'
+import ReturnTop from './ReturnTop';
 function Graphics(){
 
     gsap.registerPlugin(ScrollTrigger);
@@ -200,7 +201,8 @@ function Graphics(){
                     </div>
                 </li>
             </ul>
-            <div class="custom-shape-divider-bottom-wave">
+            <ReturnTop />
+            <div className="custom-shape-divider-bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <defs>
                         <linearGradient id='graphics-svg' x1="0%" y1="0%" x2="40%" y2="100%">

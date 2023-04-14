@@ -197,4 +197,15 @@ footer{
         font-family: $Header-font;
     }
 }
+
+.return-to-top{
+    display: flex;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        font-size: var(--fs-return-button);
+        color: whitesmoke;
+        font-family: $Header-font;
+    }
+}
 //Navigation End

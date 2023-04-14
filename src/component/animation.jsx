@@ -1,6 +1,7 @@
 import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ReturnTop from './ReturnTop';
 function Animation(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -87,7 +88,8 @@ function Animation(){
                     </div>
                 </li>
             </ul>
-            <div class="custom-shape-divider-bottom-wave">
+            <ReturnTop />
+            <div className="custom-shape-divider-bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <defs>
                         <linearGradient id='animation-svg' x1="0%" y1="0%" x2="40%" y2="100%">

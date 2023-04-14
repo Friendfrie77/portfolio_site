@@ -7,6 +7,7 @@ import art2 from '../images/art/main-page/art_2.webp';
 import ArtsProject2 from './artsproject2';
 import arts3 from '../images/art/main-page/arts_3.webp';
 import ArtsProject3 from './artsproject3';
+import ReturnTop from './ReturnTop';
 function Arts(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -146,7 +147,8 @@ function Arts(){
                     </div>
                 </li>
             </ul>
-            <div class="custom-shape-divider-bottom-triangle">
+            <ReturnTop />
+            <div className="custom-shape-divider-bottom-triangle">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <defs>
                         <linearGradient id='art-svg' x1="0%" y1="0%" x2="00%" y2="50%">

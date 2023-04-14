@@ -2,6 +2,7 @@ import {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+import ReturnTop from './ReturnTop';
 import toebean from '../images/web/test2.webp';
 import tracker from '../images/web/tracker.webp'
 import site2 from '../images/web/site2.webp';
@@ -249,7 +250,8 @@ function Web(){
                     </div>
                 </li>
             </ul>
-            <div class="custom-shape-divider-bottom-wave">
+            <ReturnTop />
+            <div className="custom-shape-divider-bottom-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <defs>
                         <linearGradient id='web-svg' x1="0%" y1="0%" x2="40%" y2="100%">
