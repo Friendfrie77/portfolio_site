@@ -121,7 +121,7 @@ function Web(){
     return(
         <section className="content" ref={ref} id='web'>
             <div className="content-hero web-hero">
-                <h1 className='content-hero-header'>Web and Programing</h1>
+                <h1 className='content-hero-header'>Web and Programming</h1>
             </div>
             <ul className='projects'>
                 <li className='panel current-show-case web-zero'>
