@@ -8,7 +8,7 @@ import tracker from '../images/web/tracker.webp'
 import site2 from '../images/web/site2.webp';
 import SqlFinal from '../images/web/test3.webp'
 import OOP from '../images/web/OOP.webp'
-import test from '../images/web/test.webm'
+import test from '../images/web/test-recording.mp4'
 import toebeansvideo from '../images/web/toebeans.webm'
 function Web(){
     gsap.registerPlugin(ScrollTrigger);
@@ -128,7 +128,7 @@ function Web(){
                     <div className='panel-description'>
                         <div>
                             <h3 className="project-title">Period Tracker (Work in Progress)</h3>
-                            <video className='panel-description-img' height='100%' width='100%' controls>
+                            <video className='panel-description-img' height='100%' width='100%' controls preload='auto'>
                                 <source className='panel-description-img' src={test} typeof='video/webm'></source>
                             </video>
                             {/* <img className='panel-description-img' src={tracker} height="100%" width='700' alt="period tracker login"/> */}
