@@ -9,7 +9,7 @@ import site2 from '../images/web/site2.webp';
 import SqlFinal from '../images/web/test3.webp'
 import OOP from '../images/web/OOP.webp'
 import test from '../images/web/test-recording.mp4'
-import toebeansvideo from '../images/web/toebeans.webm'
+import toebeansvideo from '../images/web/toebeans.mp4'
 function Web(){
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
