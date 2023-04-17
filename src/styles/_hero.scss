@@ -40,14 +40,14 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    h1{
+    .text-container{
         display: flex;
         flex-direction: column;
         text-transform: capitalize;
         margin: 10px;
-        @include for-size(phone-only){
+        @include for-size(tablet-only){
             flex-direction: row;
-            margin: 10px auto;
+            margin: 20px auto;
             text-align: center;
             justify-content: center;
         }
@@ -59,12 +59,12 @@
             line-height: 1;
         }
         span:first-of-type{
-            @include for-size(phone-only){
+            @include for-size(tablet-only){
                 padding-right: 10px;
             }
         }
     }
-    @include for-size(phone-only){
+    @include for-size(large-phone-only){
         flex-direction: column;
     }
 }
@@ -79,7 +79,7 @@
        width: 200px;
        height: 100%;
     }
-    @include for-size(phone-only){
+    @include for-size(large-phone-only){
         width: 300px;
         height: 100%;
         margin: auto;
@@ -92,21 +92,21 @@
     gap: 10px;
     justify-content: space-between;
     margin-bottom: 1.5rem;
-    @include for-size(phone-only){
+    @include for-size(large-phone-only){
         justify-content: space-evenly;
     }
     a{
-        @include for-size(tablet-only){
-            padding-right: 15px;
-        }
+        // @include for-size(tablet-only){
+        //     padding-right: 15px;
+        // }
         &:hover{
             svg{
                 fill: $nav-color;
             }
         }
         svg{
-            @include for-size(phone-only){
-                width: 45px;
+            @include for-size(large-phone-only){
+                width: 40px;
                 height: 100%;
             }
         }
@@ -182,7 +182,7 @@
     align-self: center;
     max-width: 680px;
     border-radius: 5px;
-    padding: .5rem;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     span{
         color: whitesmoke;

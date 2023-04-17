@@ -11,11 +11,9 @@
 }
 .content-hero-header{
     font-size: 5rem;
+    font-size: var(--fs-content-hero);
     color: white;
     text-align: center;
-    @include for-size(phone-only){
-        font-size: 2rem;
-    }
 }
 
 .panel{

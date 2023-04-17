@@ -1,8 +1,9 @@
 :root {
   --fs-hero-name: clamp(1rem, calc(5vw + 1rem), 6rem);
+  --fs-content-hero: clamp(2rem, calc(5vw + 1rem), 5rem);
   --fs-header: clamp(1rem, calc(5vw + 1rem), 2.25rem);
   --fs-footer:clamp(.5rem, calc(2.5vw + .2rem), 1.5rem);
-  --fs-return-button: clamp(1rem, calc(4.5vw + 3rem), 2.0rem);
+  --fs-return-button: clamp(1rem, calc(4.5vw + 3rem), 2.0rem)
   --fs-body: 1.25rem;
 }
 
@@ -516,33 +517,33 @@ footer span {
   display: flex;
   justify-content: center;
 }
-.hero-img h1 {
+.hero-img .text-container {
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
   margin: 10px;
 }
-@media (max-width: 460px) {
-  .hero-img h1 {
+@media (max-width: 768px) {
+  .hero-img .text-container {
     flex-direction: row;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
     justify-content: center;
   }
 }
-.hero-img h1 span {
+.hero-img .text-container span {
   color: whitesmoke;
   text-transform: capitalize;
   font-size: 6rem;
   font-size: var(--fs-hero-name);
   line-height: 1;
 }
-@media (max-width: 460px) {
-  .hero-img h1 span:first-of-type {
+@media (max-width: 768px) {
+  .hero-img .text-container span:first-of-type {
     padding-right: 10px;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 535px) {
   .hero-img {
     flex-direction: column;
   }
@@ -561,7 +562,7 @@ footer span {
     height: 100%;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 535px) {
   .selfie-img {
     width: 300px;
     height: 100%;
@@ -576,22 +577,17 @@ footer span {
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-@media (max-width: 460px) {
+@media (max-width: 535px) {
   .social-links {
     justify-content: space-evenly;
-  }
-}
-@media (max-width: 768px) {
-  .social-links a {
-    padding-right: 15px;
   }
 }
 .social-links a:hover svg {
   fill: #1A3461;
 }
-@media (max-width: 460px) {
+@media (max-width: 535px) {
   .social-links a svg {
-    width: 45px;
+    width: 40px;
     height: 100%;
   }
 }
@@ -680,7 +676,7 @@ footer span {
   align-self: center;
   max-width: 680px;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 1.5rem;
 }
 .hero-text span {
@@ -834,13 +830,9 @@ footer span {
 
 .content-hero-header {
   font-size: 5rem;
+  font-size: var(--fs-content-hero);
   color: white;
   text-align: center;
-}
-@media (max-width: 460px) {
-  .content-hero-header {
-    font-size: 2rem;
-  }
 }
 
 .panel {
