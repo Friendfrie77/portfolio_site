@@ -4,7 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
 import ReturnTop from './ReturnTop';
 import toebean from '../images/web/test2.webp';
-import tracker from '../images/web/tracker.webp'
+import tracker from '../images/web/tracker.webp';
+import greenhome from '../images/web/green-homes.webp';
 import site2 from '../images/web/site2.webp';
 import SqlFinal from '../images/web/test3.webp'
 import OOP from '../images/web/OOP.webp'
@@ -187,7 +188,7 @@ function Web(){
                     <div className='panel-description'>
                         <div>
                             <h3 className='project-title'>Green Home Living</h3>
-                            <img className='panel-description-img' src={site2} height="100%" width='700' alt="Green Home Living"/>
+                            <img className='panel-description-img' src={greenhome} height="100%" width='700' alt="Green Home Living"/>
                             <div className='project-description'>
                                 <p>For this project, I was tasked with making a site using a grid system to layout a site-responsive site themed around plants. I chose to make a site about how to transform your home into a green home. I used this project to start learning SCSS and JavaScript. You can find both the code, design process and the site in the links below.</p>
                             </div>
@@ -205,7 +206,7 @@ function Web(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={site2} height="100%" width='700' alt="Green Home Living"/>
+                        <img src={greenhome} height="100%" width='700' alt="Green Home Living"/>
                     </div>
                 </li>
                 <li className="panel project-three web-three">

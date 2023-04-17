@@ -89,6 +89,7 @@
 .social-links{
     display: flex;
     flex-direction: row;
+    gap: 10px;
     justify-content: space-between;
     margin-bottom: 1.5rem;
     @include for-size(phone-only){
@@ -105,7 +106,7 @@
         }
         svg{
             @include for-size(phone-only){
-                width: 35px;
+                width: 45px;
                 height: 100%;
             }
         }

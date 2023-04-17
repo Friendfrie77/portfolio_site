@@ -572,6 +572,7 @@ footer span {
 .social-links {
   display: flex;
   flex-direction: row;
+  gap: 10px;
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
@@ -590,7 +591,7 @@ footer span {
 }
 @media (max-width: 460px) {
   .social-links a svg {
-    width: 35px;
+    width: 45px;
     height: 100%;
   }
 }
@@ -1048,7 +1049,7 @@ footer span {
   left: 50%;
   transform: translateX(-50%);
   color: whitesmoke;
-  opacity: 0.85;
+  opacity: 0.95;
   font-family: "IBM_Plex_Sans";
   font-size: 1.2rem;
   display: none;
