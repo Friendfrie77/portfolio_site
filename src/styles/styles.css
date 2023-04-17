@@ -1,7 +1,9 @@
 :root {
   --fs-hero-name: clamp(1rem, calc(5vw + 1rem), 6rem);
+  --fs-header: clamp(1rem, calc(5vw + 1rem), 2.25rem);
   --fs-footer:clamp(.5rem, calc(2.5vw + .2rem), 1.5rem);
-  --fs-return-button: clamp(1rem, calc(2.5vw + 1rem), 1.9rem) ;
+  --fs-return-button: clamp(1rem, calc(4.5vw + 3rem), 2.0rem);
+  --fs-body: 1.25rem;
 }
 
 /* Font families */
@@ -122,7 +124,7 @@ html, body {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
   margin: 0;
   position: relative;
   display: flex;
@@ -238,7 +240,7 @@ nav {
   height: 75px;
   padding: 1rem;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 100;
   opacity: 0.9;
 }
@@ -314,7 +316,7 @@ nav {
   }
 }
 .Nav_Links > li a:hover {
-  color: #1A3461;
+  color: lightblue;
 }
 
 .Nav_Links li ul {
@@ -768,7 +770,7 @@ footer span {
 }
 .green-home-hero::before {
   content: "";
-  background-image: url("../images/green-home-living.png");
+  background-image: url("../images/greenhomeliving/green-home-living-xl.webp");
   display: block;
   position: absolute;
   left: 0;
@@ -777,10 +779,43 @@ footer span {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .green-home-hero .content-hero-header {
   position: relative;
   z-index: 2;
+}
+
+.period-tracker-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+.period-tracker-hero::before {
+  content: "";
+  background-image: url("../images/period-tracker/tracker-hero-xl.webp");
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1300px) {
+  .period-tracker-hero::before {
+    background-image: url("../images/period-tracker/tracker-hero.webp");
+  }
+}
+@media (max-width: 768px) {
+  .period-tracker-hero::before {
+    background-image: url("../images/period-tracker/tracker-hero-mobile.webp");
+  }
 }
 
 .projects {
@@ -856,6 +891,7 @@ footer span {
   .panel:nth-child(even) .project-title {
     text-align: center;
     margin-left: 0px;
+    padding-left: 0px;
   }
 }
 .panel:nth-child(even) .tech-list {
@@ -896,18 +932,13 @@ footer span {
 .project-title {
   text-align: right;
   font-size: 2.3rem;
+  font-size: var(--fs-return-button);
   color: whitesmoke;
   margin-bottom: 5px;
 }
 @media (max-width: 768px) {
   .project-title {
     text-align: center;
-    font-size: 1.85rem;
-  }
-}
-@media (max-width: 300px) {
-  .project-title {
-    font-size: 1.6rem;
   }
 }
 
@@ -1216,21 +1247,22 @@ input[data-autocompleted] {
   }
 }
 
-.brainstorming, .design-development {
+.brainstorming, .design-development, .development-resources {
   display: flex;
   flex-direction: column;
 }
-.brainstorming h1, .design-development h1 {
+.brainstorming h1, .brainstorming h2, .design-development h1, .design-development h2, .development-resources h1, .development-resources h2 {
   color: whitesmoke;
   font-size: 2.23rem;
+  font-size: var(--fs-header);
   text-align: center;
 }
-.brainstorming p, .design-development p {
+.brainstorming p, .design-development p, .development-resources p {
   color: whitesmoke;
   padding: 15px;
   font-size: 1.25rem;
 }
-.brainstorming a, .design-development a {
+.brainstorming a, .design-development a, .development-resources a {
   color: whitesmoke;
 }
 
@@ -1252,6 +1284,41 @@ input[data-autocompleted] {
 
 #design-carousel-2 {
   grid-template-columns: 1fr;
+}
+
+.tracker-carousel {
+  max-width: 500px;
+  display: flex;
+  align-self: center;
+}
+.tracker-carousel h1 {
+  text-align: center;
+  color: white;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+@media (max-width: 535px) {
+  .videos {
+    flex-direction: column;
+  }
+}
+
+.video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 500px;
+}
+
+.dev-picture {
+  max-width: 500px;
+  width: 100%;
 }
 
 .contact-name input:focus + .contact-lable .contact-span, .contact-name input:valid + .contact-lable .contact-span {

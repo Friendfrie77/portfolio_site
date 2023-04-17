@@ -1,9 +1,10 @@
-.brainstorming, .design-development{
+.brainstorming, .design-development, .development-resources{
     display: flex;
     flex-direction: column;
-    h1{
+    h1,h2{
         color: whitesmoke;
         font-size: 2.23rem;
+        font-size: var(--fs-header);
         text-align: center;
     }
     p{
@@ -33,4 +34,36 @@
 
 #design-carousel-2{
     grid-template-columns: 1fr;
+}
+.tracker-carousel{
+    max-width: 500px;
+    display: flex;
+    align-self: center;
+    h1{
+        text-align: center;
+        color: white;
+    }
+}
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    @include for-size(large-phone-only){
+        flex-direction: column;
+    };
+}
+
+.video{
+    aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 500px;
+}
+
+.dev-picture{
+    max-width: 500px;
+    width: 100%;
 }

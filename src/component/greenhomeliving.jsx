@@ -1,3 +1,4 @@
+import {useEffect} from 'react';
 import brainstorming1 from '../images/greenhomeliving/images/brainstorming-1.webp';
 import brainstorming2 from '../images/greenhomeliving/images/brainstorming-2.webp';
 import sitereserch from '../images/greenhomeliving/images/site-research.webp';
@@ -10,6 +11,9 @@ import greenflow from '../images/greenhomeliving/images/green-flowchart.webp';
 import greenfinal from '../images/greenhomeliving/images/green-layout.webp';
 import { Carousel} from 'react-responsive-carousel';
 function GreenHomeLiving(){
+    useEffect(() =>{
+        window.scrollTo(0,0)
+    })
     return(
         <section className="design-process">
             <div className='green-home-hero'>

@@ -37,8 +37,10 @@ $Copy-font: 'Roboto';
 
 :root{
     --fs-hero-name: clamp(1rem, calc(5vw + 1rem), 6rem);
+    --fs-header: clamp(1rem, calc(5vw + 1rem), 2.25rem);
     --fs-footer:clamp(.5rem, calc(2.5vw + .2rem), 1.5rem);
-    --fs-return-button: clamp(1rem, calc(2.5vw + 1rem), 1.9rem)
+    --fs-return-button: clamp(1rem, calc(4.5vw + 3rem), 2.0rem);
+    --fs-body: 1.25rem;
 }
 /* Font families */
 @font-face{

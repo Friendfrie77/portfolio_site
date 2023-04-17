@@ -10,7 +10,6 @@ function Nav(){
             check.current.checked = !check.current.checked
         }
     }
-
     return(
         <nav>
             <div className="logo">
@@ -24,7 +23,7 @@ function Nav(){
                 <div className="Mobile_Nav" id='mobile-nav'></div>
             </label>
             <ul className='Nav_Links' id="nav-links">
-                <li className='Nav_Item'><NavHashLink to='/#hero'>Home</NavHashLink></li>
+                <li className='Nav_Item'><NavHashLink onClick={checkChange} to='/'>Home</NavHashLink></li>
                 <li className='Nav_item dropdown'><button>Projects<span>&#9660;</span></button>
                     <ul className='nav_dropdown'>
                         <li className='Nav_Item'><NavHashLink

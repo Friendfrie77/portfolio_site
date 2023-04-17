@@ -109,11 +109,11 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Card box</h3>
                             <div className='panel-description-img'>
-                                <img src={project1} height="auto" width='338' alt="Playing cards"/>
+                                <img src={project1} height="100%" width='338' alt="Playing cards"/>
                                 <GraphicsProject1Lightbox />
                             </div>
                             <div className='project-description'>
-                                <p>For this project, I was tasked with making a playing card set. I took inspiration from a YouTube show called Helluva Boss. I used characters drawn out in Adobe Illustrator to represent the face cards. Sticking to hell theme, I used characters that represent one of the major sins as a jack. I themed the number cards around the sin that each jack represented. You can see more pictures in the Google Drives link below.</p>
+                                <p>For this project, I was tasked with making a playing card set. I took inspiration from a YouTube show called Helluva Boss. I used characters drawn out in Adobe Illustrator to represent the face cards. Sticking to the hell theme, I used characters that represent one of the major sins as a jack. I themed the number cards around the sin that each jack represented. You can see more pictures in the Google Drives link below.</p>
                             </div>
                             <ul className='tech-list'>
                                 <li>Adobe Illustrator</li>
@@ -124,7 +124,7 @@ function Graphics(){
                         </div>
                     </div>
                     <div className='panel-picture card-picture'>
-                        <img src={project1} height="auto" width='338' alt="playing cards"/>
+                        <img src={project1} height="100%" width='338' alt="playing cards"/>
                         <GraphicsProject1Lightbox />
                     </div>
                 </li>
@@ -161,7 +161,7 @@ function Graphics(){
                             <GraphicsProject3Lightbox />
                             </div>
                             <div className='project-description'>
-                                <p>For this project I was tasked with making an emphasis typography advisement using a quote. For my quote I picked a quote dealing with hurting and sorrow. I chose to use that to make an advertisement for the suicide prevention hotline. </p>
+                                <p>For this project, I was tasked with making an emphasis typography advisement using a quote. For my quote, I picked a quote dealing with hurting and sorrow. I chose to use that to make an advertisement for the suicide prevention hotline.</p>
                             </div>
                             <ul className='tech-list'>
                                 <li>Adobe Illustrator</li>
@@ -181,11 +181,11 @@ function Graphics(){
                         <div>
                             <h3 className='project-title'>Trompe-l'oeil</h3>
                             <div className='panel-description-img'>
-                                <img src={project4} height="auto" width='338' alt="Trompe-l'oeil"/>
+                                <img src={project4} height="100%" width='338' alt="Trompe-l'oeil"/>
                                 <GraphicsProject4Lightbox />
                             </div>
                             <div className='project-description'>
-                                <p>For this project, I was tasked with making a composite image with a strong Trompe-l’oeil effect advertising a company or service, with the piece inspired by a quote given by the teacher. I choices to center mine around a gym, using the saying, “A leopard can’t change its spots.” I combined parts of images from fit people. I emphasized aspects of the call ad to highlight that there is no easy way to change. You can see more at the Google drives link below.</p>
+                                <p>For this project, I was tasked with making a composite image with a strong Trompe-l’oeil effect advertising a company or service, with the piece inspired by a quote given by the teacher. I choices to center mine around a gym, using the saying, “A leopard can’t change its spots.” I combined parts of images from fit people. I emphasized aspects of the call ad to highlight that there is no easy way to change. You can see more at the Google Drive link below.</p>
                             </div>
                             <ul className='tech-list'>
                                 <li>Adobe Photoshop</li>
@@ -196,7 +196,7 @@ function Graphics(){
                         </div>
                     </div>
                     <div className='panel-picture'>
-                        <img src={project4} height="auto" width='338' alt="Trompe-l'oeil"/>
+                        <img src={project4} height="100%" width='338' alt="Trompe-l'oeil"/>
                         <GraphicsProject4Lightbox />
                     </div>
                 </li>
