@@ -68,6 +68,9 @@ p, li, span{
     font-family: $Copy-font;
 }
 
+.noScroll{
+    overflow: hidden;
+}
 @import './reset';
 @import './carousel';
 @import './wrappers';

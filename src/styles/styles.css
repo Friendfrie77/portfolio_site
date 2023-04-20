@@ -28,6 +28,10 @@ p, li, span {
   font-family: "Roboto";
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 /* CSS Reset */
 /* Box sizing rules */
 *,
@@ -271,6 +275,7 @@ nav {
     margin-top: 50px;
     justify-content: start;
     background-color: #000155;
+    overflow: auto;
     opacity: 1;
     transition: cubic-bezier(0.23, 1, 0.32, 1) 0.35s;
   }

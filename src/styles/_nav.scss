@@ -33,6 +33,7 @@ nav{
         margin-top: 50px;
         justify-content: start;
         background-color: $background-color-5;
+        overflow:auto;
         opacity: 1;
         transition: cubic-bezier(0.23, 1, 0.32, 1) .35s;
     }
