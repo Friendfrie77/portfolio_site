@@ -129,7 +129,7 @@ html, body {
 }
 
 body {
-  overflow-x: auto;
+  overflow-x: hidden;
   margin: 0;
   position: relative;
   display: flex;
