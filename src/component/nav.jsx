@@ -7,11 +7,11 @@ function Nav(){
     const check = useRef(false)
     const checkChange = () =>{
         const wrapper = document.getElementById('root')
-        const body = document.getElementsByTagName('html')
+        const body = document.querySelector('body')
         if (check.current.checked){
             check.current.checked = !check.current.checked
             wrapper.classList.remove('noScroll')
-            body.classList.remove('noScroll')
+            body.style.overflow = 'auto'
         }
     }
     const navOpen = (event) =>{
