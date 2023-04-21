@@ -90,35 +90,12 @@
     border-radius: 10px;
     border-color: transparent;
     background:linear-gradient(-45deg, $background-color-5, $background-color-4, $background-color-3, $background-color-1);
-    background: whitesmoke;
     opacity: 1;
-    // background-size: 400% 400%;
-    // animation: gradient 5s ease infinite;
     @include for-size(tablet-only){
         display: none;
     }
 }
-.hr-dark{
-    background:linear-gradient(-45deg, $background-color-5, $background-color-4, $background-color-3, $background-color-1);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
-}
-.hr-light{
-    background: linear-gradient(-45deg, $background-color-5, #00027A, #00028F);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
-}
-@keyframes gradient{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
+
 .panel-description{
     position: relative;
     grid-area: 1/6/1/12;

@@ -25,7 +25,7 @@ function Web(){
             {
                 opacity: 1,
                 y: 0,
-                duration: .2,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".web-hero"),
                     start: "-40%",
@@ -47,7 +47,7 @@ function Web(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .2,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".web-hero"),
                     start: "-20%",
