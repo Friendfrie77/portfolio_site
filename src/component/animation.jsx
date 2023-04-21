@@ -69,6 +69,7 @@ function Animation(){
                     <div className='panel-picture'>
                         <iframe width="auto" height="350" src="https://www.youtube.com/embed/j7nZ2l1WTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project_two animation-two">
                     <div className='panel-description'>
@@ -86,6 +87,7 @@ function Animation(){
                     <div className='panel-picture'>
                         <iframe height="350" width='auto' src="https://www.youtube.com/embed/A_AYO5lyMFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
             </ul>
             <ReturnTop />

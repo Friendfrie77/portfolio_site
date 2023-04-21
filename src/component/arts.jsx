@@ -100,6 +100,7 @@ function Arts(){
                         <img src={art1} height="100%" width='700' alt="type as shapes"/>
                         <ArtsProject1 />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project-two arts-two">
                     <div className='panel-description'>
@@ -121,6 +122,7 @@ function Arts(){
                         <img src={art2} height="100%" width='700' alt="color theory"/>
                         <ArtsProject2 />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project-three arts-three" id='arts-three'>
                     <div className='panel-description'>
@@ -145,6 +147,7 @@ function Arts(){
                         <img src={arts3} height="100%" width='700' alt="Wedding Sign"/>
                         <ArtsProject3 />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
             </ul>
             <ReturnTop />

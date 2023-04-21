@@ -69,16 +69,17 @@ p, li, span{
 }
 
 .noScroll{
-    overflow: hidden;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
 }
+
 @import './reset';
 @import './carousel';
 @import './wrappers';
+@import './animations';
 @import './nav';
 @import './hero';
 @import './content-heros';
 @import './content';
 @import './contact';
 @import './design-process';
-@import './animations';
-@import './lightbox';

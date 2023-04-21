@@ -28,9 +28,10 @@ function Web(){
                 duration: .2,
                 scrollTrigger: {
                     trigger: element.querySelector(".web-hero"),
-                    start: "-20%",
+                    start: "-40%",
                     scrub: true,
-                    end: "30%"
+                    end: "30%",
+                    // markers:true
                 }
             }
         )
@@ -154,6 +155,7 @@ function Web(){
                             <source src={test} typeof='video/webm'></source>
                         </video>
                     </div>
+                    <hr className='content-hr hr-light'></hr>
                 </li>
                 <li className="panel project-one web-one">
                     <div className='panel-description'>
@@ -183,6 +185,7 @@ function Web(){
                             <source src={toebeansvideo} typeof='video/webm'></source>
                         </video>
                     </div>
+                    <hr className='content-hr hr-dark'></hr>
                 </li>
                 <li className="panel project-two web-two">
                     <div className='panel-description'>
@@ -208,6 +211,7 @@ function Web(){
                     <div className='panel-picture'>
                         <img src={greenhome} height="100%" width='700' alt="Green Home Living"/>
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project-three web-three">
                     <div className='panel-description'>
@@ -228,6 +232,7 @@ function Web(){
                     <div className='panel-picture'>
                         <img src={SqlFinal} height="100%" width='700' alt='OOP final'/>
                     </div>
+                    <hr className='content-hr hr-light'></hr>
                 </li>
                 <li className="panel project-three web-four">
                     <div className='panel-description'>
@@ -248,6 +253,7 @@ function Web(){
                     <div className='panel-picture'>
                         <img src={OOP} height="100%" width='700' alt='OOP final'/>
                     </div>
+                    <hr className='content-hr hr-light'></hr>
                 </li>
             </ul>
             <ReturnTop />

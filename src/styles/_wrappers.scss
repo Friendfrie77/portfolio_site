@@ -1,13 +1,12 @@
 html, body{
-    // width: 100%;
-    // min-width: 100vw;
+    width: 100%;
+    min-width: 100vw;
     height: 100%;
     // min-height: 100%;
     // background-color: red;
-
+    overflow: auto;
 }
 body{
-    overflow-x: auto;
     margin: 0;
     position: relative;
     display: flex;
@@ -17,14 +16,16 @@ body{
 background: rgb(0,1,38);
 min-height: 100%;
 min-width: 100%;
+// width: 100vw;
 display: flex;
 flex-direction: column;
 flex-grow: 1;
 }
-.main-content-wrapper{
-    min-width: 100vw;
 
-}
+// .main-content-wrapper{
+//     min-width: 100vw;
+//     width: 100%;
+// }
 .hero{
     display: flex;
     flex-direction: column;

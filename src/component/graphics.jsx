@@ -127,6 +127,7 @@ function Graphics(){
                         <img src={project1} height="100%" width='338' alt="playing cards"/>
                         <GraphicsProject1Lightbox />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project-two graphics-two">
                     <div className='panel-description'>
@@ -151,6 +152,7 @@ function Graphics(){
                         <img src={project2} height="100%" width='700' alt="Compositing"/>
                         <GraphicsProject2Lightbox />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project-three graphics-three">
                     <div className='panel-description'>
@@ -175,6 +177,7 @@ function Graphics(){
                         <img src={project3} height="100%" width='auto' alt='Typography'/>
                         <GraphicsProject3Lightbox />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
                 <li className="panel project-four graphics-four">
                     <div className='panel-description'>
@@ -199,6 +202,7 @@ function Graphics(){
                         <img src={project4} height="100%" width='338' alt="Trompe-l'oeil"/>
                         <GraphicsProject4Lightbox />
                     </div>
+                    <hr className='content-hr'></hr>
                 </li>
             </ul>
             <ReturnTop />

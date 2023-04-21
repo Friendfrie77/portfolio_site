@@ -6,20 +6,27 @@ import logo from '../images/logo2.svg'
 function Nav(){
     const check = useRef(false)
     const checkChange = () =>{
-        const wrapper = document.getElementById('wrapper')
+        const wrapper = document.getElementById('root')
+        const body = document.getElementsByTagName('html')
         if (check.current.checked){
             check.current.checked = !check.current.checked
             wrapper.classList.remove('noScroll')
+            body.classList.remove('noScroll')
         }
     }
     const navOpen = (event) =>{
         const isOpen = event.target.checked
-        const wrapper = document.getElementById('wrapper')
+        const wrapper = document.getElementById('root')
+        const html = document.querySelector('html')
+        const body = document.querySelector('body')
+        console.log(body)
         if(isOpen){
-            wrapper.classList.add('noScroll')
-        }else(
-            wrapper.classList.remove('noScroll')
-        )
+            wrapper.classList.add('noScroll');
+            body.style.overflow = 'hidden'
+        }else{
+            wrapper.classList.remove('noScroll');
+            body.style.overflow = 'auto'
+        }
     }
     const freezePage = () =>{
         const test = document.getElementById('test')
