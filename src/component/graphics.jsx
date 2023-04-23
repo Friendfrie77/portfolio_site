@@ -30,7 +30,8 @@ function Graphics(){
                     trigger: element.querySelector(".graphics-hero"),
                     start: "-50%",
                     scrub: true,
-                    end: "55%"
+                    end: "55%",
+                    fastScrollEnd: true
                 }
             }
         );
@@ -52,6 +53,7 @@ function Graphics(){
                     start: "-65%",
                     scrub: true,
                     end: "10%",
+                    fastScrollEnd: true
                 }
             }
         );
@@ -72,7 +74,8 @@ function Graphics(){
                     trigger:element.querySelector('.graphics-two'),
                     start: '-160%',
                     scrub: true,
-                    end: '-40%'
+                    end: '-40%',
+                    fastScrollEnd: true
                 }
             }
         );
@@ -93,7 +96,8 @@ function Graphics(){
                     trigger:element.querySelector('.graphics-three'),
                     start: '-90%',
                     scrub: true,
-                    end: '10%'
+                    end: '10%',
+                    fastScrollEnd: true
                 }
             }
         );

@@ -33,6 +33,19 @@ p, li, span {
   -webkit-overflow-scrolling: touch !important;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #000155 10%, #000140 25%, #000130 85%, #000110 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 245, 245, 0.8);
+  border-radius: 1rem;
+}
+
 /* CSS Reset */
 /* Box sizing rules */
 *,
@@ -129,6 +142,8 @@ html, body {
   width: 100%;
   min-width: 100vw;
   height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -145,6 +160,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.main-content-wrapper {
+  max-width: 100%;
 }
 
 .hero {

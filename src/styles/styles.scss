@@ -73,6 +73,16 @@ p, li, span{
     -webkit-overflow-scrolling: touch !important;
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: $backgroung-grad;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(245,245,245, .8);
+    border-radius: 1rem;
+}
 @import './reset';
 @import './carousel';
 @import './wrappers';

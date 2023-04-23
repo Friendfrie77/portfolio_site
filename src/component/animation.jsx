@@ -21,7 +21,8 @@ function Animation(){
                     trigger: element.querySelector(".animation-hero"),
                     start: "-75%",
                     scrub: true,
-                    end: "15%"
+                    end: "15%",
+                    fastScrollEnd: true
                 }
             }
         );
@@ -43,6 +44,7 @@ function Animation(){
                     start: "top-=110%",
                     scrub: true,
                     end: "top-=10%",
+                    fastScrollEnd: true
                 }
             }
         );
