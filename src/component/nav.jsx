@@ -17,7 +17,6 @@ function Nav(){
     const navOpen = (event) =>{
         const isOpen = event.target.checked
         const wrapper = document.getElementById('root')
-        const html = document.querySelector('html')
         const body = document.querySelector('body')
         console.log(body)
         if(isOpen){

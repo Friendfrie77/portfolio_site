@@ -143,7 +143,6 @@ html, body {
   min-width: 100vw;
   height: 100%;
   overflow: auto;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -160,6 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  scroll-behavior: smooth;
 }
 
 .main-content-wrapper {
