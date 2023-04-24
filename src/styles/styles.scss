@@ -10,7 +10,7 @@ $Copy-font: 'Roboto';
 
 @mixin for-size($size){
     @if $size == tablet-only{
-        @media (max-width: 768px){ @content;}
+        @media (max-width: 868px){ @content;}
     }
     @if $size == small-tablet-only{
         @media (max-width: 720px){ @content;}

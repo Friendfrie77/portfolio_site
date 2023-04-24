@@ -140,9 +140,10 @@ select {
 
 html, body {
   width: 100%;
-  min-width: 100vw;
+  min-width: 100%;
   height: 100%;
-  overflow: auto;
+  margin: 0;
+  background-color: #000155;
 }
 
 body {
@@ -150,6 +151,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .wrapper {
@@ -294,7 +296,7 @@ nav {
   z-index: 100;
   opacity: 0.9;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   nav {
     opacity: 1;
   }
@@ -307,7 +309,7 @@ nav {
   margin: 0;
   padding: 5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links {
     translate: -100%;
     flex-direction: column;
@@ -341,17 +343,17 @@ nav {
   margin: 0 1rem;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links > li {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links > li:first-child {
     margin-top: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links > li:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -361,7 +363,7 @@ nav {
   color: #fff;
   font-size: 1.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links > li a {
     font-size: 2rem;
   }
@@ -383,7 +385,7 @@ nav {
   z-index: 100;
   border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links li ul {
     flex-direction: column;
     position: static;
@@ -397,7 +399,7 @@ nav {
   font-size: 1.4rem;
   padding: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Nav_Links li button {
     font-size: 2rem;
   }
@@ -436,7 +438,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Mobile_Nav_container {
     display: flex;
   }
@@ -462,7 +464,7 @@ nav {
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .Mobile_Nav,
   .Mobile_Nav::before,
   .Mobile_Nav::after {
@@ -573,7 +575,7 @@ footer span {
   text-transform: capitalize;
   margin: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .hero-img .text-container {
     flex-direction: row;
     margin: 20px auto;
@@ -588,7 +590,7 @@ footer span {
   font-size: var(--fs-hero-name);
   line-height: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .hero-img .text-container span:first-of-type {
     padding-right: 10px;
   }
@@ -606,7 +608,7 @@ footer span {
   margin-right: 10px;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .selfie-img {
     width: 200px;
     height: 100%;
@@ -859,7 +861,7 @@ footer span {
     background-image: url("../images/period-tracker/tracker-hero.webp");
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .period-tracker-hero::before {
     background-image: url("../images/period-tracker/tracker-hero-mobile.webp");
   }
@@ -897,7 +899,7 @@ footer span {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel {
     display: flex;
     align-self: center;
@@ -907,7 +909,7 @@ footer span {
 .panel:nth-child(even) .panel-picture {
   grid-area: 1/7/1/12;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel:nth-child(even) .panel-picture {
     display: none;
   }
@@ -918,7 +920,7 @@ footer span {
   margin-right: 30px;
   padding: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel:nth-child(even) .panel-description {
     grid-area: 1/1/1/12;
     width: 100%;
@@ -931,7 +933,7 @@ footer span {
   text-align: left;
   padding-left: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel:nth-child(even) .project-title {
     text-align: center;
     margin-left: 0px;
@@ -949,7 +951,7 @@ footer span {
 .panel:nth-child(even) .project-links a {
   padding-left: 5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel:nth-child(even) .tech-list, .panel:nth-child(even) .project-links {
     justify-content: flex-end;
   }
@@ -968,7 +970,7 @@ footer span {
   background: linear-gradient(-45deg, #000155, #000140, #000130, #000110);
   opacity: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .content-hr {
     display: none;
   }
@@ -980,7 +982,7 @@ footer span {
   z-index: 2;
   padding: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel-description {
     grid-area: 1/1/1/12;
     width: 100%;
@@ -996,7 +998,7 @@ footer span {
   color: whitesmoke;
   margin-bottom: 5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .project-title {
     text-align: center;
   }
@@ -1013,7 +1015,7 @@ footer span {
 .project-description p {
   color: whitesmoke;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .project-description {
     margin: auto;
     background-color: hsla(218, 58%, 16%, 0);
@@ -1025,7 +1027,7 @@ footer span {
   display: none;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel-description-img {
     margin: auto;
     display: block;
@@ -1047,7 +1049,7 @@ footer span {
 .tech-list li {
   padding: 5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .tech-list {
     padding-left: 5px;
   }
@@ -1071,7 +1073,7 @@ footer span {
 .panel-picture iframe {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .panel-picture {
     display: none;
   }
@@ -1116,7 +1118,7 @@ footer span {
   font-size: 1.2rem;
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .lightbox-button span {
     display: block;
   }
@@ -1149,7 +1151,7 @@ footer span {
   margin: 25px;
   background-color: #000120;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .contact form {
     min-width: 95%;
   }
@@ -1338,7 +1340,7 @@ input[data-autocompleted] {
 .design-carousel .carousel-root {
   max-width: 700px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .design-carousel {
     display: flex;
     flex-direction: column;

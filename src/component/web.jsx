@@ -32,7 +32,6 @@ function Web(){
                     scrub: true,
                     end: "30%",
                     fastScrollEnd: true,
-                    // markers:true
                 }
             }
         )
@@ -51,10 +50,10 @@ function Web(){
                 duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".web-hero"),
-                    start: "-20%",
+                    start: "10%",
                     scrub: true,
-                    end: "30%",
-                    fastScrollEnd: true
+                    end: "100%",
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -73,10 +72,10 @@ function Web(){
                 y: 0,
                 scrollTrigger: {
                     trigger: element.querySelector(".web-hero"),
-                    start: "60%",
+                    start: "90%",
                     scrub: true,
-                    end: "130%",
-                    fastScrollEnd: true
+                    end: "170%",
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -116,11 +115,12 @@ function Web(){
                 y: 0,
                 duration: .7,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project-one"),
+                    trigger: element.querySelector(".project-two"),
                     start:'0%',
                     scrub: true,
                     end: "bottom",
-                    fastScrollEnd: true
+                    fastScrollEnd: true,
+                    // markers:true
                 }
             }
         );
