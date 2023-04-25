@@ -25,12 +25,12 @@ function Graphics(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .2,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".graphics-hero"),
-                    start: "-50%",
+                    start: "-40%",
                     scrub: true,
-                    end: "55%",
+                    end: "30%",
                     fastScrollEnd: true
                 }
             }
@@ -47,12 +47,12 @@ function Graphics(){
             {
                 opacity: 1,
                 y:0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".graphics-one"),
-                    start: "-65%",
+                    start: "-10%",
                     scrub: true,
-                    end: "10%",
+                    end: "35%",
                     fastScrollEnd: true
                 }
             }
@@ -69,12 +69,12 @@ function Graphics(){
             {
                 opacity: 1,
                 x: 0,
-                duration:.7,
+                duration:.5,
                 scrollTrigger:{
                     trigger:element.querySelector('.graphics-two'),
-                    start: '-160%',
+                    start: '-10%',
                     scrub: true,
-                    end: '-40%',
+                    end: '35%',
                     fastScrollEnd: true
                 }
             }
@@ -91,12 +91,12 @@ function Graphics(){
             {
                 opacity: 1,
                 y: 0,
-                duration:.7,
+                duration:.5,
                 scrollTrigger:{
                     trigger:element.querySelector('.graphics-three'),
-                    start: '-90%',
+                    start: '-10%',
                     scrub: true,
-                    end: '10%',
+                    end: '35%',
                     fastScrollEnd: true
                 }
             }

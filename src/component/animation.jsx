@@ -16,12 +16,12 @@ function Animation(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".animation-hero"),
-                    start: "-75%",
+                    start: "-40%",
                     scrub: true,
-                    end: "15%",
+                    end: "30%",
                     fastScrollEnd: true,
                     preventOverlaps: true
                 }
@@ -39,12 +39,12 @@ function Animation(){
             {
                 opacity: 1,
                 y:0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".animation-one"),
-                    start: "top-=110%",
+                    start: "-40%",
                     scrub: true,
-                    end: "top-=10%",
+                    end: "20%",
                     fastScrollEnd: true,
                     preventOverlaps: true
                 }

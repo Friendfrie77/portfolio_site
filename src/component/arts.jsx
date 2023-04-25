@@ -22,12 +22,12 @@ function Arts(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".arts-hero"),
-                    start: "-35%",
+                    start: "-40%",
                     scrub: true,
-                    end: "50%",
+                    end: "30%",
                     fastScrollEnd: true
                 }
             }
@@ -44,13 +44,13 @@ function Arts(){
             {
                 opacity: 1,
                 y:0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".arts-one"),
-                    start: "-70%",
+                    start: "-10%",
                     scrub: true,
-                    end: "0%",
-                    fastScrollEnd: true
+                    end: "25%",
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -66,12 +66,12 @@ function Arts(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".arts-two"),
-                    start: "-65%",
+                    start: "-10%",
                     scrub: true,
-                    end: '45%',
+                    end: '25%',
                     fastScrollEnd: true
                 }
             }

@@ -1,5 +1,6 @@
 import {useEffect, useRef, useLayoutEffect} from 'react';
 import {gsap} from 'gsap';
+import { Timeline } from 'gsap/gsap-core';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
 import ReturnTop from './ReturnTop';
@@ -11,7 +12,6 @@ import toebeansvideo from '../images/web/toebeans.mp4'
 function Web(){
     gsap.registerPlugin(ScrollTrigger)
     const ref = useRef(null);
-
     useEffect(() =>{
         const element = ref.current;
         gsap.fromTo(
@@ -30,7 +30,7 @@ function Web(){
                     trigger: element.querySelector(".web-hero"),
                     start: "-40%",
                     scrub: true,
-                    end: "30%",
+                    end: "25%",
                     fastScrollEnd: true,
                 }
             }
@@ -49,10 +49,10 @@ function Web(){
                 x: 0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".web-hero"),
-                    start: "10%",
+                    trigger: element.querySelector(".web-zero"),
+                    start: "-10%",
                     scrub: true,
-                    end: "100%",
+                    end: "55%",
                     fastScrollEnd: true,
                 }
             }
@@ -71,10 +71,10 @@ function Web(){
                 duration: .5,
                 y: 0,
                 scrollTrigger: {
-                    trigger: element.querySelector(".web-hero"),
-                    start: "90%",
+                    trigger: element.querySelector(".web-one"),
+                    start: "-10%",
                     scrub: true,
-                    end: "170%",
+                    end: "55%",
                     fastScrollEnd: true,
                 }
             }
@@ -91,12 +91,12 @@ function Web(){
             {
                 opacity: 1,
                 x: 0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project-one"),
-                    start:'0%',
+                    trigger: element.querySelector(".web-two"),
+                    start:'-10%',
                     scrub: true,
-                    end: "bottom",
+                    end: "55%",
                     fastScrollEnd: true
                 }
             }
@@ -113,14 +113,13 @@ function Web(){
             {
                 opacity: 1,
                 y: 0,
-                duration: .7,
+                duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".project-two"),
-                    start:'0%',
+                    trigger: element.querySelector(".web-three"),
+                    start:'-10%',
                     scrub: true,
-                    end: "bottom",
+                    end: "55%",
                     fastScrollEnd: true,
-                    // markers:true
                 }
             }
         );
