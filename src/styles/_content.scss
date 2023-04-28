@@ -81,6 +81,9 @@
             }
         }
     }
+    iframe{
+        border-radius: 10px;
+    }
 }
 .content-hr{
     grid-area: 2/2/2/12;
@@ -117,11 +120,7 @@
     margin-bottom: 5px;
     @include for-size(tablet-only){
         text-align: center;
-        // font-size:1.85rem
     }
-    // @include for-size(small-phone-only){
-    //     font-size: 1.6rem;
-    // }
 }
 .project-description{
     position: relative;

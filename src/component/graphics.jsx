@@ -31,7 +31,7 @@ function Graphics(){
                     start: "-40%",
                     scrub: true,
                     end: "30%",
-                    fastScrollEnd: true
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -49,11 +49,11 @@ function Graphics(){
                 y:0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".graphics-one"),
-                    start: "-10%",
+                    trigger: element.querySelector(".graphics-hero"),
+                    start: "50%",
                     scrub: true,
-                    end: "35%",
-                    fastScrollEnd: true
+                    end: "100%",
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -71,11 +71,11 @@ function Graphics(){
                 x: 0,
                 duration:.5,
                 scrollTrigger:{
-                    trigger:element.querySelector('.graphics-two'),
+                    trigger:element.querySelector('.graphics-one'),
                     start: '-10%',
                     scrub: true,
-                    end: '35%',
-                    fastScrollEnd: true
+                    end: '50%',
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -93,11 +93,11 @@ function Graphics(){
                 y: 0,
                 duration:.5,
                 scrollTrigger:{
-                    trigger:element.querySelector('.graphics-three'),
-                    start: '-10%',
+                    trigger:element.querySelector('.graphics-two'),
+                    start: '0%',
                     scrub: true,
-                    end: '35%',
-                    fastScrollEnd: true
+                    end: '90%',
+                    fastScrollEnd: true,
                 }
             }
         );

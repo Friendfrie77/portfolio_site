@@ -23,7 +23,7 @@ function Animation(){
                     scrub: true,
                     end: "30%",
                     fastScrollEnd: true,
-                    preventOverlaps: true
+                    preventOverlaps: true, 
                 }
             }
         );
@@ -41,12 +41,12 @@ function Animation(){
                 y:0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".animation-one"),
-                    start: "-40%",
+                    trigger: element.querySelector(".animation-hero"),
+                    start: "30%",
                     scrub: true,
-                    end: "20%",
+                    end: "90%",
                     fastScrollEnd: true,
-                    preventOverlaps: true
+                    preventOverlaps: true,
                 }
             }
         );

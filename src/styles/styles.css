@@ -371,6 +371,11 @@ nav {
 .Nav_Links > li a:hover {
   color: lightblue;
 }
+@media screen and (orientation: landscape) and (max-width: 840px) and (min-width: 390px) {
+  .Nav_Links > li a {
+    font-size: 1.25rem;
+  }
+}
 
 .Nav_Links li ul {
   position: absolute;
@@ -402,6 +407,11 @@ nav {
 @media (max-width: 868px) {
   .Nav_Links li button {
     font-size: 2rem;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 840px) and (min-width: 390px) {
+  .Nav_Links li button {
+    font-size: 1.25rem;
   }
 }
 
@@ -958,6 +968,9 @@ footer span {
   .panel:nth-child(even) .tech-list a, .panel:nth-child(even) .project-links a {
     padding-left: 5px;
   }
+}
+.panel iframe {
+  border-radius: 10px;
 }
 
 .content-hr {

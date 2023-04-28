@@ -30,7 +30,7 @@ function Web(){
                     trigger: element.querySelector(".web-hero"),
                     start: "-40%",
                     scrub: true,
-                    end: "25%",
+                    end: "20%",
                     fastScrollEnd: true,
                 }
             }
@@ -49,10 +49,10 @@ function Web(){
                 x: 0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".web-zero"),
-                    start: "-10%",
+                    trigger: element.querySelector(".web-hero"),
+                    start: "50%",
                     scrub: true,
-                    end: "55%",
+                    end: "100%",
                     fastScrollEnd: true,
                 }
             }
@@ -71,10 +71,10 @@ function Web(){
                 duration: .5,
                 y: 0,
                 scrollTrigger: {
-                    trigger: element.querySelector(".web-one"),
+                    trigger: element.querySelector(".web-zero"),
                     start: "-10%",
                     scrub: true,
-                    end: "55%",
+                    end: "100%",
                     fastScrollEnd: true,
                 }
             }
@@ -93,11 +93,11 @@ function Web(){
                 x: 0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".web-two"),
+                    trigger: element.querySelector(".web-one"),
                     start:'-10%',
                     scrub: true,
-                    end: "55%",
-                    fastScrollEnd: true
+                    end: "100%",
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -115,10 +115,10 @@ function Web(){
                 y: 0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".web-three"),
-                    start:'-10%',
+                    trigger: element.querySelector(".web-two"),
+                    start:'0%',
                     scrub: true,
-                    end: "55%",
+                    end: "100%",
                     fastScrollEnd: true,
                 }
             }
@@ -138,7 +138,7 @@ function Web(){
                                 <source className='panel-description-img' src={test} typeof='video/webm'></source>
                             </video>
                             <div className='project-description'>
-                                <p>For this project, I was tasked to make a simple period tracking application. I used this as an opportunity to get a better understanding of React and the MERN stack in general. At the moment, the site offers basic tracking using the Planned Parnethoods method of tracking found on their website. More features will be added at a later date, once the accuracy of the application can be honed in. Please note, the back-end server is currently running on a free-tier server, so it is slow to log in.</p>
+                                <p>For this project, I was tasked to make a simple period tracking application. I used this as an opportunity to get a better understanding of React and the MERN stack in general. At the moment, the site offers basic tracking using the Planned Parnethood's method of tracking found on their website. More features will be added at a later date, once the accuracy of the application can be honed in. Please note, the back-end server is currently running on a free-tier server, so it is slow to log in.</p>
                             </div>
                             <ul className='tech-list'>
                                 <li>React</li>

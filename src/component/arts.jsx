@@ -25,10 +25,10 @@ function Arts(){
                 duration: .5,
                 scrollTrigger: {
                     trigger: element.querySelector(".arts-hero"),
-                    start: "-40%",
+                    start: "-50%",
                     scrub: true,
                     end: "30%",
-                    fastScrollEnd: true
+                    fastScrollEnd: true,
                 }
             }
         );
@@ -46,10 +46,10 @@ function Arts(){
                 y:0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".arts-one"),
-                    start: "-10%",
+                    trigger: element.querySelector(".arts-hero"),
+                    start: "40%",
                     scrub: true,
-                    end: "25%",
+                    end: "100%",
                     fastScrollEnd: true,
                 }
             }
@@ -68,11 +68,11 @@ function Arts(){
                 x: 0,
                 duration: .5,
                 scrollTrigger: {
-                    trigger: element.querySelector(".arts-two"),
+                    trigger: element.querySelector(".arts-one"),
                     start: "-10%",
                     scrub: true,
                     end: '25%',
-                    fastScrollEnd: true
+                    fastScrollEnd: true,
                 }
             }
         );

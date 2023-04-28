@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import Lightbox from "react-18-image-lightbox";
 import lbprojectthree1 from '../images/graphics/graphic-3/photo_01.webp'
-import lbprojectthree2 from '../images/graphics/graphic-3/photo_02.webp'
-import lbprojectthree3 from '../images/graphics/graphic-3/photo_03.webp'
-import lbprojectthree4 from '../images/graphics/graphic-3/photo_04.webp'
+import lbprojectthree2 from '../images/graphics/graphic-3/photo_02-04.webp'
 
 const images = [
     lbprojectthree1,
     lbprojectthree2,
-    lbprojectthree3,
-    lbprojectthree4,
   ];
   
   export default class GraphicsProject3Lightbox extends Component {

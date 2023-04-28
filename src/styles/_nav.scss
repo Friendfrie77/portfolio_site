@@ -75,6 +75,9 @@ nav{
         {
             color: lightblue;
         }
+        @media screen and (orientation:landscape) and (max-width: 840px) and (min-width:390px){
+            font-size: 1.25rem;
+        }
     }
 }
 
@@ -103,6 +106,9 @@ nav{
     padding: 0;
     @include for-size(tablet-only){
         font-size: 2rem;
+    }
+    @media screen and (orientation:landscape) and (max-width: 840px) and (min-width:390px){
+        font-size: 1.25rem;
     }
 
 }
@@ -137,6 +143,7 @@ nav{
     @include for-size(tablet-only){
         display: flex;
     }
+
 }
 #Mobile_Nav_toggle{
     display: none;
