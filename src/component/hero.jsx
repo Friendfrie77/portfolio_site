@@ -5,7 +5,7 @@ import post from '../images/svgs/postgresql.svg'
 import photoshop from '../images/svgs/adobe-photoshop.svg'
 import illustrator from '../images/svgs/adobe-illustrator.svg'
 import flask from '../images/svgs/flask.svg'
-import resume from '../Friend_Albert_Resume.pdf'
+import resume from '../Resume.pdf'
 function hero(){
     return(
         <section className="hero" id = "hero">
